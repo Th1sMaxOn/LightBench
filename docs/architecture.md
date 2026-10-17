@@ -1,15 +1,36 @@
-# Архітектура ShelfWatch, ЛР2
+# Архітектура LightBench
 
-`firmware/Core` містить startup, clock, pin AF і виклик scheduler; `Drivers` містить vendored CMSIS/STM32C0 HAL. `Platform/board.c` адаптує I2C1, ADC1 та UART queues до плати. `Platform/runtime.c` планує 10-мс IMU, 50-мс ADC, опитування PIR і UART. `Devices/mpu6050.c` знає регістри MPU та `SensorBus` callbacks, але не HAL. `App` містить калібрування, режими, пороги й події та не включає заголовків MCU. Component diagram: `lab2/figures/components.png`.
+App не залежить від HAL, GPIO або I²C. runtime поєднує дані драйвера та ADC з прикладною моделлю. make check перевіряє напрям залежностей.
 
-У board.c використано апаратний I2C1 з AUTOEND: STOP між записом register pointer і читанням, ACK усіх байтів, master NACK останнього. Повні записи CR2 і паузи 120 мкс після START/TX/STOP усувають спостережену гонку моделі; deadline 10 мс обмежує транзакцію. Це адаптація моделі, яка потребує повторного вимірювання на фізичному MCU. При NACK/timeout очищуються flags/CR2, за потреби PE; повтор ініціалізації не частіше одного разу на 1 с. Інші канали продовжують роботу. Таймаути обчислюються unsigned subtraction, з перевіркою wraparound у tests.
+```mermaid
+flowchart LR
+ Core[Core + HAL/CMSIS] --> Board[Platform/board]
+ Board --> Runtime[Platform/runtime]
+ Runtime --> MPU[Devices/mpu6050]
+ Runtime --> Bench[App/bench]
+ Bench --> Pose[App/pose]
+ Bench --> Records[App/records]
+ Runtime --> Protocol[App/protocol]
+ Protocol --> Bench
+ Protocol --> Records
+```
 
-UART RX IRQ ring256, TX IRQ ring2048, критичні секції відновлюють попередній PRIMASK. Парсер приймає до 80 символів; NUL, надмірну довжину або RX overflow відкидає до кінця рядка. Самоперевірка `selftest` виконує реальні операції MPU; `status` видає валідність усіх трьох сенсорів. ADC wrapper виставляє PA4 до HAL_ADC_Start та опускає після HAL_ADC_Stop. Після відмови ADC наступна ініціалізація через 1 с; фільтр вимагає п'яти нових вибірок. LED: помилка 200 мс, тривога стала HIGH, норма heartbeat 1 с.
+LightSample і PoseSample оновлюються незалежно, зберігають завершення читання. bench_light/bench_pose рахують статистики активної серії, але останні дані доступні й у stopped для selftest. Натискання після debounce формує ReferencePoint з уже завершених вимірів. Читання заради точки не запускається. Прапорці розрізняють помилку каналу, старість, skew і непридатний вектор.
 
-Режими: disarmed / inspection / armed. Калібрування: 100 (1 с) вибірок, обмеження розкиду та векторної швидкості. Правила: удар ≥0,6 g; швидкість ≥30°/с протягом 200 мс; світло Δ500/300, витримка 100 мс; PIR тривожний лише в armed. Пороги не доводять факт злому або пошкодження. Перехід до охорони й ACK перевіряють здоров'я датчиків, фон і quiet interval.
+Кільце 64×28 байтів і сталий знімок 64×28 байтів разом займають 3584 байти. Канонічний формат CRC має п'ять uint32 і чотири uint16 у little-endian, без padding C. CRC32 IEEE, initial/final XOR 0xffffffff, polynomial 0xedb88320. CSV передає ці самі поля. ISR не змінює записи.
 
-`make test` перевіряє dependency boundaries, checksum vendor ADC і 5 assert-based suites. `make sanitize` додає ASan/UBSan. `make test-linux` та `make coverage` працюють у Docker. Fake шини перевіряє ID, порядок п'яти config writes, усі помилки й незмінність останнього sample при відмові; captured fixture походить із власного VCD, hash/time у `tests/fixtures/mpu-captured.json`. assert дає простий незалежний запуск, але немає автоматичної mock generation та деталізованого runner framework.
+Стан stopped → run за справного ADC → collecting → stop/ADC fault/3600000 мс → stopped. Новий run скидає лише статистики. Суми uint64 та окремі знаменники для ADC й придатних кутів. Gap означає інтервал >40 мс, failures невдалі спроби. Це різні метрики.
 
-Coverage gate: portable App+Devices ≥85% lines і ≥70% branches taken. Board/HAL не входять у ці відсотки. Runtime тестується з fake Board/clock/UART окремо, signal-level інтеграція перевірена Wokwi/VCD. Версії HAL/CMSIS базової ЛР1 збережені; додані ADC/ADCEx/LL_ADC STM32C0 HAL v1.0.1 перевіряються за `lab2/adc-vendor-manifest.json`. Вендорські файли не редагуються. Docker base pinned digest; конкретні версії компілятора зафіксовано в Dockerfile. CI запускає build/test-linux/coverage для branch/PR, checkout pinned commit.
+runtime_poll обробляє обмежену порцію UART, періодичні ADC та IMU, кнопку й один рядок export за наявності вільного TX. TX працює через IT-кільце. Status може чекати вже поставлені байти export, це обмеження перевіряється. I²C має спільний timeout 10 мс; короткі settle-інтервали порту не є навантаженням для картинки. HAL_Delay у циклі відсутній. NACK запускає IMU retry не частіше разу/с. ADC fault завершує серію.
 
-Відтворення захвату: `make build`, Wokwi Start Simulator, `selftest`, `imuaddr 0x69`, через 2 с `imuaddr 0x68`, калібрування за правилами профілю. `docs/captures/manifest.json` зберігає канали, джерела, offsets і sample rates. Для ADC/PIR використовуються цифрові markers; вони не вимірюють аналогову точність. Повні VCD стиснені без втрат, короткі VCD/SR/PVS відкриваються без переконвертації. `sigrok-cli` і `tools/analyze_vcd.py` дають незалежні текстові декоди. RFC2217 collector потребує pyserial3.5; його host monotonic clock не дорівнює часу MCU під час паузи Wokwi.
+## Ресурси та продовження
+
+STM32C031C6 має 32 КіБ flash і 12 КіБ RAM. Лінкер обмежує код 28 КіБ, резервуючи 0x08007000..0x08007fff під FR-12 ЛР3. Фактичні секції та стекові кадри наведені у validation. Вони не доводять вимір піка стеку.
+
+ЛР2 використовує SysTick, мс. Для ЛР3 кандидат TIM3 1 МГц із розширенням overflow і GPIO PA4/PB0/PB1. Підтримку таймера й reset потрібно перевірити окремим прототипом, DWT Cortex-M4 не переноситься на M0+. Flash, S1–S3, годинний прогін і повний baseline залишаються майбутньою роботою.
+
+FreeRTOS може розділити збір, єдиного власника серії/точок та вивід/сховище. Черги передають початкові часи, критерії свіжості лишаються. Бюджет стеків задач потребує вимірів. ЛР5–6 невідомі.
+
+## Походження
+
+Core, HAL/CMSIS походять із дозволеного SP-Boilerplate та [stm32-hello-wokwi](https://github.com/wokwi/stm32-hello-wokwi), ліцензії збережені. board і MPU адаптовано зі своєї попередньої версії, без копіювання чужої прикладної частини. App і тести створено для часових потоків LightBench; profile/engine і перемикач власника відсутні. Vendor manifest фіксує залежності. Схема перевіряється окремо від host-тестів.

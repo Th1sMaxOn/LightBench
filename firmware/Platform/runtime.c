@@ -16,6 +16,7 @@ static CommandReader reader;
 static Mpu6050 imu;
 static bool imu_ready, exporting;
 static unsigned export_row, export_stage;
+static uint32_t export_crc;
 static uint32_t last_adc, last_imu, last_retry, last_status;
 static uint32_t rx_losses, tx_losses;
 
@@ -103,6 +104,7 @@ static void execute(BenchCommand cmd, uint32_t now) {
         if (exporting) (void)line("reply=export result=busy\r\n");
         else {
             records_snapshot(&bench.history, &snapshot);
+            export_crc = UINT32_MAX;
             exporting = true; export_row = 0; export_stage = 0;
         }
         break;
@@ -139,12 +141,13 @@ static void export_step(void) {
         export_stage = 1;
     } else if (export_row < snapshot.count) {
         const ReferencePoint *p = &snapshot.items[export_row++];
+        export_crc = records_crc_append(export_crc, p);
         (void)line("%lu,%lu,%lu,%lu,%lu,%u,%u,%u,%u\r\n",
             (unsigned long)p->sequence, (unsigned long)p->series, (unsigned long)p->mark_ms,
             (unsigned long)p->light_ms, (unsigned long)p->pose_ms,
             p->raw, p->angle_cdeg, p->flags, p->reserved);
     } else {
-        (void)line("export_end count=%u crc32=%08lx\r\n", snapshot.count, (unsigned long)snapshot.crc);
+        (void)line("export_end count=%u crc32=%08lx\r\n", snapshot.count, (unsigned long)(export_crc ^ UINT32_MAX));
         exporting = false;
     }
 }

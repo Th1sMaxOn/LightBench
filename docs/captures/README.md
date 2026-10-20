@@ -1,23 +1,40 @@
-# Власні захвати ShelfWatch
+# Власні записи LightBench
 
-Форма B, Wokwi, виконано 15.10.2026. Джерело `acceptance.vcd`, SHA256 `ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5`. Розрізнення часових шкал: журнал `time_ms` походить із MCU; `origin.json` містить абсолютний час VCD; у SR/PulseView вісь починається з нуля відповідного window. Жодних згенерованих замінних сигналів не використано.
+Фактичний запуск Wokwi 27.10.2026, build ed8ba61-d5b4dbed. [Manifest](manifest.json) містить SHA256 прошивки, джерел і файлів. Дати Git не є датами вимірювання.
 
-Для перегляду відкрити `.sr` у PulseView, поруч лежить `.pvs`. Якщо програма не підхопила setup, застосувати Open → Restore Session Setup до однойменного `.pvs` один раз у чистому сеансі. Декодер I2C: SCL/SDA, 7-bit address; UART: UART_TX як RX, 115200 8N1. GPIO-сесії показують PIR/ADC_MARK/LED. Вимірювання: `../lab2/measurements.json`.
+- final.vcd.gz є повним lossless VCD фінального запуску, 29.25814355 с модельного часу.
+- final-uart.txt є сирим UART, final-session-uart.txt його точний фінальний сеанс.
+- measurements.json та i2c-transactions.json отримані власним аналізатором переходів.
+- Кожне вікно VCD має origin з offset і hash повного джерела. SR перетворено при 20 МГц, крок 50 нс; первинні переходи мають шкалу 1 нс.
+- PVS задає підписи та декодери PulseView. Скриншоти у ../figures зроблено з цих записів. Для UART використано також окреме збільшене вікно uart-fragment.
 
-| Запис | Сенс | SR samplerate |
-|---|---|---|
-| i2c-whoami | 0x68 W, 0x75, STOP, 0x68 R, 0x68, master NACK, STOP |20 МГц|
-| i2c-manual-address | сирий SCL/SDA, без декодера, D0=11010000, slave ACK=0 |20 МГц|
-| i2c-burst | pointer0x3B і 14 байтів accel/temp/gyro |20 МГц|
-| i2c-nack | неправильна адреса0x69, адресний байт D2, slave NACK=1 |20 МГц|
-| uart-startup | перший рядок події; ASCII, видимий початок, далі pan |20 МГц|
-| adc-marker | обгортка Start/Poll/Get/Stop, не aperture ADC |20 МГц|
-| adc-period | кілька послідовних опитувань |1 МГц|
-| simultaneous-events | PIR HIGH + IMU step + LDR step; підсумок у wire-uart.txt |1 МГц|
-| pir-pulse | HIGH PIR і повернення LOW через5с |1 МГц|
+| Канал | Модель / вимір |
+|---|---|
+| SCL/SDA | 100 кГц, median SCL period 10 мкс |
+| WHO_AM_I | pointer 0x75, read 0x68; read phase 195 мкс, pointer+read 624.275 мкс |
+| Burst | 14 bytes із 0x3B; read phase 1365 мкс, pointer+read 1899.375 мкс |
+| IMU_MARK | median ширина 2014.7 мкс, period 19993.575 мкс |
+| ADC_MARK | median ширина 50.725 мкс, period 19996.825 мкс, max period 27504.6 мкс |
+| BUTTON/POINT | 75 груп і 75 точок; max 39.167 мс до POINT |
+| UART_TX | median bit 8.7 мкс проти розрахункових 8.6806 мкс, близько 0.22% |
+| NACK | 0xD2, ACK bit=1, 105 мкс; повтор через 1 с |
 
-I2C standard mode: median SCL=10 мкс; IMU burst period=10.000050 мс. ADC wrapper median=65.225 мкс; ADC period=49.993700 мс. В VCD часова одиниця1нс; квантування імпорту20МГц=50нс,1МГц=1мкс. Надійність фронтів/живлення на залізі не досліджувалась. Wokwi logic analyzer має обмежену глибину; source ends at 54.909302с, тож пізніший UART за межами VCD не доводить існування відповідної осцилограми.
+ADC_MARK охоплює HAL start/read/stop, а не лише час семплювання. Теорія ADC при 24 МГц: (160.5+12.5)/24 = 7.21 мкс. IMU max period 1577.638 мс належить навмисному NACK/recovery. Це одна gap, не штатна періодика.
 
-Ручний розбір адреси: START є спадом SDA при SCL=1; вісім рівнів SDA на фронтах SCL:1,1,0,1,0,0,0,0 =0xD0. Перші7біт1101000=0x68, R/W=0. Дев'ятий рівень0 є ACK від slave. У pointer байті0x75=01110101, далі ACK. Наступна операція читає0xD1 та ID0x68; останній NACK дає master навмисно. У i2c-nack дев'ятий рівень1 означає відсутність пристрою0x69.
+## Ручне читання I²C
 
-Повний спокійний burst: `00 00 00 00 40 00 EF 5C 00 00 00 00 00 00`. AccelZ=0x4000=16384→1000mg; temp=0xEF5C=-4260→24001m°C, gyro=0. За стимулу X=2g із Z=1g ADC MPU насичується на32767→1999mg; це програмний step моделі, не каліброване механічне навантаження.
+У вікні WHO_AM_I SDA переходить HIGH→LOW при HIGH SCL, це START. Наступні вісім значень SDA на фронтах SCL утворюють 11010000, тобто 0xD0. Сім старших бітів 1101000 дають адресу 0x68, молодший біт 0 означає write. Дев'ятий біт LOW означає ACK. Далі йде 01110101, регістр 0x75, та ACK. Після STOP і наступного START адресний байт 11010001 означає read; повертається 01101000, тобто WHO_AM_I=0x68. Master завершує останній байт NACK і STOP. Два окремі цикли pointer/read відповідають адаптеру з AUTOEND.
+
+Для негативного тесту 11010010 означає 0x69 write. Дев'ятий біт HIGH є NACK. Після нього видно додатковий START без повного байта. Ця аномалія збережена у первинному записі; успішний burst так не виглядає.
+
+## Повторення аналізу
+
+```sh
+python3 tools/analyze_export.py docs/captures/final-session-uart.txt
+gzip -dc docs/captures/final.vcd.gz > /tmp/lightbench-final.vcd
+python3 tools/inspect_capture.py /tmp/lightbench-final.vcd /tmp/lightbench-review
+sigrok-cli -i docs/captures/i2c-whoami.sr -P i2c:scl=SCL:sda=SDA -A i2c=addr-data
+sigrok-cli -i docs/captures/uart-startup.sr -P uart:tx=UART_TX:baudrate=115200 -B uart=tx
+```
+
+inspect_capture створює нові вікна у вказаному каталозі; збережені докази не перезаписуються цими командами. Під час пауз симулятора модельний час стоїть. Вхід lux та орієнтація змінювалися незалежно, тому записи не доводять залежності світла від кута.

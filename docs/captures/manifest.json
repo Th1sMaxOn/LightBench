@@ -1,83 +1,87 @@
 {
-  "project": "ShelfWatch",
-  "captured_on": "2026-10-15",
-  "source": "acceptance.vcd",
-  "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5",
-  "last_vcd_time_ns": 54909301925,
-  "channels": {
-    "D0": "SCL PB8",
-    "D1": "SDA PB9",
-    "D2": "USART2 TX PA2",
-    "D3": "PIR PA1",
-    "D4": "ADC_MARK PA4",
-    "D5": "LED PA5",
-    "D6": "USART2 RX PA3"
+  "created_at": "2026-10-27T09:24:45.016153+00:00",
+  "engine": "Wokwi VS Code 4.0.0, wcode4.1.0",
+  "build_id": "ed8ba61-d5b4dbed",
+  "firmware": {
+    "firmware.elf": "f439c03fda0d6985ad4ed439ac226585c193cc9fb7d407e0c84634aa949967ff",
+    "firmware.hex": "a9acd961410a530806ee721eb9e71ba3a87d73e7453ad3dadfd4ef4b9534cbaf",
+    "firmware.bin": "e52cfdcd5a1a346d8eb39b9095450974a8cff66325b7fa59469b37dec3d381c8"
   },
-  "trigger": "Wokwi starts acquisition with simulation; all windows are cropped afterward with source offsets retained",
-  "limits": "Simulated digital traces only; GPIO marker measures software ADC wrapper, not analog accuracy or ADC aperture",
-  "windows": [
-    {
-      "name": "i2c-whoami",
-      "start_ns": 9688800,
-      "end_ns": 10521525,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "i2c-manual-address",
-      "start_ns": 9833800,
-      "end_ns": 9948800,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "i2c-burst",
-      "start_ns": 17712550,
-      "end_ns": 19542225,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "uart-startup",
-      "start_ns": 4811475,
-      "end_ns": 12961475,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "adc-marker",
-      "start_ns": 51497000,
-      "end_ns": 51607000,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "adc-period",
-      "start_ns": 51407000,
-      "end_ns": 271507000,
-      "sr_samplerate_hz": 1000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "simultaneous-events",
-      "start_ns": 41582443500,
-      "end_ns": 42233443500,
-      "sr_samplerate_hz": 1000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "pir-pulse",
-      "start_ns": 41582443500,
-      "end_ns": 46584443525,
-      "sr_samplerate_hz": 1000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    },
-    {
-      "name": "i2c-nack",
-      "start_ns": 20315998350,
-      "end_ns": 20316218350,
-      "sr_samplerate_hz": 20000000,
-      "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5"
-    }
-  ]
+  "source_sha256": {
+    "firmware/firmware.ioc": "15e0fb6e383c3f23be94eead504e794ba3c94de3e6f5c20f5fed4d9a92bfd5c9",
+    "firmware/Makefile": "104f7837beda7019aeca539e1bf9a76a0839d2cd6dd9477110f7f345ada24196",
+    "firmware/startup_stm32c031xx.s": "3e82a92039aa156ae0d8f2db5d7ee862885fff9ecccd65d88205a9593d54fbad",
+    "firmware/STM32C031C6Tx_FLASH.ld": "fea9d7e936a6503e8d50f947e838efee0d345495948c31b84b118de526b8a74c",
+    "firmware/Core/Inc/main.h": "c0eea391917a104bac9851c058843d11606a05c44ec62471f97c2d95ee03425c",
+    "firmware/Core/Inc/stm32c0xx_hal_conf.h": "fdd9e651f42d0948ab349f50e9945a711b2215c48978c617e27554292df8d6f5",
+    "firmware/Core/Inc/stm32c0xx_it.h": "d426a290394c8de983ed8742fdca8d7162b07ded3b5172b2806a367154ebad38",
+    "firmware/Core/Startup/startup_stm32c031c6tx.s": "3e82a92039aa156ae0d8f2db5d7ee862885fff9ecccd65d88205a9593d54fbad",
+    "firmware/Core/Src/system_stm32c0xx.c": "494f06811540fce3fa6f6cb7b9226cad70ba510c7f49ac114872ee9a9a5065ef",
+    "firmware/Core/Src/stm32c0xx_it.c": "98e9eb2071e3876f88ab6118712157b388db0f394a3ff09b66482bc0dedfb6e4",
+    "firmware/Core/Src/syscalls.c": "ab00c3df1417d6249b5c9c13c4e7b926f1fec9cd10961861d3f3c8d34983b913",
+    "firmware/Core/Src/main.c": "f1efbcf1aecdbf9776177d31feafc90684bdfae778ebc3ca8ae50405dd74b7cc",
+    "firmware/Core/Src/stm32c0xx_hal_msp.c": "de53fb412596c3893f187ee37c5b352b7943fa6bc69267ad9a87343d52dba586",
+    "firmware/Core/Src/sysmem.c": "67f3125e749700183d510a14cb979e5acee05ebe29d1972eceaa55aa4ac25366",
+    "firmware/App/protocol.h": "d0fa1c650d98b0d137af0964ed0728fb362fcd6b0cbea52ad8b56594e0ba4a42",
+    "firmware/App/bench.h": "449f6b5649dd0f285007776a60906996f287e67b3ea02a276e1a4bdc09fdc027",
+    "firmware/App/records.c": "4a5d72478eed596fddfa229b4ec21ebccf2947918d7052e96cbab22525b24959",
+    "firmware/App/pose.h": "0b650b80bef258bd629931008a7482673dada5799a021863237a3b0635eba581",
+    "firmware/App/protocol.c": "8d16bab88692abb5a426ead60cf266fee7e7c164ba6c281747d5dd559f64a4e1",
+    "firmware/App/bench.c": "79ae61f8b46846227bb15f3689aca4a37217e19c57ac563a72033f0be31dc36a",
+    "firmware/App/pose.c": "1dcc5ea0e82aecd492a4601b5974c47631b041cfe19299cc285e8d7bade914b9",
+    "firmware/App/records.h": "6546e98c24d25e52bb3aeff8f26d9e419be6682a204d48e24f17f97db6ec9f4a",
+    "firmware/Platform/runtime.c": "e1842bfbe0b5b0471453c4e5636d6ed8aebe304e5bb921f37573d09ea9e01e82",
+    "firmware/Platform/board.c": "6e5ffd6c6c2603ed4b242d25340221365718b2019f9996144089bba0f07ee009",
+    "firmware/Platform/runtime.h": "d1a84aa6d3513bbb3bc4c6c74b126fede67e765c97c95887ca7b9ba65c873647",
+    "firmware/Platform/board.h": "688a149bc874102ca56a24aeee68203ae8d2d021c4931cfa3fb45d9ede06fd06",
+    "firmware/Devices/mpu6050.h": "8b18f78e0b995050f63512d5ece23f17c5b8f98f000e3c65d6df125e474982fa",
+    "firmware/Devices/mpu6050.c": "ca3f2d61ff8dc24923c1bf51112c3840570dfb31e6510ad5e268a897d709898e"
+  },
+  "diagram_sha256": "3d067bb904499d83c47c99a615b2b1c2d3a74cefc213289d78cc5ec31a91ba7d",
+  "full_vcd_uncompressed_sha256": "e6d37e4322f3b0458a766c1c73c0f23639e29321beae0c95f5edbf58c20cee58",
+  "run": "75 stable press groups; light10 to100000, vectorZ1 toX1, export64 with point74, NACK0x69 point75, address0x68 recovery, stop, export",
+  "pauses": "GUI paused simulation between input changes; UART schedule uses actual host monotonic time; MCU/VCD have independent origins",
+  "files": {
+    "README.md": "cffe8a9482e35abb0772bc08d286cd12e32c3689c1ef4f37040d3c123a0f2598",
+    "adc-period.origin.json": "a48d926eb6515401e4daa132ae5e7ec5f498c94e9d680cbee8fcff8851ea8242",
+    "adc-period.pvs": "cc0deb02c1635917ac0b39aae4579f9dce2715cd76ae12b35758795e8abac535",
+    "adc-period.sr": "c3784aa1011a4dd52d94bc6d8d381677864698677a4b31295511f153dd3e5193",
+    "adc-period.vcd": "a03455a8c255f7194bcabfa90d85b9487cfa68c721e8277b8b9aaf9b863867cc",
+    "button-point.origin.json": "e67908425334be11bace1b5c9f8bfb25d2375a02b1ccc3c49fdeaf9d680a3e50",
+    "button-point.pvs": "3bd5a8132477b6c0d8c973c8a3b9b63828629cdd66c684b78707af153b78a135",
+    "button-point.sr": "2605d0f1dfe6bbb305442628ccd2a846f8038aa2386a19e9838e24e41524aa24",
+    "button-point.vcd": "d5b4b546ca992442fbe2afdb1c13be22a3665532e07ddf8cb793c5c8141dce2f",
+    "export-verification.json": "340b4be1c92b4877598fa16c81f8168e311bc3a768efb50895b81c9710a39b67",
+    "final-session-uart.origin.json": "330659b730363498264ae694b735b8a7a9ae17e1060d2d6565085a0fb5d9093c",
+    "final-session-uart.txt": "3262db9b9f26f7e753aa8b715fd1a877f698c565aa24a565b80018ad75cf64d5",
+    "final-uart.session.json": "7b6a9b53da2332ed557013cafb019b97e3de8cd33d47f5e31342685cb6097f85",
+    "final-uart.txt": "a48b867fe3aae2eb50e9404db0e20f7e044dc7d3fa5cc8cbf4821f3d0229c9b1",
+    "final.vcd.gz": "dade6743e2afba8a66ad6a0356f0764e2f6001040e972f0eeee1af2de105e63f",
+    "i2c-burst.decoded.txt": "7be8d24441559bbaa0df0902ab4546b5592f9634b9e196105dbee9513498143d",
+    "i2c-burst.origin.json": "e4640890bbf7a1faab2daec6c8dfa05ca8f7037b628f39818af6440d2c72dee3",
+    "i2c-burst.pvs": "cd4f114ed968c8a2893bcd8068d100220be454f8df73800abdd0e1f6a66b4d24",
+    "i2c-burst.sr": "739e4f8bd071ae5868a84e5bc2cf359d6ae16ed7ae35e057564d281c7440ac42",
+    "i2c-burst.vcd": "906c8540a76f9154bee761132ed923707c7fe3858170728523d0904938d94bb1",
+    "i2c-nack.decoded.txt": "93a950b854470c9caadaea328665fba07793b81e9ac193600d9575bc98a275ef",
+    "i2c-nack.origin.json": "27c54fe176f51da20fe16b4e2625228585fa510c623e8d30b237ebfea7cf7f4f",
+    "i2c-nack.pvs": "f3e7e34e90ae1e91ed9b39de58e048a416e273a4a6c189b28a11524dc143ea0d",
+    "i2c-nack.sr": "e15dfb20bb8e3d5a1314f9052f567e5dcae43b54245ff93223f9091f28790241",
+    "i2c-nack.vcd": "aa3e98aea9c40795bd39d76bb0be6e52a2934e1e8cd7623920dd890556ea3143",
+    "i2c-transactions.json": "3af88cece168b038f67df97df3f51d042bddac2a2630bc551a03e88a61e93ec7",
+    "i2c-whoami.decoded.txt": "7e663b269ee043be6d98a43ebc76decf273c58d7168798f727f75e747d8e899e",
+    "i2c-whoami.origin.json": "9bfe096ef83e893b9a0018f57b88aad7291f46b69bad6a6d6abbf1e37578bc30",
+    "i2c-whoami.pvs": "5e1947cbab8c26b0dff4dc9e4606f107029fb7d52ff061bc752154a6e32e2f53",
+    "i2c-whoami.sr": "338ae98f53aadfaab7660c5c7bba11364dccc5713d92359675724274f808c6b2",
+    "i2c-whoami.vcd": "b47d22ec39e72d2cc996c096117988e77e39dcbcc232308496d0face9826ecc3",
+    "measurements.json": "6426fdfc3d5f9e69771b28e48d8c317592658340d094a9a09f5f4d75c3cf36ba",
+    "uart-fragment.origin.json": "0c1532e512c3acab5822f0dcfdd2c4e65c1f993d0870fabdbd62ecbfb6c88d64",
+    "uart-fragment.pvs": "32f1381e444d7f889e9394cd04401837354be3ec29229426969bdedb1e9003cd",
+    "uart-fragment.sr": "6c15f89a85332721966e0104eb14af233a4a1edec783f948c27acacef129ef77",
+    "uart-fragment.vcd": "b28cb33e2a923437ff84ba9c36eeb90e68c5bc100bf55d6b49adb565c5bc6ce4",
+    "uart-startup.decoded.txt": "f5f0d375905f3909398ddc8b802512939249902eb5f158951f62e3d4b0f11271",
+    "uart-startup.origin.json": "1c8200250799bbf8cb30e2a55c5ed90b3e6a700c02bf47c1a260a21bd8d69733",
+    "uart-startup.pvs": "425cc0ea7437a449baebc9a1cf906f94ee38b6c9ee69c58e86eb27d8148f21e4",
+    "uart-startup.sr": "991ab9e701290a4c82f59a8d98746a142214d9144da668e127bc45619d17650e",
+    "uart-startup.vcd": "4806af1c22b7facc87b930465d4e43fc367e594a93fcf3976d404b06b621da49"
+  }
 }

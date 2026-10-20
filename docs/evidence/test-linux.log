@@ -1,0 +1,67 @@
+docker build -t lightbench-build:lab2 docker
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 510B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#4 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#4 DONE 0.0s
+
+#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     gcc=4:13.2.0-7ubuntu1     libc6-dev     python3     make     gcc-arm-none-eabi=15:13.2.rel1-2     binutils-arm-none-eabi=2.42-1ubuntu1+23     libnewlib-arm-none-eabi=4.4.0.20231231-2     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 [3/3] WORKDIR /workspace
+#6 CACHED
+
+#7 exporting to image
+#7 exporting layers done
+#7 exporting manifest sha256:b56d68ce3313022972b0148e354c60227418808f807ec2f9a3106715fd760f5e done
+#7 exporting config sha256:4e01ec3dc163614a9b2a9e46121eb1e45edc7a0ad2881c18b0aa4f111b35c76e done
+#7 exporting attestation manifest sha256:f331f2c341381204382e03b771b95453ff47a384863e5b0104bb86e587df389a done
+#7 exporting manifest list sha256:9b5fa5866b7bb630c5aed7b60e755b43d2d696dd2f78f0535d67ee80c214421f done
+#7 naming to docker.io/library/lightbench-build:lab2 done
+#7 unpacking to docker.io/library/lightbench-build:lab2 done
+#7 DONE 0.0s
+docker run --rm -v "/Users/pliffdax/Projects/university/Study/People/Пашко Максим Ігорович/2026-Fall/SP/Lab01/Work/ShelfWatch:/workspace" -w /workspace --user "501:20" lightbench-build:lab2 make test sanitize
+python3 tools/check_project.py
+App/Devices dependencies, vendor hashes and absence of profile/delays passed
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_bench.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/test_bench"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_protocol.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/test_protocol"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_mpu.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/test_mpu"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_runtime.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c ../firmware/Platform/runtime.c -lm -o "build/Linux-aarch64/test_runtime"
+bench: angle sweep, temporal boundaries/wrap, series denominators/faults, debounce, immutable ring and CRC passed
+protocol: exact commands, CRLF, oversize/nonprintable/overflow recovery passed
+mpu: config sequence, signed scales, NACK/timeout/error/ID and output preservation passed; synthetic boundaries plus own Wokwi fixture
+runtime: concurrent polling, button, export, retry timing, ADC stop, recovery, errors and hour limit passed with fake ports
+make[1]: Leaving directory '/workspace/tests'
+python3 tests/test_export.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+make -C tests sanitize
+make[1]: Entering directory '/workspace/tests'
+make test BUILD=build/Linux-aarch64/sanitize CFLAGS='-std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer'
+make[2]: Entering directory '/workspace/tests'
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_bench.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/sanitize/test_bench"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_protocol.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/sanitize/test_protocol"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_mpu.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Linux-aarch64/sanitize/test_mpu"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer test_runtime.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c ../firmware/Platform/runtime.c -lm -o "build/Linux-aarch64/sanitize/test_runtime"
+bench: angle sweep, temporal boundaries/wrap, series denominators/faults, debounce, immutable ring and CRC passed
+protocol: exact commands, CRLF, oversize/nonprintable/overflow recovery passed
+mpu: config sequence, signed scales, NACK/timeout/error/ID and output preservation passed; synthetic boundaries plus own Wokwi fixture
+runtime: concurrent polling, button, export, retry timing, ADC stop, recovery, errors and hour limit passed with fake ports
+make[2]: Leaving directory '/workspace/tests'
+make[1]: Leaving directory '/workspace/tests'

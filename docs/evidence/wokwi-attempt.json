@@ -1,0 +1,14 @@
+{
+  "attempted_at": "2026-10-27T08:42:53.358830+00:00",
+  "project": "LightBench",
+  "source_commit": "ed8ba61",
+  "extension": "wokwi.wokwi-vscode-4.0.0",
+  "action": "Wokwi: Start Simulator",
+  "result": "succeeded_after_user_renewal",
+  "message": "Your Wokwi license has expired",
+  "trial_activated": false,
+  "license_changed": false,
+  "capture_available": true,
+  "license_changed_by_agent": false,
+  "subsequent_run": "docs/captures/manifest.json"
+}

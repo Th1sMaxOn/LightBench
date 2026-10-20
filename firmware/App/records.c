@@ -16,20 +16,22 @@ static uint32_t crc_word(uint32_t crc, uint32_t word, unsigned bytes) {
     }
     return crc;
 }
+uint32_t records_crc_append(uint32_t crc, const ReferencePoint *p) {
+    crc = crc_word(crc, p->sequence, 4);
+    crc = crc_word(crc, p->series, 4);
+    crc = crc_word(crc, p->mark_ms, 4);
+    crc = crc_word(crc, p->light_ms, 4);
+    crc = crc_word(crc, p->pose_ms, 4);
+    crc = crc_word(crc, p->raw, 2);
+    crc = crc_word(crc, p->angle_cdeg, 2);
+    crc = crc_word(crc, p->flags, 2);
+    crc = crc_word(crc, p->reserved, 2);
+    return crc;
+}
 uint32_t records_crc(const ReferencePoint *points, size_t count) {
     uint32_t crc = UINT32_MAX;
-    for (size_t i = 0; i < count; ++i) {
-        const ReferencePoint *p = &points[i];
-        crc = crc_word(crc, p->sequence, 4);
-        crc = crc_word(crc, p->series, 4);
-        crc = crc_word(crc, p->mark_ms, 4);
-        crc = crc_word(crc, p->light_ms, 4);
-        crc = crc_word(crc, p->pose_ms, 4);
-        crc = crc_word(crc, p->raw, 2);
-        crc = crc_word(crc, p->angle_cdeg, 2);
-        crc = crc_word(crc, p->flags, 2);
-        crc = crc_word(crc, p->reserved, 2);
-    }
+    for (size_t i = 0; i < count; ++i)
+        crc = records_crc_append(crc, &points[i]);
     return crc ^ UINT32_MAX;
 }
 void records_snapshot(const PointHistory *history, PointSnapshot *snapshot) {
@@ -38,5 +40,4 @@ void records_snapshot(const PointHistory *history, PointSnapshot *snapshot) {
     unsigned first = (history->head + POINT_CAPACITY - history->count) % POINT_CAPACITY;
     for (unsigned i = 0; i < history->count; ++i)
         snapshot->items[i] = history->items[(first + i) % POINT_CAPACITY];
-    snapshot->crc = records_crc(snapshot->items, snapshot->count);
 }

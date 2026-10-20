@@ -11,6 +11,8 @@ parser.add_argument('--port', type=int, required=True)
 parser.add_argument('--output', type=Path, required=True)
 parser.add_argument('--seconds', type=float, default=65)
 parser.add_argument('--schedule', type=Path)
+parser.add_argument('--control-file', type=Path, help='Append newline-terminated commands during a live run')
+parser.add_argument('--stop-file', type=Path, help='Stop cleanly when this file exists')
 args = parser.parse_args()
 schedule = json.loads(args.schedule.read_text()) if args.schedule else []
 assert schedule == sorted(schedule, key=lambda item: item['after_seconds'])
@@ -22,8 +24,20 @@ session = args.output.with_suffix('.session.json')
 session.write_text(json.dumps({'started_at': started, 'port': args.port, 'state': 'recording'}, indent=2)+'\n')
 with serial.serial_for_url(f'rfc2217://localhost:{args.port}', baudrate=115200, timeout=0.05) as connection:
     epoch = time.monotonic()
+    control_offset = 0
     with args.output.open('wb') as stream:
         while (elapsed := time.monotonic() - epoch) < args.seconds:
+            if args.stop_file and args.stop_file.exists():
+                reason = 'requested_stop'
+                break;
+            if args.control_file and args.control_file.exists():
+                pending = args.control_file.read_bytes()[control_offset:]
+                complete = pending.rfind(b'\n') + 1
+                for raw in pending[:complete].splitlines():
+                    if raw:
+                        connection.write(raw + b'\n')
+                        events.append({'wall_seconds': elapsed, 'command': raw.decode('ascii')})
+                control_offset += complete
             while schedule and elapsed >= schedule[0]['after_seconds']:
                 item = schedule.pop(0)
                 connection.write((item['text'] + '\n').encode())

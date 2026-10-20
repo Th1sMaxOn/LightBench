@@ -1,0 +1,58 @@
+{
+  "started_at": "2026-10-27T11:04:51.749664+02:00",
+  "duration_seconds": 237.01467166600014,
+  "port": 4503,
+  "end_reason": "requested_stop",
+  "commands": [
+    {
+      "wall_seconds": 80.77509420800016,
+      "command": "selftest"
+    },
+    {
+      "wall_seconds": 80.77509420800016,
+      "command": "run"
+    },
+    {
+      "wall_seconds": 80.77509420800016,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 169.56018816600044,
+      "command": "export"
+    },
+    {
+      "wall_seconds": 169.56018816600044,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 187.260239833,
+      "command": "imuaddr 0x69"
+    },
+    {
+      "wall_seconds": 187.260239833,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 216.56931258300028,
+      "command": "imuaddr 0x68"
+    },
+    {
+      "wall_seconds": 216.56931258300028,
+      "command": "selftest"
+    },
+    {
+      "wall_seconds": 216.56931258300028,
+      "command": "stop"
+    },
+    {
+      "wall_seconds": 216.56931258300028,
+      "command": "export"
+    },
+    {
+      "wall_seconds": 216.56931258300028,
+      "command": "status"
+    }
+  ],
+  "uart_bytes": 22224,
+  "clock": "Host monotonic schedule; UART time_ms comes from the simulated MCU"
+}

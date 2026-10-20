@@ -1,0 +1,17 @@
+{
+  "source_sha256": "e6d37e4322f3b0458a766c1c73c0f23639e29321beae0c95f5edbf58c20cee58",
+  "start_ns": 11347875,
+  "end_ns": 13947875,
+  "channels": [
+    "SCL",
+    "SDA",
+    "UART_TX",
+    "BUTTON",
+    "ADC_MARK",
+    "LED",
+    "POINT",
+    "IMU_MARK"
+  ],
+  "sha256": "b28cb33e2a923437ff84ba9c36eeb90e68c5bc100bf55d6b49adb565c5bc6ce4",
+  "sampling": "event transitions at 1 ns; SR conversion downsample=50 gives 20 MHz"
+}

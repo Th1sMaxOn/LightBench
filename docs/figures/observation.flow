@@ -1,0 +1,15 @@
+ALGORITHM observation
+INPUT "Взяти останні виміри світла й положення"
+STEP "Обчислити вік кожного джерела та розрив часу; flags = 0"
+STEP "Додати LIGHT_BAD / POSE_BAD для недоступних каналів"
+IF "Вік будь-якого джерела понад 40 мс?" THEN
+  STEP "Додати LIGHT_OLD / POSE_OLD окремо для старих джерел"
+END IF
+IF "Розрив між джерелами понад 20 мс?" THEN
+  STEP "Додати SKEW"
+END IF
+IF "IMU доступний, але кут непридатний?" THEN
+  STEP "Додати DYNAMIC"
+END IF
+OUTPUT "Повернути часи джерел, raw, кут, flags та номери точки й серії"
+END ALGORITHM

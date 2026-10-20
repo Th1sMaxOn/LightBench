@@ -1,0 +1,6 @@
+{
+  "source": "final-uart.txt",
+  "byte_offset": 3400,
+  "sha256": "3262db9b9f26f7e753aa8b715fd1a877f698c565aa24a565b80018ad75cf64d5",
+  "note": "Exact final boot slice; no line text edits"
+}

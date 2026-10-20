@@ -1,0 +1,33 @@
+# Intended Wokwi CLI scenario. Execution status is recorded in validation.md.
+name: LightBench independent light and pose
+version: 1
+author: Maksym Pashko
+steps:
+  - wait-serial: 'project=LightBench'
+  - write-serial: "selftest\n"
+  - wait-serial: 'selftest adc=1 imu=1'
+  - write-serial: "run\n"
+  - wait-serial: 'reply=run result=ok'
+  - delay: 100ms
+  - set-control: {part-id: mark, name: pressed, value: 1}
+  - delay: 100ms
+  - set-control: {part-id: mark, name: pressed, value: 0}
+  - delay: 100ms
+  - set-control: {part-id: ldr, name: lux, value: 100000}
+  - delay: 100ms
+  - write-serial: "status\n"
+  - set-control: {part-id: imu, name: accelX, value: 1}
+  - set-control: {part-id: imu, name: accelZ, value: 0}
+  - delay: 100ms
+  - set-control: {part-id: mark, name: pressed, value: 1}
+  - delay: 100ms
+  - set-control: {part-id: mark, name: pressed, value: 0}
+  - write-serial: "export\n"
+  - wait-serial: 'export_end count=2'
+  - write-serial: "imuaddr 0x69\n"
+  - delay: 1200ms
+  - write-serial: "status\n"
+  - write-serial: "imuaddr 0x68\n"
+  - delay: 100ms
+  - write-serial: "stop\n"
+  - wait-serial: 'summary series=1'

@@ -1,0 +1,17 @@
+python3 tools/check_project.py
+App/Devices dependencies, vendor hashes and absence of profile/delays passed
+/Library/Developer/CommandLineTools/usr/bin/make -C tests test
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_bench.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Darwin-arm64/test_bench"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_protocol.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Darwin-arm64/test_protocol"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_mpu.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c -lm -o "build/Darwin-arm64/test_mpu"
+cc -I../firmware/Devices -I../firmware/App -I../firmware/Platform -Ifakes -std=c11 -O0 -g -Wall -Wextra -Werror test_runtime.c ../firmware/App/bench.c ../firmware/App/pose.c ../firmware/App/records.c ../firmware/App/protocol.c ../firmware/Devices/mpu6050.c ../firmware/Platform/runtime.c -lm -o "build/Darwin-arm64/test_runtime"
+bench: angle sweep, temporal boundaries/wrap, series denominators/faults, debounce, immutable ring and CRC passed
+protocol: exact commands, CRLF, oversize/nonprintable/overflow recovery passed
+mpu: config sequence, signed scales, NACK/timeout/error/ID and output preservation passed; synthetic boundaries plus own Wokwi fixture
+runtime: concurrent polling, button, export, retry timing, ADC stop, recovery, errors and hour limit passed with fake ports
+python3 tests/test_export.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

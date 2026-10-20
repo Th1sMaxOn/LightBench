@@ -1,7 +1,7 @@
-name: ShelfWatch verification
+name: LightBench verification
 on:
   push:
-    branches: [main, feature/lab-2]
+    branches: [main, feature/lightbench-rewrite]
   pull_request:
     branches: [main]
 permissions:

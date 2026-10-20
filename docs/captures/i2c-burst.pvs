@@ -15,9 +15,9 @@ name=SDA
 enabled=false
 name=UART_TX
 
-[PIR]
+[BUTTON]
 enabled=false
-name=PIR
+name=BUTTON
 
 [ADC_MARK]
 enabled=false
@@ -27,9 +27,13 @@ name=ADC_MARK
 enabled=false
 name=LED
 
-[UART_RX]
+[POINT]
 enabled=false
-name=UART_RX
+name=POINT
+
+[IMU_MARK]
+enabled=false
+name=IMU_MARK
 
 [decode_signal0]
 name=I2C
@@ -50,7 +54,7 @@ channel1\assigned_signal_name=SDA
 channel1\initial_pin_state=2
 
 [view0]
-scale=2.103074712643678e-06
+scale=2.365e-06
 offset=22 serialization::archive 20 0 0 0 0 0 0 0 0 0 0 0 0 0 6
 zero_offset=22 serialization::archive 20 0 0 0 0 0 0 0 0 0 0 0 0 0 6
 v_offset=0

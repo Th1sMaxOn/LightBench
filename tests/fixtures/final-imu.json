@@ -1,0 +1,30 @@
+{
+  "capture": "docs/captures/final.vcd.gz",
+  "uncompressed_sha256": "e6d37e4322f3b0458a766c1c73c0f23639e29321beae0c95f5edbf58c20cee58",
+  "transaction_start_ns": 2015219775,
+  "bytes": [
+    64,
+    0,
+    0,
+    0,
+    0,
+    0,
+    239,
+    92,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "expected_accel_mg": [
+    1000,
+    0,
+    0
+  ],
+  "expected_angle_cdeg": 9000,
+  "uart": "docs/captures/final-uart.txt; series 1 points 3..74, raw32 and angle_cdeg9000",
+  "units": "mg / cdeg",
+  "firmware_hex_sha256": "a9acd961410a530806ee721eb9e71ba3a87d73e7453ad3dadfd4ef4b9534cbaf"
+}

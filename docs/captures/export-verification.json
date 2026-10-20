@@ -1,0 +1,20 @@
+[
+  {
+    "rows": 64,
+    "overwritten": 9,
+    "rejected_pairs": 0,
+    "crc32": "a391cbd3",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 11,
+    "rejected_pairs": 1,
+    "crc32": "1d5afb21",
+    "series": [
+      1
+    ]
+  }
+]

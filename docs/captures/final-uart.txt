@@ -1,0 +1,273 @@
+status ms=54009 series=0 running=0 adc=1 raw=32 light_ms=53994 imu=1 angle_cdeg=9000 pose_ms=54009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=55009 series=0 running=0 adc=1 raw=32 light_ms=54994 imu=1 angle_cdeg=9000 pose_ms=55009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=56009 series=0 running=0 adc=1 raw=32 light_ms=55994 imu=1 angle_cdeg=9000 pose_ms=56009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=57009 series=0 running=0 adc=1 raw=32 light_ms=56994 imu=1 angle_cdeg=9000 pose_ms=57009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=58009 series=0 running=0 adc=1 raw=32 light_ms=57994 imu=1 angle_cdeg=9000 pose_ms=58009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=59009 series=0 running=0 adc=1 raw=32 light_ms=58994 imu=1 angle_cdeg=9000 pose_ms=59009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=60009 series=0 running=0 adc=1 raw=32 light_ms=59994 imu=1 angle_cdeg=9000 pose_ms=60009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=61009 series=0 running=0 adc=1 raw=32 light_ms=60994 imu=1 angle_cdeg=9000 pose_ms=61009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=62009 series=0 running=0 adc=1 raw=32 light_ms=61994 imu=1 angle_cdeg=9000 pose_ms=62009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=63009 series=0 running=0 adc=1 raw=32 light_ms=62994 imu=1 angle_cdeg=9000 pose_ms=63009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=64009 series=0 running=0 adc=1 raw=32 light_ms=63994 imu=1 angle_cdeg=9000 pose_ms=64009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=65009 series=0 running=0 adc=1 raw=32 light_ms=64994 imu=1 angle_cdeg=9000 pose_ms=65009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=66009 series=0 running=0 adc=1 raw=32 light_ms=65994 imu=1 angle_cdeg=9000 pose_ms=66009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=67009 series=0 running=0 adc=1 raw=32 light_ms=66994 imu=1 angle_cdeg=9000 pose_ms=67009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=68009 series=0 running=0 adc=1 raw=32 light_ms=67994 imu=1 angle_cdeg=9000 pose_ms=68009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=69009 series=0 running=0 adc=1 raw=32 light_ms=68994 imu=1 angle_cdeg=9000 pose_ms=69009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=70009 series=0 running=0 adc=1 raw=32 light_ms=69994 imu=1 angle_cdeg=9000 pose_ms=70009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=71009 series=0 running=0 adc=1 raw=32 light_ms=70994 imu=1 angle_cdeg=9000 pose_ms=71009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=72009 series=0 running=0 adc=1 raw=32 light_ms=71994 imu=1 angle_cdeg=9000 pose_ms=72009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+status ms=73009 series=0 running=0 adc=1 raw=32 light_ms=72994 imu=1 angle_cdeg=9000 pose_ms=73009 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+project=LightBench build=ed8ba61-d5b4dbed adc=1 imu=1 button=ready store=ram_volatile uart=115200_8N1
+selftest adc=1 imu=1 button=ready bus=0 ms=178
+reply=run result=ok ms=180
+status ms=181 series=1 running=1 adc=1 raw=3413 light_ms=178 imu=1 angle_cdeg=0 pose_ms=178 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=1 series=1 ms=303 edge_ms=273 raw=3413 angle_cdeg=0 flags=0 light_ms=291 pose_ms=290
+status ms=1007 series=1 running=1 adc=1 raw=32 light_ms=991 imu=1 angle_cdeg=0 pose_ms=990 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=2 series=1 ms=1113 edge_ms=1082 raw=32 angle_cdeg=0 flags=0 light_ms=1111 pose_ms=1113
+point seq=3 series=1 ms=1704 edge_ms=1674 raw=32 angle_cdeg=9000 flags=0 light_ms=1693 pose_ms=1693
+status ms=2007 series=1 running=1 adc=1 raw=32 light_ms=1993 imu=1 angle_cdeg=9000 pose_ms=1993 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=4 series=1 ms=2044 edge_ms=2014 raw=32 angle_cdeg=9000 flags=0 light_ms=2034 pose_ms=2033
+point seq=5 series=1 ms=2368 edge_ms=2338 raw=32 angle_cdeg=9000 flags=0 light_ms=2354 pose_ms=2353
+point seq=6 series=1 ms=2713 edge_ms=2681 raw=32 angle_cdeg=9000 flags=0 light_ms=2694 pose_ms=2713
+status ms=3007 series=1 running=1 adc=1 raw=32 light_ms=2996 imu=1 angle_cdeg=9000 pose_ms=2993 flags=0 points=6 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=7 series=1 ms=3045 edge_ms=3015 raw=32 angle_cdeg=9000 flags=0 light_ms=3036 pose_ms=3033
+point seq=8 series=1 ms=3378 edge_ms=3348 raw=32 angle_cdeg=9000 flags=0 light_ms=3376 pose_ms=3373
+point seq=9 series=1 ms=3720 edge_ms=3690 raw=32 angle_cdeg=9000 flags=0 light_ms=3716 pose_ms=3713
+status ms=4007 series=1 running=1 adc=1 raw=32 light_ms=3996 imu=1 angle_cdeg=9000 pose_ms=3993 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=10 series=1 ms=4053 edge_ms=4023 raw=32 angle_cdeg=9000 flags=0 light_ms=4036 pose_ms=4053
+point seq=11 series=1 ms=4387 edge_ms=4357 raw=32 angle_cdeg=9000 flags=0 light_ms=4376 pose_ms=4373
+point seq=12 series=1 ms=4713 edge_ms=4682 raw=32 angle_cdeg=9000 flags=0 light_ms=4696 pose_ms=4713
+status ms=5007 series=1 running=1 adc=1 raw=32 light_ms=4996 imu=1 angle_cdeg=9000 pose_ms=4993 flags=0 points=12 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=13 series=1 ms=5045 edge_ms=5015 raw=32 angle_cdeg=9000 flags=0 light_ms=5036 pose_ms=5033
+point seq=14 series=1 ms=5378 edge_ms=5348 raw=32 angle_cdeg=9000 flags=0 light_ms=5376 pose_ms=5373
+point seq=15 series=1 ms=5713 edge_ms=5682 raw=32 angle_cdeg=9000 flags=0 light_ms=5696 pose_ms=5713
+status ms=6007 series=1 running=1 adc=1 raw=32 light_ms=5996 imu=1 angle_cdeg=9000 pose_ms=5993 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=16 series=1 ms=6036 edge_ms=6006 raw=32 angle_cdeg=9000 flags=0 light_ms=6036 pose_ms=6033
+point seq=17 series=1 ms=6363 edge_ms=6333 raw=32 angle_cdeg=9000 flags=0 light_ms=6356 pose_ms=6353
+point seq=18 series=1 ms=6703 edge_ms=6673 raw=32 angle_cdeg=9000 flags=0 light_ms=6696 pose_ms=6693
+status ms=7007 series=1 running=1 adc=1 raw=32 light_ms=6996 imu=1 angle_cdeg=9000 pose_ms=6993 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=19 series=1 ms=7037 edge_ms=7007 raw=32 angle_cdeg=9000 flags=0 light_ms=7036 pose_ms=7033
+point seq=20 series=1 ms=7370 edge_ms=7340 raw=32 angle_cdeg=9000 flags=0 light_ms=7356 pose_ms=7353
+point seq=21 series=1 ms=7705 edge_ms=7675 raw=32 angle_cdeg=9000 flags=0 light_ms=7696 pose_ms=7695
+status ms=8007 series=1 running=1 adc=1 raw=32 light_ms=7996 imu=1 angle_cdeg=9000 pose_ms=7995 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=22 series=1 ms=8028 edge_ms=7998 raw=32 angle_cdeg=9000 flags=0 light_ms=8016 pose_ms=8015
+point seq=23 series=1 ms=8362 edge_ms=8332 raw=32 angle_cdeg=9000 flags=0 light_ms=8356 pose_ms=8355
+point seq=24 series=1 ms=8705 edge_ms=8675 raw=32 angle_cdeg=9000 flags=0 light_ms=8696 pose_ms=8695
+status ms=9007 series=1 running=1 adc=1 raw=32 light_ms=8996 imu=1 angle_cdeg=9000 pose_ms=8995 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=25 series=1 ms=9041 edge_ms=9011 raw=32 angle_cdeg=9000 flags=0 light_ms=9036 pose_ms=9035
+point seq=26 series=1 ms=9362 edge_ms=9332 raw=32 angle_cdeg=9000 flags=0 light_ms=9356 pose_ms=9355
+point seq=27 series=1 ms=9702 edge_ms=9672 raw=32 angle_cdeg=9000 flags=0 light_ms=9696 pose_ms=9695
+status ms=10007 series=1 running=1 adc=1 raw=32 light_ms=9996 imu=1 angle_cdeg=9000 pose_ms=9995 flags=0 points=27 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=28 series=1 ms=10028 edge_ms=9998 raw=32 angle_cdeg=9000 flags=0 light_ms=10016 pose_ms=10015
+point seq=29 series=1 ms=10370 edge_ms=10340 raw=32 angle_cdeg=9000 flags=0 light_ms=10356 pose_ms=10355
+point seq=30 series=1 ms=10705 edge_ms=10675 raw=32 angle_cdeg=9000 flags=0 light_ms=10696 pose_ms=10695
+status ms=11007 series=1 running=1 adc=1 raw=32 light_ms=10996 imu=1 angle_cdeg=9000 pose_ms=10995 flags=0 points=30 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=31 series=1 ms=11045 edge_ms=11015 raw=32 angle_cdeg=9000 flags=0 light_ms=11036 pose_ms=11035
+point seq=32 series=1 ms=11378 edge_ms=11348 raw=32 angle_cdeg=9000 flags=0 light_ms=11376 pose_ms=11375
+point seq=33 series=1 ms=11712 edge_ms=11682 raw=32 angle_cdeg=9000 flags=0 light_ms=11696 pose_ms=11695
+status ms=12007 series=1 running=1 adc=1 raw=32 light_ms=11997 imu=1 angle_cdeg=9000 pose_ms=11997 flags=0 points=33 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=34 series=1 ms=12037 edge_ms=12007 raw=32 angle_cdeg=9000 flags=0 light_ms=12017 pose_ms=12037
+point seq=35 series=1 ms=12370 edge_ms=12340 raw=32 angle_cdeg=9000 flags=0 light_ms=12360 pose_ms=12357
+point seq=36 series=1 ms=12712 edge_ms=12682 raw=32 angle_cdeg=9000 flags=0 light_ms=12700 pose_ms=12697
+status ms=13007 series=1 running=1 adc=1 raw=32 light_ms=13000 imu=1 angle_cdeg=9000 pose_ms=12997 flags=0 points=36 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=37 series=1 ms=13042 edge_ms=13012 raw=32 angle_cdeg=9000 flags=0 light_ms=13040 pose_ms=13037
+point seq=38 series=1 ms=13379 edge_ms=13349 raw=32 angle_cdeg=9000 flags=0 light_ms=13360 pose_ms=13377
+point seq=39 series=1 ms=13712 edge_ms=13682 raw=32 angle_cdeg=9000 flags=0 light_ms=13702 pose_ms=13697
+status ms=14007 series=1 running=1 adc=1 raw=32 light_ms=14002 imu=1 angle_cdeg=9000 pose_ms=13997 flags=0 points=39 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=40 series=1 ms=14047 edge_ms=14017 raw=32 angle_cdeg=9000 flags=0 light_ms=14042 pose_ms=14037
+point seq=41 series=1 ms=14370 edge_ms=14340 raw=32 angle_cdeg=9000 flags=0 light_ms=14362 pose_ms=14357
+point seq=42 series=1 ms=14712 edge_ms=14682 raw=32 angle_cdeg=9000 flags=0 light_ms=14702 pose_ms=14697
+status ms=15007 series=1 running=1 adc=1 raw=32 light_ms=15002 imu=1 angle_cdeg=9000 pose_ms=14997 flags=0 points=42 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=43 series=1 ms=15044 edge_ms=15014 raw=32 angle_cdeg=9000 flags=0 light_ms=15042 pose_ms=15037
+point seq=44 series=1 ms=15378 edge_ms=15348 raw=32 angle_cdeg=9000 flags=0 light_ms=15362 pose_ms=15377
+point seq=45 series=1 ms=15712 edge_ms=15682 raw=32 angle_cdeg=9000 flags=0 light_ms=15702 pose_ms=15697
+status ms=16007 series=1 running=1 adc=1 raw=32 light_ms=16002 imu=1 angle_cdeg=9000 pose_ms=15997 flags=0 points=45 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=46 series=1 ms=16037 edge_ms=16006 raw=32 angle_cdeg=9000 flags=0 light_ms=16022 pose_ms=16037
+point seq=47 series=1 ms=16379 edge_ms=16349 raw=32 angle_cdeg=9000 flags=0 light_ms=16362 pose_ms=16377
+point seq=48 series=1 ms=16712 edge_ms=16682 raw=32 angle_cdeg=9000 flags=0 light_ms=16702 pose_ms=16697
+status ms=17007 series=1 running=1 adc=1 raw=32 light_ms=17002 imu=1 angle_cdeg=9000 pose_ms=16997 flags=0 points=48 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=49 series=1 ms=17044 edge_ms=17014 raw=32 angle_cdeg=9000 flags=0 light_ms=17042 pose_ms=17037
+point seq=50 series=1 ms=17370 edge_ms=17340 raw=32 angle_cdeg=9000 flags=0 light_ms=17362 pose_ms=17357
+point seq=51 series=1 ms=17704 edge_ms=17674 raw=32 angle_cdeg=9000 flags=0 light_ms=17702 pose_ms=17697
+status ms=18007 series=1 running=1 adc=1 raw=32 light_ms=18002 imu=1 angle_cdeg=9000 pose_ms=17997 flags=0 points=51 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=52 series=1 ms=18029 edge_ms=17999 raw=32 angle_cdeg=9000 flags=0 light_ms=18022 pose_ms=18017
+point seq=53 series=1 ms=18362 edge_ms=18332 raw=32 angle_cdeg=9000 flags=0 light_ms=18362 pose_ms=18357
+point seq=54 series=1 ms=18697 edge_ms=18665 raw=32 angle_cdeg=9000 flags=0 light_ms=18682 pose_ms=18697
+status ms=19007 series=1 running=1 adc=1 raw=32 light_ms=19002 imu=1 angle_cdeg=9000 pose_ms=18997 flags=0 points=54 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=55 series=1 ms=19021 edge_ms=18991 raw=32 angle_cdeg=9000 flags=0 light_ms=19002 pose_ms=19017
+point seq=56 series=1 ms=19362 edge_ms=19332 raw=32 angle_cdeg=9000 flags=0 light_ms=19345 pose_ms=19357
+point seq=57 series=1 ms=19687 edge_ms=19657 raw=32 angle_cdeg=9000 flags=0 light_ms=19685 pose_ms=19677
+status ms=20007 series=1 running=1 adc=1 raw=32 light_ms=20005 imu=1 angle_cdeg=9000 pose_ms=19997 flags=0 points=57 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=58 series=1 ms=20028 edge_ms=19998 raw=32 angle_cdeg=9000 flags=0 light_ms=20025 pose_ms=20017
+point seq=59 series=1 ms=20362 edge_ms=20332 raw=32 angle_cdeg=9000 flags=0 light_ms=20345 pose_ms=20357
+point seq=60 series=1 ms=20694 edge_ms=20664 raw=32 angle_cdeg=9000 flags=0 light_ms=20685 pose_ms=20677
+status ms=21007 series=1 running=1 adc=1 raw=32 light_ms=21005 imu=1 angle_cdeg=9000 pose_ms=20999 flags=0 points=60 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=61 series=1 ms=21029 edge_ms=20999 raw=32 angle_cdeg=9000 flags=0 light_ms=21025 pose_ms=21019
+point seq=62 series=1 ms=21361 edge_ms=21331 raw=32 angle_cdeg=9000 flags=0 light_ms=21345 pose_ms=21359
+point seq=63 series=1 ms=21695 edge_ms=21665 raw=32 angle_cdeg=9000 flags=0 light_ms=21685 pose_ms=21679
+status ms=22007 series=1 running=1 adc=1 raw=32 light_ms=22005 imu=1 angle_cdeg=9000 pose_ms=22000 flags=0 points=63 overwritten=0 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=64 series=1 ms=22030 edge_ms=22000 raw=32 angle_cdeg=9000 flags=0 light_ms=22025 pose_ms=22020
+point seq=65 series=1 ms=22353 edge_ms=22323 raw=32 angle_cdeg=9000 flags=0 light_ms=22345 pose_ms=22340
+point seq=66 series=1 ms=22687 edge_ms=22657 raw=32 angle_cdeg=9000 flags=0 light_ms=22685 pose_ms=22680
+status ms=23007 series=1 running=1 adc=1 raw=32 light_ms=23005 imu=1 angle_cdeg=9000 pose_ms=23000 flags=0 points=64 overwritten=2 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=67 series=1 ms=23030 edge_ms=23000 raw=32 angle_cdeg=9000 flags=0 light_ms=23025 pose_ms=23020
+point seq=68 series=1 ms=23362 edge_ms=23332 raw=32 angle_cdeg=9000 flags=0 light_ms=23345 pose_ms=23360
+point seq=69 series=1 ms=23703 edge_ms=23673 raw=32 angle_cdeg=9000 flags=0 light_ms=23685 pose_ms=23700
+status ms=24007 series=1 running=1 adc=1 raw=32 light_ms=24006 imu=1 angle_cdeg=9000 pose_ms=24000 flags=0 points=64 overwritten=5 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=70 series=1 ms=24030 edge_ms=24000 raw=32 angle_cdeg=9000 flags=0 light_ms=24026 pose_ms=24020
+point seq=71 series=1 ms=24362 edge_ms=24332 raw=32 angle_cdeg=9000 flags=0 light_ms=24346 pose_ms=24360
+point seq=72 series=1 ms=24704 edge_ms=24674 raw=32 angle_cdeg=9000 flags=0 light_ms=24686 pose_ms=24700
+status ms=25007 series=1 running=1 adc=1 raw=32 light_ms=25007 imu=1 angle_cdeg=9000 pose_ms=25000 flags=0 points=64 overwritten=8 rx_lost=0 tx_lost=0 store=ram_volatile
+point seq=73 series=1 ms=25036 edge_ms=25006 raw=32 angle_cdeg=9000 flags=0 light_ms=25027 pose_ms=25020
+status ms=25397 series=1 running=1 adc=1 raw=32 light_ms=25387 imu=1 angle_cdeg=9000 pose_ms=25381 flags=0 points=64 overwritten=9 rx_lost=0 tx_lost=0 store=ram_volatile
+export_begin count=64 overwritten=9 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+10,1,4053,4036,4053,32,9000,0,0
+11,1,4387,4376,4373,32,9000,0,0
+12,1,4713,4696,4713,32,9000,0,0
+13,1,5045,5036,5033,32,9000,0,0
+14,1,5378,5376,5373,32,9000,0,0
+15,1,5713,5696,5713,32,9000,0,0
+16,1,6036,6036,6033,32,9000,0,0
+17,1,6363,6356,6353,32,9000,0,0
+18,1,6703,6696,6693,32,9000,0,0
+19,1,7037,7036,7033,32,9000,0,0
+20,1,7370,7356,7353,32,9000,0,0
+21,1,7705,7696,7695,32,9000,0,0
+22,1,8028,8016,8015,32,9000,0,0
+23,1,8362,8356,8355,32,9000,0,0
+24,1,8705,8696,8695,32,9000,0,0
+25,1,9041,9036,9035,32,9000,0,0
+26,1,9362,9356,9355,32,9000,0,0
+27,1,9702,9696,9695,32,9000,0,0
+28,1,10028,10016,10015,32,9000,0,0
+29,1,10370,10356,10355,32,9000,0,0
+30,1,10705,10696,10695,32,9000,0,0
+31,1,11045,11036,11035,32,9000,0,0
+32,1,11378,11376,11375,32,9000,0,0
+33,1,11712,11696,11695,32,9000,0,0
+34,1,12037,12017,12037,32,9000,0,0
+35,1,12370,12360,12357,32,9000,0,0
+36,1,12712,12700,12697,32,9000,0,0
+37,1,13042,13040,13037,32,9000,0,0
+point seq=74 series=1 ms=25549 edge_ms=25517 raw=32 angle_cdeg=9000 flags=0 light_ms=25533 pose_ms=25549
+38,1,13379,13360,13377,32,9000,0,0
+39,1,13712,13702,13697,32,9000,0,0
+40,1,14047,14042,14037,32,9000,0,0
+41,1,14370,14362,14357,32,9000,0,0
+42,1,14712,14702,14697,32,9000,0,0
+43,1,15044,15042,15037,32,9000,0,0
+44,1,15378,15362,15377,32,9000,0,0
+45,1,15712,15702,15697,32,9000,0,0
+46,1,16037,16022,16037,32,9000,0,0
+47,1,16379,16362,16377,32,9000,0,0
+48,1,16712,16702,16697,32,9000,0,0
+49,1,17044,17042,17037,32,9000,0,0
+50,1,17370,17362,17357,32,9000,0,0
+51,1,17704,17702,17697,32,9000,0,0
+52,1,18029,18022,18017,32,9000,0,0
+53,1,18362,18362,18357,32,9000,0,0
+54,1,18697,18682,18697,32,9000,0,0
+55,1,19021,19002,19017,32,9000,0,0
+56,1,19362,19345,19357,32,9000,0,0
+57,1,19687,19685,19677,32,9000,0,0
+58,1,20028,20025,20017,32,9000,0,0
+59,1,20362,20345,20357,32,9000,0,0
+60,1,20694,20685,20677,32,9000,0,0
+61,1,21029,21025,21019,32,9000,0,0
+62,1,21361,21345,21359,32,9000,0,0
+63,1,21695,21685,21679,32,9000,0,0
+64,1,22030,22025,22020,32,9000,0,0
+65,1,22353,22345,22340,32,9000,0,0
+66,1,22687,22685,22680,32,9000,0,0
+67,1,23030,23025,23020,32,9000,0,0
+68,1,23362,23345,23360,32,9000,0,0
+69,1,23703,23685,23700,32,9000,0,0
+70,1,24030,24026,24020,32,9000,0,0
+71,1,24362,24346,24360,32,9000,0,0
+72,1,24704,24686,24700,32,9000,0,0
+73,1,25036,25027,25020,32,9000,0,0
+export_end count=64 crc32=a391cbd3
+status ms=26007 series=1 running=1 adc=1 raw=32 light_ms=26002 imu=1 angle_cdeg=9000 pose_ms=25993 flags=0 points=64 overwritten=10 rx_lost=0 tx_lost=0 store=ram_volatile
+reply=imuaddr address=105
+status ms=26265 series=1 running=1 adc=1 raw=32 light_ms=26262 imu=0 angle_cdeg=invalid pose_ms=26264 flags=2 points=64 overwritten=10 rx_lost=0 tx_lost=0 store=ram_volatile
+probe=imu result=1 ms=26271
+point seq=75 series=1 ms=26396 edge_ms=26366 raw=32 angle_cdeg=65535 flags=26 light_ms=26382 pose_ms=26264
+status ms=27007 series=1 running=1 adc=1 raw=32 light_ms=27002 imu=0 angle_cdeg=invalid pose_ms=26264 flags=26 points=64 overwritten=11 rx_lost=0 tx_lost=0 store=ram_volatile
+probe=imu result=1 ms=27271
+reply=imuaddr address=104
+selftest adc=1 imu=1 button=ready bus=0 ms=27832
+reply=stop result=ok ms=27833
+summary series=1 reason=command adc_n=1382 pose_n=1304 angle_n=1304 mean_raw=129 min_raw=32 max_raw=3413 mean_cdeg=8523
+quality adc_fail=0 imu_fail=2 adc_gaps=0 pose_gaps=1
+status ms=27843 series=1 running=0 adc=1 raw=32 light_ms=27832 imu=1 angle_cdeg=9000 pose_ms=27831 flags=0 points=64 overwritten=11 rx_lost=0 tx_lost=0 store=ram_volatile
+export_begin count=64 overwritten=11 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+12,1,4713,4696,4713,32,9000,0,0
+13,1,5045,5036,5033,32,9000,0,0
+14,1,5378,5376,5373,32,9000,0,0
+15,1,5713,5696,5713,32,9000,0,0
+16,1,6036,6036,6033,32,9000,0,0
+17,1,6363,6356,6353,32,9000,0,0
+18,1,6703,6696,6693,32,9000,0,0
+19,1,7037,7036,7033,32,9000,0,0
+20,1,7370,7356,7353,32,9000,0,0
+21,1,7705,7696,7695,32,9000,0,0
+22,1,8028,8016,8015,32,9000,0,0
+23,1,8362,8356,8355,32,9000,0,0
+24,1,8705,8696,8695,32,9000,0,0
+25,1,9041,9036,9035,32,9000,0,0
+26,1,9362,9356,9355,32,9000,0,0
+27,1,9702,9696,9695,32,9000,0,0
+28,1,10028,10016,10015,32,9000,0,0
+29,1,10370,10356,10355,32,9000,0,0
+30,1,10705,10696,10695,32,9000,0,0
+31,1,11045,11036,11035,32,9000,0,0
+32,1,11378,11376,11375,32,9000,0,0
+33,1,11712,11696,11695,32,9000,0,0
+34,1,12037,12017,12037,32,9000,0,0
+35,1,12370,12360,12357,32,9000,0,0
+36,1,12712,12700,12697,32,9000,0,0
+37,1,13042,13040,13037,32,9000,0,0
+38,1,13379,13360,13377,32,9000,0,0
+39,1,13712,13702,13697,32,9000,0,0
+40,1,14047,14042,14037,32,9000,0,0
+41,1,14370,14362,14357,32,9000,0,0
+42,1,14712,14702,14697,32,9000,0,0
+status ms=28010 series=1 running=0 adc=1 raw=32 light_ms=27994 imu=1 angle_cdeg=9000 pose_ms=27996 flags=0 points=64 overwritten=11 rx_lost=0 tx_lost=0 store=ram_volatile
+43,1,15044,15042,15037,32,9000,0,0
+44,1,15378,15362,15377,32,9000,0,0
+45,1,15712,15702,15697,32,9000,0,0
+46,1,16037,16022,16037,32,9000,0,0
+47,1,16379,16362,16377,32,9000,0,0
+48,1,16712,16702,16697,32,9000,0,0
+49,1,17044,17042,17037,32,9000,0,0
+50,1,17370,17362,17357,32,9000,0,0
+51,1,17704,17702,17697,32,9000,0,0
+52,1,18029,18022,18017,32,9000,0,0
+53,1,18362,18362,18357,32,9000,0,0
+54,1,18697,18682,18697,32,9000,0,0
+55,1,19021,19002,19017,32,9000,0,0
+56,1,19362,19345,19357,32,9000,0,0
+57,1,19687,19685,19677,32,9000,0,0
+58,1,20028,20025,20017,32,9000,0,0
+59,1,20362,20345,20357,32,9000,0,0
+60,1,20694,20685,20677,32,9000,0,0
+61,1,21029,21025,21019,32,9000,0,0
+62,1,21361,21345,21359,32,9000,0,0
+63,1,21695,21685,21679,32,9000,0,0
+64,1,22030,22025,22020,32,9000,0,0
+65,1,22353,22345,22340,32,9000,0,0
+66,1,22687,22685,22680,32,9000,0,0
+67,1,23030,23025,23020,32,9000,0,0
+68,1,23362,23345,23360,32,9000,0,0
+69,1,23703,23685,23700,32,9000,0,0
+70,1,24030,24026,24020,32,9000,0,0
+71,1,24362,24346,24360,32,9000,0,0
+72,1,24704,24686,24700,32,9000,0,0
+73,1,25036,25027,25020,32,9000,0,0
+74,1,25549,25533,25549,32,9000,0,0
+75,1,26396,26382,26264,32,65535,26,0
+export_end count=64 crc32=1d5afb21
+status ms=29010 series=1 running=0 adc=1 raw=32 light_ms=29005 imu=1 angle_cdeg=9000 pose_ms=29008 flags=0 points=64 overwritten=11 rx_lost=0 tx_lost=0 store=ram_volatile

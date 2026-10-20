@@ -19,10 +19,12 @@ typedef struct {
 } PointHistory;
 typedef struct {
     ReferencePoint items[POINT_CAPACITY];
-    uint32_t overwritten, crc;
+    uint32_t overwritten;
     uint16_t count;
 } PointSnapshot;
 void records_append(PointHistory *history, ReferencePoint point);
 void records_snapshot(const PointHistory *history, PointSnapshot *snapshot);
 uint32_t records_crc(const ReferencePoint *points, size_t count);
+/* Unfinalized CRC state. Start at UINT32_MAX, XOR UINT32_MAX at the end. */
+uint32_t records_crc_append(uint32_t crc, const ReferencePoint *point);
 #endif

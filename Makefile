@@ -8,7 +8,7 @@ image:
 build: image
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
-		make -C firmware all BUILD_ID=$(shell git rev-parse --short HEAD)
+		make -C firmware all BUILD_ID=$(shell git rev-parse --short HEAD)-$(shell cat firmware/App/*.c firmware/Platform/runtime.c | shasum -a 256 | cut -c1-8)
 
 clean:
 	$(MAKE) -C firmware clean
@@ -18,6 +18,7 @@ check:
 	python3 tools/check_project.py
 test: check
 	$(MAKE) -C tests test
+	python3 tests/test_export.py
 sanitize: check
 	$(MAKE) -C tests sanitize
 test-linux: image

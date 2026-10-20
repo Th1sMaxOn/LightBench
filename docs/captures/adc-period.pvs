@@ -15,24 +15,29 @@ name=SDA
 enabled=false
 name=UART_TX
 
-[PIR]
+[BUTTON]
 enabled=true
-name=PIR
+name=BUTTON
 
 [ADC_MARK]
 enabled=true
 name=ADC_MARK
 
 [LED]
-enabled=true
+enabled=false
 name=LED
 
-[UART_RX]
-enabled=false
-name=UART_RX
+[POINT]
+enabled=true
+name=POINT
+
+[IMU_MARK]
+enabled=true
+name=IMU_MARK
+
 
 [view0]
-scale=0.0002529885057471264
+scale=0.00011999999999999999
 offset=22 serialization::archive 20 0 0 0 0 0 0 0 0 0 0 0 0 0 6
 zero_offset=22 serialization::archive 20 0 0 0 0 0 0 0 0 0 0 0 0 0 6
 v_offset=0

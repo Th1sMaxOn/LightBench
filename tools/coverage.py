@@ -17,15 +17,15 @@ compiler = os.environ.get('CC', 'cc')
 gcov = os.environ.get('GCOV', 'gcov')
 flags = ['-std=c11', '-O0', '-g', '-Wall', '-Wextra', '-Werror']
 includes = [f'-I{root / part}' for part in ['firmware/Devices', 'firmware/App', 'firmware/Platform', 'tests/fakes']]
-portable = ['firmware/Devices/mpu6050.c', 'firmware/App/app.c', 'firmware/App/events.c', 'firmware/App/commands.c']
-suites = ['test_mpu', 'test_calibration', 'test_events', 'test_acceptance', 'test_runtime']
+portable = ['firmware/Devices/mpu6050.c', 'firmware/App/bench.c', 'firmware/App/pose.c', 'firmware/App/records.c', 'firmware/App/protocol.c']
+suites = ['test_bench', 'test_protocol', 'test_mpu', 'test_runtime']
 objects = []
 instrumented = []
 for relative in portable + ['firmware/Platform/runtime.c']:
     source = root / relative
     target = output / (source.stem + '.o')
     coverage = ['--coverage'] if relative in portable else []
-    hooks = ['-DRUNTIME_TEST_PRINTF'] if relative == 'firmware/Platform/runtime.c' else []
+    hooks = []
     subprocess.run([compiler, *flags, *includes, *coverage, *hooks, '-c', str(source), '-o', str(target)], check=True)
     objects.append(str(target))
     if coverage:
@@ -70,8 +70,8 @@ totals = {key: sum(item[key] for item in results) for key in ['lines', 'executed
 totals['line_percent'] = round(100 * totals['executed'] / totals['lines'], 2)
 totals['branch_taken_percent'] = round(100 * totals['taken'] / totals['branches'], 2)
 report = {'scope': 'Portable App and Devices only; Board/HAL are excluded', 'files': results, 'totals': totals,
-          'gate': {'line_percent': 85, 'branch_taken_percent': 70}}
+          'gate': {'line_percent': 90, 'branch_taken_percent': 80}}
 (output / 'coverage.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report, indent=2))
-if totals['line_percent'] < 85 or totals['branch_taken_percent'] < 70:
+if totals['line_percent'] < 90 or totals['branch_taken_percent'] < 80:
     raise SystemExit('Coverage gate failed')

@@ -1,7 +1,17 @@
 {
-  "source": "acceptance.vcd",
-  "source_sha256": "ecae31f95488934f2b9338a12dfd136a53f0a3ef14071a06e438aa710769adb5",
-  "start_ns": 51407000,
-  "end_ns": 271507000,
-  "output_sha256": "ffe1ca93d276414eb954da59b9097d372623c496fb578314307a77d4cf4d14ff"
+  "source_sha256": "e6d37e4322f3b0458a766c1c73c0f23639e29321beae0c95f5edbf58c20cee58",
+  "start_ns": 1000000000,
+  "end_ns": 1120000000,
+  "channels": [
+    "SCL",
+    "SDA",
+    "UART_TX",
+    "BUTTON",
+    "ADC_MARK",
+    "LED",
+    "POINT",
+    "IMU_MARK"
+  ],
+  "sha256": "a03455a8c255f7194bcabfa90d85b9487cfa68c721e8277b8b9aaf9b863867cc",
+  "sampling": "event transitions at 1 ns; SR conversion downsample=50 gives 20 MHz"
 }

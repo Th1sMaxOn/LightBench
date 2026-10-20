@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "name": "lightbench_components_overview",
+  "model": "directed",
+  "title": "Компоненти LightBench",
+  "states": [
+    {
+      "id": "core",
+      "label": "Core / main\nІніціалізація й головний цикл",
+      "layer": 0
+    },
+    {
+      "id": "runtime",
+      "label": "Platform / runtime\nЧас, команди, збір і експорт",
+      "layer": 1
+    },
+    {
+      "id": "board",
+      "label": "Platform / board\nGPIO / ADC / UART / I²C",
+      "layer": 2
+    },
+    {
+      "id": "mpu",
+      "label": "Devices / MPU6050\nРегістри та SensorBus",
+      "layer": 2
+    },
+    {
+      "id": "app",
+      "label": "App\nbench, pose, records, protocol",
+      "layer": 2
+    },
+    {
+      "id": "hal",
+      "label": "ST HAL / CMSIS\nПериферія MCU",
+      "layer": 3
+    }
+  ],
+  "transitions": [
+    {
+      "id": "entry",
+      "source": "core",
+      "target": "runtime",
+      "label": "init / poll"
+    },
+    {
+      "id": "ports",
+      "source": "runtime",
+      "target": "board",
+      "label": "читання й вивід"
+    },
+    {
+      "id": "sensor",
+      "source": "runtime",
+      "target": "mpu",
+      "label": "init / read"
+    },
+    {
+      "id": "model",
+      "source": "runtime",
+      "target": "app",
+      "label": "виміри й команди"
+    },
+    {
+      "id": "hardware",
+      "source": "board",
+      "target": "hal",
+      "label": "HAL / регістри"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-IMAGE ?= shelfwatch-build:lab2
+IMAGE ?= lightbench-build:lab2
 
 .PHONY: image build clean
 

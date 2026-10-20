@@ -18,7 +18,7 @@ BusResult mpu6050_init(Mpu6050 *device) {
     BusResult result = device->bus.read(device->bus.context, device->address, 0x75, &id, 1);
     if (result != BUS_OK) return result;
     if (id != 0x68) return BUS_ERROR;
-    const uint8_t config[][2] = {{0x6b, 0x01}, {0x19, 0x09}, {0x1a, 0x03}, {0x1b, 0}, {0x1c, 0}};
+    const uint8_t config[][2] = {{0x6b, 0x01}, {0x19, 0x13}, {0x1a, 0x03}, {0x1b, 0}, {0x1c, 0}};
     for (size_t index = 0; index < sizeof(config) / sizeof(config[0]); ++index) {
         result = device->bus.write(device->bus.context, device->address, config[index][0], &config[index][1], 1);
         if (result != BUS_OK) return result;

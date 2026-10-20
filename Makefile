@@ -8,7 +8,7 @@ image:
 build: image
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
-		make -C firmware all
+		make -C firmware all BUILD_ID=$(shell git rev-parse --short HEAD)
 
 clean:
 	$(MAKE) -C firmware clean

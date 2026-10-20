@@ -1,7 +1,0 @@
-#ifndef PROJECT_PROFILE_H
-#define PROJECT_PROFILE_H
-#define PROJECT_KIND SHELFWATCH
-#define PROJECT_NAME "ShelfWatch"
-#define IMU_PERIOD_MS 10u
-#define ADC_PERIOD_MS 50u
-#endif

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "ShelfWatch",
+  "author": "LightBench",
   "editor": "wokwi",
   "parts": [
     {
@@ -20,12 +20,14 @@
       }
     },
     {
-      "type": "wokwi-pir-motion-sensor",
-      "id": "pir",
+      "type": "wokwi-pushbutton",
+      "id": "mark",
       "top": 200,
       "left": 290,
       "attrs": {
-        "delayTime": "5"
+        "color": "blue",
+        "label": "Reference point",
+        "key": "M"
       }
     },
     {
@@ -61,7 +63,7 @@
       "top": -100,
       "left": 520,
       "attrs": {
-        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK,LED,UART_RX",
+        "channelNames": "SCL,SDA,UART_TX,BUTTON,ADC_MARK,LED,POINT,IMU_MARK",
         "bufferSize": "4000000",
         "triggerMode": "off"
       }
@@ -89,18 +91,6 @@
     [
       "nucleo:GND.1",
       "imu:GND",
-      "black",
-      []
-    ],
-    [
-      "nucleo:5V.1",
-      "pir:VCC",
-      "red",
-      []
-    ],
-    [
-      "nucleo:GND.1",
-      "pir:GND",
       "black",
       []
     ],
@@ -159,12 +149,6 @@
       []
     ],
     [
-      "pir:OUT",
-      "nucleo:PA1",
-      "orange",
-      []
-    ],
-    [
       "ldr:AO",
       "nucleo:PA0",
       "purple",
@@ -213,9 +197,27 @@
       []
     ],
     [
-      "nucleo:PA3",
+      "nucleo:3V3.1",
+      "mark:1.l",
+      "red",
+      []
+    ],
+    [
+      "mark:2.l",
+      "nucleo:PA1",
+      "orange",
+      []
+    ],
+    [
+      "nucleo:PB0",
       "logic:D6",
-      "gray",
+      "green",
+      []
+    ],
+    [
+      "nucleo:PB1",
+      "logic:D7",
+      "green",
       []
     ]
   ],

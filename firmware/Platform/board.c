@@ -140,7 +140,18 @@ bool board_rx_overflow(void) {
     if (!mask) __enable_irq();
     return value;
 }
-bool board_motion(void) { return HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET; }
+bool board_button(void) { return HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET; }
+void board_point_marker(void) { HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); }
+void board_imu_marker(bool on) {
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, on ? GPIO_PIN_SET : GPIO_PIN_RESET);
+}
+size_t board_tx_free(void) {
+    uint32_t mask = __get_PRIMASK();
+    __disable_irq();
+    size_t free = (tx_tail - tx_head - 1u) & 2047u;
+    if (!mask) __enable_irq();
+    return free;
+}
 void board_led(bool on) { HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, on ? GPIO_PIN_SET : GPIO_PIN_RESET); }
 bool board_read_light(uint16_t *value) {
     if (!adc_ready) adc_ready = initialize_adc();
@@ -161,6 +172,8 @@ void board_init(void) {
     __HAL_RCC_GPIOA_CLK_ENABLE(); __HAL_RCC_GPIOB_CLK_ENABLE();
     gpio.Pin = GPIO_PIN_1; gpio.Mode = GPIO_MODE_INPUT; gpio.Pull = GPIO_PULLDOWN; HAL_GPIO_Init(GPIOA, &gpio);
     gpio.Pin = GPIO_PIN_4; gpio.Mode = GPIO_MODE_OUTPUT_PP; gpio.Pull = GPIO_NOPULL; HAL_GPIO_Init(GPIOA, &gpio);
+    gpio.Pin = GPIO_PIN_0 | GPIO_PIN_1; HAL_GPIO_Init(GPIOB, &gpio);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0 | GPIO_PIN_1, GPIO_PIN_RESET);
     gpio.Pin = GPIO_PIN_0; gpio.Mode = GPIO_MODE_ANALOG; HAL_GPIO_Init(GPIOA, &gpio);
     adc_ready = initialize_adc();
     HAL_NVIC_SetPriority(USART2_IRQn, 2, 0); HAL_NVIC_EnableIRQ(USART2_IRQn);

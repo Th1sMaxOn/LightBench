@@ -6,7 +6,10 @@
 void board_init(void);
 SensorBus board_sensor_bus(void);
 bool board_read_light(uint16_t *value);
-bool board_motion(void);
+bool board_button(void);
+void board_point_marker(void);
+void board_imu_marker(bool on);
+size_t board_tx_free(void);
 void board_led(bool on);
 int board_get_char(void);
 bool board_rx_overflow(void);

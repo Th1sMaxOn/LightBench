@@ -62,7 +62,8 @@ _Min_Stack_Size = 0x400; /* required amount of stack */
 MEMORY
 {
 RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 12K
-FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 32K
+/* Last 4 KiB reserved for LR3 persistence; no writer in LR2. */
+FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 28K
 }
 
 /* Define output sections */

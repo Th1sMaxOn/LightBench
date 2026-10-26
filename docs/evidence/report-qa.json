@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-27T10:18:01.971448+00:00",
+  "reports": {
+    "lab1": {
+      "pages": 8,
+      "sha256": "7e9614e9bc994aafcabfaa1d477df20fa75d6202aa7bac219aec44ae9a588597",
+      "all_pages_visually_reviewed": true,
+      "page_numbers": false,
+      "full_grid_tables": true,
+      "private_tool_name_in_text_or_raw_pdf": false,
+      "file": "docs/lab1/\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430_\u0440\u043e\u0431\u043e\u0442\u0430_1_\u041c\u0430\u043a\u0441\u0438\u043c_\u041f\u0430\u0448\u043a\u043e_\u0406\u041e-32.pdf"
+    },
+    "lab2": {
+      "pages": 15,
+      "sha256": "65d5946f1d45b3b872ec74985bd20d5d2e6c1674bb18421c6fa6b5bc77ddc736",
+      "all_pages_visually_reviewed": true,
+      "page_numbers": false,
+      "full_grid_tables": true,
+      "private_tool_name_in_text_or_raw_pdf": false,
+      "comments_applied": [
+        "diagram internal title removed",
+        "personal contribution section and table removed",
+        "first two pinout columns expanded to 25/32 mm"
+      ],
+      "file": "docs/lab2/\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430_\u0440\u043e\u0431\u043e\u0442\u0430_2_\u041c\u0430\u043a\u0441\u0438\u043c_\u041f\u0430\u0448\u043a\u043e_\u0406\u041e-32.pdf"
+    }
+  }
+}

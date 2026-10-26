@@ -12,8 +12,8 @@ Nucleo-C031C6, LQFP48; єдина монтажна схема diagram.json. Ус
 | PA3 | AF1 USART2_RX | VCP, CN10.10 | Serial TX | 3.3 В, окремий RX |
 | PA4 | GPIO output | A2, CN8.3 / CN7.32 | ADC_MARK / D4 | HIGH на час HAL ADC start/read/stop |
 | PA5 | GPIO output | D13, CN5.6 / CN10.11 | LED / D5 | Активна серія, бортове навантаження |
-| PB0 | GPIO output | A3, CN8.4 / CN7.34 | POINT / D6 | Перемикається при кожній записаній точці |
-| PB1 | GPIO output | CN10.24 | IMU_MARK / D7 | HIGH під час читання burst |
+| PB0 | GPIO output | D10, CN5.3 / CN10.34 | POINT / D6 | Перемикається при кожній записаній точці |
+| PB1 | GPIO output | A3, CN8.4 / CN7.34 | IMU_MARK / D7 | HIGH під час читання burst |
 | 3V3, GND | Power | CN6.4 / CN6.6 | MPU VCC/GND, LDR VCC/GND | MPU AD0 до GND, INT/XDA/XCL та LDR DO не підключені |
 
 Джерела: [DS13867 Rev4](https://www.st.com/resource/en/datasheet/stm32c031c6.pdf), §4, таблиці pin/AF; [UM2953](https://www.st.com/resource/en/user_manual/um2953-stm32-nucleo64-board-mb1717-stmicroelectronics.pdf), рисунок 7, таблиця 11 та VCP §6.9. У старій таблиці 12 UM2953 підписи SDA/SCL переставлені; використано DS і таблицю 11. PA13/PA14 збережено для SWD.

@@ -1,52 +1,54 @@
-# Перевірка ЛР1 ShelfWatch
+# Перевірка LightBench
 
-Цей файл містить результати перевірок.
+Дата фактичного виконання: 27.10.2026. [Машинний підсумок](evidence/verification.json), [план тестів](test-plan.md).
 
-## Підтверджено
+## Збірка та host-тести
 
-- Каталог із `.git` перенесено у `Lab01/Work/ShelfWatch`; локальний Git config збережено побайтно. Не було інших файлів чи наявного призначення. Панель tmux People %8 показує новий шлях; інші панелі не змінювалися.
-- 100 файлів шаблону скопійовано без `.git` і `firmware/build`, перевірено побайтно. Firmware, `.ioc`, `diagram.json`, Dockerfile, Makefile, wokwi.toml і ліцензії не змінено. README шаблону збережено окремо.
-- UART/LED підтверджено переглядом коду: PA2/PA3 USART2 115200 8N1, PA5 LED, стартовий рядок і `tick`, HAL_Delay(1000).
-- Дві чисті збірки з однаковим образом успішні. Для першої перед build виконано `make clean`, для другої clean-log збережено окремо. Після clean в обох логах видно створення `build` і повну компіляцію.
-- Хост macOS 27.0.1 arm64; Docker Desktop, context desktop-linux, Engine 29.6.1 Linux arm64. GCC 10.3.1. Точний image ID збережено у [image.txt](evidence/image.txt), параметри в [environment.json](evidence/environment.json). Це не запуск Ubuntu 24.04 VM.
-- VS Code знайдено у `/Applications/Visual Studio Code.app`, `code --list-extensions` показав `wokwi.wokwi-vscode`. VirtualBox встановлено, але його `list vms` і `list runningvms` не показали VM. Це не доводить відсутності VM на іншому комп'ютері.
+Дві чисті збірки в одному образі Ubuntu 24.04 дали однакові ELF/HEX/BIN. ARM GCC 13.2.1, -Os, LTO, Cortex-M0+. Flash 23936/28672 байти; RAM 8456/12288 із резервами heap 512 і stack 1024. Залишок RAM 3832 байти за linker map не є виміром запасу стеку. Найбільший окремий кадр із .su становить 408 байтів; вкладені виклики й IRQ треба вимірювати окремо.
 
-Логи [build-1](evidence/build-1/build.log), [build-2](evidence/build-2/build.log), [clean-2](evidence/build-2/clean.log), [Docker](evidence/docker-version.txt), [компілятор](evidence/compiler.txt). Компілятор повідомив text=13464, data=120, bss=1808 байтів. Це розмір секцій, не вимір максимального використання стеку під час виконання.
-
-| Артефакт | SHA256 обох збірок |
+| Перевірка | Результат / джерело |
 |---|---|
-| firmware.elf | `0f7b87f63097adfc290c57ea018a65e5a05da061aaa48fd520c14fbfe05f85da` |
-| firmware.hex | `20c68952fd3c7ab6640f8ca53935729d6ca2c54d55dbba98597a92c2e0248415` |
-| firmware.bin | `c21e312881deefbec24a06e9808d3651367530ac8ea930d3b37cc011daa7f7df` |
+| Чисті збірки | [1](evidence/build-1.log), [2](evidence/build-2.log), SHA256 поруч; ідентичні |
+| macOS / Linux | 4 C-набори, 3 Python-тести; [macOS](evidence/test-macos.log), [Linux](evidence/test-linux.log) |
+| ASan / UBSan | Пройдено, [macOS](evidence/sanitize-macos.log), Linux у test-linux.log |
+| Coverage App + Devices | 170/170 рядків; 126/130 гілок, 96.92%; [JSON](evidence/coverage.json) |
+| Перевірка меж шарів | make check, vendor SHA256, App без HAL |
+| Драйвер із запису | [fixture](../tests/fixtures/final-imu.json), burst → (1000,0,0) mg → 90° |
+| CRC / CSV | Незалежний Python struct/zlib, відхилення пошкоджених та обірваних експортів |
 
-Повні списки [SHA256 першої](evidence/build-1/SHA256SUMS) та [другої](evidence/build-2/SHA256SUMS) збірки збігаються. Доказ обмежений одним шляхом, платформою й образом. Dockerfile не фіксує digest базового образу або версії пакетів; майбутня збірка з оновленими пакетами не гарантовано дасть ці хеші. Інша архітектура VM й абсолютний шлях debug-інформації також можуть змінити ELF. У VM спочатку порівнювати дві її власні чисті збірки.
+Тести охоплюють кут 0..180°, нульовий/динамічний вектор, межі 40/41 і 20/21 мс, wrap uint32, окремі знаменники, порожні й повторні команди, насичення лічильників, debounce/утримання, кільце та сталий знімок. Fake bus відтворює послідовність регістрів, NACK, timeout та хибний ID; fake runtime перевіряє збір під час експорту й відновлення. Прискорений fake clock перевіряє годинний ліміт, не тривалу фізичну стабільність. Runtime покривають тести поведінки, але він не входить до portable coverage.
 
-## Очікуване за кодом
+## Власна симуляція
 
-Після запуску UART повинен показати `STM32C031C6 ready`, далі tick. Перший tick може бути 0, бо цикл друкує до HAL_Delay. LED перемикається з інтервалом близько 1000 мс, повний цикл займає близько 2 с. UART-друк додає невелику затримку. Це висновок із коду, ще не спостереження ShelfWatch у симуляторі.
+[Повний UART](captures/final-uart.txt) містить попереднє автоперезавантаження та фінальний запуск того самого коду. [Фінальний сеанс](captures/final-session-uart.txt) є точним зрізом; origin фіксує byte offset. VCD фінального запуску має 29.25814355 с модельного часу. Під час редагування входів симулятор призупинявся; це не безперервний wall-clock benchmark.
 
-## Не виконано
+| Сценарій | Фактичний результат |
+|---|---|
+| Світло | point 1 raw=3413; після 100000 lux у моделі point 2 raw=32 |
+| Положення | Початкові точки 0°; після X=1g, Z=0 точки 3..74 мають 90° |
+| Debounce | 75 груп натискань, 7457 сирих імпульсів, 75 POINT; 29.623..39.167 мс до маркера |
+| Кільце | Перший export містить seq 10..73, count=64, overwritten=9 |
+| Експорт під навантаженням | point 74 з'явилася під час передачі; знімок лишився 10..73, CRC a391cbd3 |
+| IMU NACK | Проби ms 26271 та 27271, інтервал 1000 мс; ADC продовжив роботу |
+| Відхилена пара | point 75, raw=32, angle=65535, flags=26: POSE_BAD, POSE_OLD, SKEW |
+| Відновлення | selftest ms 27832: ADC=1, IMU=1; stop ms 27833 |
+| Підсумок серії | adc_n=1382, pose_n=1304, angle_n=1304, mean_raw=129, min=32, max=3413, mean_cdeg=8523 |
+| Якість | adc_fail=0, imu_fail=2, adc_gaps=0, pose_gaps=1; RX/TX lost=0 |
+| Другий export | count=64, overwritten=11, одна відхилена пара, CRC 1d5afb21 |
 
-Ubuntu VM не запущено, її Docker і build не перевірено. ShelfWatch у Wokwi не запущено: під час перевірки VS Code інтерфейс переключився на інший студентський проєкт, дії припинено, щоб не працювати в чужій копії. Trial не активовано; наявність ліцензії відома зі слів користувача, її дію не перевірено. Симуляційного UART-логу, вимірювання LED, скриншотів CubeMX і датчиків немає.
+Мінімальна затримка трохи нижче 30 мс через квантування SysTick 1 мс; програмна перевірка виконує elapsed≥30 у мс. Максимум нижче цілі 80 мс від стабілізації. Не слід ототожнювати маркер, момент фізичного контакту та мілісекундний timestamp.
 
-PRD описує майбутні сценарії. Немає реалізації режимів, сенсорних драйверів, threshold, ack, обробки NACK чи тестів ЛР2. PDF-звіт і п'ять фактичних складнощів студента ще не підготовлено. Немає віддаленого репозиторію, доступу викладача чи PR.
+## Виявлені проблеми
 
-## Повторна перевірка
+1. Початковий код не вмістився у 28 КіБ flash. LTO і перетворення перевіреного обмеженого квадрата норми через uint32 прибрали непотрібні double helpers.
+2. CRC всього знімка в одному виклику порушував збір ADC. CRC тепер обчислюється по одному CSV-рядку; у фінальному записі ADC не має інтервалів понад 40 мс.
+3. Усередині контейнера немає .git, тому банер мав local. Кореневий Makefile передає parent commit і checksum App/runtime; перевірений build ID ed8ba61-d5b4dbed.
+4. Per-file assembler listing разом із LTO давав попередження. Прапорці listing прибрано; два фінальні build log не мають warning.
+5. Підписи PB0/PB1 на Arduino-роз'ємах виправлено за UM2953, рис.7 і табл.11. GPIO коду й схеми перевірено окремо.
+6. За адресою 0x69 модель дає NACK і додатковий START без адресного байта. Цю особливість адаптера видно у VCD; це не штатний успішний read.
 
-На Ubuntu з кореня цієї копії:
+Хеші firmware та вихідних файлів прив'язують виміри до протестованого коду, який на момент запису ще мав незакомічені виправлення. Наступні коміти документації не змінюють походження захвату.
 
-```sh
-mkdir -p /tmp/shelfwatch-check
-uname -sm > /tmp/shelfwatch-check/platform.txt
-cat /etc/os-release >> /tmp/shelfwatch-check/platform.txt
-docker version > /tmp/shelfwatch-check/docker-version.txt
-make clean > /tmp/shelfwatch-check/clean-1.log 2>&1
-make build > /tmp/shelfwatch-check/build-1.log 2>&1
-sha256sum firmware/build/firmware.{elf,hex,bin} > /tmp/shelfwatch-check/SHA256SUMS-1
-make clean > /tmp/shelfwatch-check/clean-2.log 2>&1
-make build > /tmp/shelfwatch-check/build-2.log 2>&1
-sha256sum firmware/build/firmware.{elf,hex,bin} > /tmp/shelfwatch-check/SHA256SUMS-2
-diff -u /tmp/shelfwatch-check/SHA256SUMS-1 /tmp/shelfwatch-check/SHA256SUMS-2
-```
+## Межі результату
 
-Виконувати команди послідовно й перевіряти код виходу кожної. У разі помилки build зупинитися й читати log, не продовжувати до заяви про успіх. Зберегти ОС, Docker image ID і gcc --version для VM також. Реальні результати перенести спочатку в окрему VM-Inbox, порівняти й лише потім доповнити основну копію.
+Board/HAL не перевіряються host coverage. Wokwi не підтверджує струм, аналогові допуски, фронти підтяжок або фізичну точність кута. Контрольний ADC fault і timeout перевірено fake-тестами, фізичне відключення AO не моделювалося. Ціль status≤100 мс без TX-черги не має окремого вимірювання wire latency. За черги export відповідь може затримуватися. FR-12, S1–S3 та годинний baseline ЛР3 не виконані. FreeRTOS та ЛР5–6 не заявляються завершеними. Новий відеозвіт не записаний.

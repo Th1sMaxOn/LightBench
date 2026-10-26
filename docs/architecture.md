@@ -2,22 +2,15 @@
 
 App не залежить від HAL, GPIO або I²C. runtime поєднує дані драйвера та ADC з прикладною моделлю. make check перевіряє напрям залежностей.
 
-```mermaid
-flowchart LR
- Core[Core + HAL/CMSIS] --> Board[Platform/board]
- Board --> Runtime[Platform/runtime]
- Runtime --> MPU[Devices/mpu6050]
- Runtime --> Bench[App/bench]
- Bench --> Pose[App/pose]
- Bench --> Records[App/records]
- Runtime --> Protocol[App/protocol]
- Protocol --> Bench
- Protocol --> Records
-```
+![Залежності компонентів](figures/components.png)
+
+Діаграма Flowcraft показує залежності модулів стрілкою від споживача до залежності. Core/main викликає runtime; runtime використовує board, MPU та App; board звертається до HAL. Це огляд модулів, а не повний граф кожного виклику. Core також ініціалізує HAL, а MPU отримує SensorBus із callback-функціями board. [Редагований граф](figures/components.stategraph.json) і [SVG](figures/components.svg).
+
+[Алгоритм перевірки пари](figures/observation.png) є абстракцією правил bench_observation. Доступність каналів згрупована для читання; вихідний C-код лишається джерелом точного порядку перевірок.
 
 LightSample і PoseSample оновлюються незалежно, зберігають завершення читання. bench_light/bench_pose рахують статистики активної серії, але останні дані доступні й у stopped для selftest. Натискання після debounce формує ReferencePoint з уже завершених вимірів. Читання заради точки не запускається. Прапорці розрізняють помилку каналу, старість, skew і непридатний вектор.
 
-Кільце 64×28 байтів і сталий знімок 64×28 байтів разом займають 3584 байти. Канонічний формат CRC має п'ять uint32 і чотири uint16 у little-endian, без padding C. CRC32 IEEE, initial/final XOR 0xffffffff, polynomial 0xedb88320. CSV передає ці самі поля. ISR не змінює записи.
+Кільце 64×28 байтів і сталий знімок 64×28 байтів разом займають 3584 байти. Канонічний формат CRC має п'ять uint32 і чотири uint16 у little-endian, без padding C. CRC32 IEEE, initial/final XOR 0xffffffff, polynomial 0xedb88320. CSV передає ці самі поля. CRC обчислюється по одному рядку під час експорту, щоб не блокувати збір підготовкою всього журналу. ISR не змінює записи.
 
 Стан stopped → run за справного ADC → collecting → stop/ADC fault/3600000 мс → stopped. Новий run скидає лише статистики. Суми uint64 та окремі знаменники для ADC й придатних кутів. Gap означає інтервал >40 мс, failures невдалі спроби. Це різні метрики.
 

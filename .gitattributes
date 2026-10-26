@@ -1,2 +1,3 @@
 
 docs/captures/*.txt -text whitespace=cr-at-eol
+docs/evidence/*.log -text whitespace=-blank-at-eol

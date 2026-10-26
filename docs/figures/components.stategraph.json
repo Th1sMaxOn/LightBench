@@ -2,7 +2,6 @@
   "version": 1,
   "name": "lightbench_components_overview",
   "model": "directed",
-  "title": "Компоненти LightBench",
   "states": [
     {
       "id": "core",

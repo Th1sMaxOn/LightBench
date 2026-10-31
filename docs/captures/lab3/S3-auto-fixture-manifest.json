@@ -1,0 +1,8 @@
+{
+  "sha256": "fe1cf25839c571c7ef4fd64d411d71725d58c070ec24c510cb3c91a4743b7568",
+  "source": "diagram-lab3-hour.json",
+  "change": "Button and its connections removed; 1 Hz CLK drives PA1, logic:D3 remains connected; MCU PA1 input pulldown",
+  "stimulus": "automatic square-wave, not human press; VCD verification required",
+  "source_reference": "https://docs.wokwi.com/parts/wokwi-clock-generator",
+  "elf_sha256": "620f86877273314e973cd62c8575900f2111ecf7f448ad6ff84e71202403a58d"
+}

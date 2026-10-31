@@ -1,0 +1,26 @@
+firmware/build/firmware.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                25068   134217920
+.rodata               2364   134242988
+.ARM                     8   134245352
+.init_array              4   134245360
+.fini_array              4   134245364
+.data                   92   536870912
+.bss                  7456   536871008
+._user_heap_stack     2560   536878464
+.ARM.attributes         40           0
+.comment                38           0
+.debug_info         151500           0
+.debug_abbrev        28150           0
+.debug_loclists      39370           0
+.debug_aranges        1640           0
+.debug_rnglists       4076           0
+.debug_line          63779           0
+.debug_str           27509           0
+.debug_frame          4148           0
+.debug_ranges           32           0
+.debug_line_str        312           0
+Total               358342
+
+

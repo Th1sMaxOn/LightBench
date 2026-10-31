@@ -1,0 +1,11 @@
+ALGORITHM lightbench_superloop
+WHILE "Прошивка працює" DO
+  STEP "Початок виміру циклу, перевірка межі серії"
+  CALL "UART: до 64 байтів; виконання завершених команд"
+  CALL "ADC, IMU та повтор probe за їхніми періодами"
+  CALL "Debounce кнопки, точка в RAM і чергу flash"
+  CALL "Статус, LED та один рядок snapshot"
+  CALL "Flash: один erase або один doubleword"
+  CALL "Метрики та завершення виміру циклу"
+END WHILE
+END ALGORITHM

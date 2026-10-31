@@ -1,0 +1,67 @@
+{
+  "scope": "Portable App and Devices only; Board/HAL are excluded",
+  "files": [
+    {
+      "source": "firmware/App/bench.c",
+      "lines": 79,
+      "executed": 79,
+      "branches": 68,
+      "taken": 68,
+      "uncovered_lines": []
+    },
+    {
+      "source": "firmware/Devices/mpu6050.c",
+      "lines": 23,
+      "executed": 23,
+      "branches": 14,
+      "taken": 14,
+      "uncovered_lines": []
+    },
+    {
+      "source": "firmware/App/point_store.c",
+      "lines": 63,
+      "executed": 62,
+      "branches": 62,
+      "taken": 56,
+      "uncovered_lines": [
+        54
+      ]
+    },
+    {
+      "source": "firmware/App/pose.c",
+      "lines": 10,
+      "executed": 10,
+      "branches": 14,
+      "taken": 10,
+      "uncovered_lines": []
+    },
+    {
+      "source": "firmware/App/protocol.c",
+      "lines": 22,
+      "executed": 22,
+      "branches": 20,
+      "taken": 20,
+      "uncovered_lines": []
+    },
+    {
+      "source": "firmware/App/records.c",
+      "lines": 36,
+      "executed": 36,
+      "branches": 14,
+      "taken": 14,
+      "uncovered_lines": []
+    }
+  ],
+  "totals": {
+    "lines": 233,
+    "executed": 232,
+    "branches": 192,
+    "taken": 182,
+    "line_percent": 99.57,
+    "branch_taken_percent": 94.79
+  },
+  "gate": {
+    "line_percent": 90,
+    "branch_taken_percent": 80
+  }
+}

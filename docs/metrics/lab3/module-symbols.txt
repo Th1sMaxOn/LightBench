@@ -1,0 +1,223 @@
+536871188 00000001 b adc_ready
+536871008 00000001 b completed.1
+536871372 00000001 b exporting
+536871232 00000001 b imu_ready
+536871208 00000001 b rx_byte
+536871214 00000001 b rx_overflow
+536871052 00000001 b tx_busy
+536871053 00000001 b tx_overflow
+134242960 00000002 W ADC1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W DMA1_Channel1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W DMA1_Channel2_3_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W DMAMUX1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 T Default_Handler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W EXTI0_1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W EXTI2_3_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W FLASH_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134226194 00000002 T HardFault_Handler	/workspace/firmware/Core/Src/stm32c0xx_it.c:84
+134242960 00000002 W I2C1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134226192 00000002 T NMI_Handler	/workspace/firmware/Core/Src/stm32c0xx_it.c:69
+134226198 00000002 T PendSV_Handler	/workspace/firmware/Core/Src/stm32c0xx_it.c:112
+134242960 00000002 W RCC_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W RTC_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W SPI1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134226196 00000002 T SVC_Handler	/workspace/firmware/Core/Src/stm32c0xx_it.c:99
+134242960 00000002 W TIM14_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W TIM16_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W TIM17_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W TIM1_BRK_UP_TRG_COM_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W TIM1_CC_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W USART1_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134242960 00000002 W WWDG_IRQHandler	/workspace/firmware/startup_stm32c031xx.s:109
+134237040 00000002 W __aeabi_idiv0
+134237040 00000002 W __aeabi_ldiv0
+134228228 00000002 T __malloc_lock	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:136
+134228232 00000002 T __malloc_unlock	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:138
+536871210 00000002 b rx_head
+536871212 00000002 b rx_tail
+536871048 00000002 b tx_head
+536871050 00000002 b tx_tail
+536870912 00000004 d SystemCoreClock
+536878456 00000004 B __malloc_free_list	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdlib/nano-mallocr.c:198
+536878452 00000004 B __malloc_sbrk_start	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdlib/nano-mallocr.c:201
+536871420 00000004 b __sbrk_heap_end
+536878136 00000004 B __stdio_exit_handler	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/sys/reent.h:903
+536870924 00000004 D _impure_ptr	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/sys/reent.h:782
+134227366 00000004 T _lseek	/workspace/firmware/Core/Src/syscalls.c:112
+536871224 00000004 b adc_previous
+536871040 00000004 b bus_started
+536871380 00000004 b busy_us
+536871384 00000004 b epoch_us
+536878460 00000004 B errno	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/reent/reent.c:26
+536871408 00000004 b export_crc
+536871412 00000004 b export_row
+536871416 00000004 b export_stage
+536871228 00000004 b imu_previous
+536871404 00000004 b last_adc
+536871400 00000004 b last_imu
+536871236 00000004 b last_retry
+536871396 00000004 b last_status
+536871392 00000004 b missed_adc
+536871388 00000004 b missed_imu
+134243400 00000004 r one	/build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libm/machine/arm/../../math/ef_sqrt.c:19
+536870920 00000004 d period_ms
+536871376 00000004 b report_at
+536871220 00000004 b rx_losses
+134243404 00000004 r tiny	/build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libm/machine/arm/../../math/ef_sqrt.c:19
+536871216 00000004 b tx_losses
+536871044 00000004 b uwTick
+536870916 00000004 d uwTickPrio
+134227360 00000006 T _close	/workspace/firmware/Core/Src/syscalls.c:92
+134232468 00000006 T fabsf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/math.h:381
+134237032 00000008 T __aeabi_idivmod	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/lib1funcs.S:1346
+134236564 00000008 T __aeabi_uidivmod	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/lib1funcs.S:1134
+134218716 00000008 t measurement_us	/workspace/firmware/Platform/measurement.c:28
+134232460 00000008 T nanf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/math.h:418
+536871056 00000008 b timer_upper
+134232716 00000012 T __aeabi_fcmpeq	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:211
+134227688 00000012 T __errno	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/sys/errno.h:19
+134227296 00000012 T _exit	/workspace/firmware/Core/Src/syscalls.c:61
+134218796 00000014 t put	/workspace/firmware/App/point_store.c:6
+134226200 00000016 T SysTick_Handler	/workspace/firmware/Core/Src/stm32c0xx_it.c:125
+134227432 00000016 T SystemInit	/workspace/firmware/Core/Src/system_stm32c0xx.c:136
+134232700 00000016 T __aeabi_cfcmpeq	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:193
+134232700 00000016 T __aeabi_cfcmple	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:193
+536871192 00000016 b imu
+134232788 00000018 T __aeabi_fcmpge	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:238
+134232768 00000018 T __aeabi_fcmpgt	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:237
+134232748 00000018 T __aeabi_fcmple	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:236
+134232728 00000018 T __aeabi_fcmplt	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:235
+134231520 00000018 T _malloc_usable_size_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:106
+134218748 00000018 t measurement_ms	/workspace/firmware/Platform/measurement.c:29
+134223768 00000020 t HAL_FLASH_Lock.isra.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:449
+134222872 00000020 t HAL_UART_ErrorCallback.part.0	/workspace/firmware/Platform/board.c:128
+134236276 00000020 T __gnu_thumb1_case_uhi
+134243200 00000020 r names.0
+134243180 00000020 r periods.1
+134232692 00000024 T __aeabi_cfrcmple	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:183
+134218810 00000024 t get	/workspace/firmware/App/point_store.c:9
+134218724 00000024 t measured	/workspace/firmware/Platform/runtime.c:32
+536871012 00000024 b object.0
+536871064 00000024 b pFlash
+134227308 00000026 T _read	/workspace/firmware/Core/Src/syscalls.c:67
+134227334 00000026 T _write	/workspace/firmware/Core/Src/syscalls.c:80
+134226216 00000028 T EXTI4_15_IRQHandler	/workspace/firmware/Core/Src/stm32c0xx_it.c:146
+134218766 00000030 t read_bytes	/workspace/firmware/Platform/internal_flash.c:5
+134242988 00000032 r APBPrescTable
+134223312 00000032 t UART_DMAAbortOnError	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3791
+134218544 00000032 t board_tx_free	/workspace/firmware/Platform/board.c:148
+134219364 00000036 t HAL_FLASH_Unlock	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:425
+134228236 00000036 T _sbrk_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/reent.h:154
+134219324 00000040 t HAL_RCC_GetPCLK1Freq	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:922
+134236108 00000042 T __aeabi_fcmpun	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/unordsf2.c:33
+134226148 00000044 T TIM3_IRQHandler	/workspace/firmware/Platform/measurement.c:17
+134243220 00000048 r names.2
+134220016 00000050 t UART_TxISR_16BIT.part.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3987
+134220066 00000050 t UART_TxISR_8BIT	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3987
+134220016 00000050 t UART_TxISR_8BIT.part.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3987
+134218136 00000052 t finish_i2c	/workspace/firmware/Platform/board.c:39
+134220116 00000054 t UART_TxISR_16BIT	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4016
+134218834 00000054 t crc_word	/workspace/firmware/App/records.c:10
+134242880 00000056 W Reset_Handler	/workspace/firmware/startup_stm32c031xx.s:52
+536871316 00000056 b reader
+134232400 00000058 T sqrtf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/math.h:395
+134236216 00000060 T __clzsi2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/lib1funcs.S:1703
+134218656 00000060 t clock_ticks	/workspace/firmware/Platform/measurement.c:20
+134237044 00000062 T __aeabi_uldivmod	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/config/arm/bpabi-v6m.S:148
+134227370 00000062 T _sbrk	/workspace/firmware/Core/Src/sysmem.c:57
+134243032 00000064 r AHBPrescTable
+134222476 00000064 t HAL_UART_RxCpltCallback	/workspace/firmware/Platform/board.c:121
+134236152 00000064 T __aeabi_f2iz	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/fixsfsi.c:33
+134231628 00000064 T acosf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/math.h:385
+134218072 00000064 t wait_i2c	/workspace/firmware/Platform/board.c:27
+134221756 00000068 t bus_write	/workspace/firmware/Platform/board.c:81
+134221596 00000068 t delay_us.constprop.0	/workspace/firmware/Platform/board.c:16
+134231448 00000070 T memcmp	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/string.h:30
+134219252 00000072 t HAL_RCC_GetSysClockFreq	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:867
+134227448 00000072 T __libc_init_array	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/misc/init.c:30
+134227700 00000072 t sbrk_aligned	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdlib/nano-mallocr.c:209
+536870928 00000076 D _impure_data	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/sys/reent.h:788
+536871240 00000076 b hi2c1
+134218888 00000078 t records_crc_append	/workspace/firmware/App/records.c:19
+134234188 00000080 T __eqsf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/eqsf2.c:33
+134234188 00000080 T __nesf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/eqsf2.c:34
+134218464 00000080 t board_put_char	/workspace/firmware/Platform/board.c:96
+134218576 00000080 t metric	/workspace/firmware/Platform/runtime.c:26
+134220612 00000084 t ADC_ConversionStop.constprop.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2683
+134223964 00000084 t line	/workspace/firmware/Platform/runtime.c:47
+134231540 00000088 T lroundf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/math.h:408
+134237108 00000090 T __aeabi_lmul	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/libgcc2.c:529
+134237108 00000090 T __muldi3	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/libgcc2.c:528
+134220368 00000092 t FLASH_WaitForLastOperation.constprop.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:580
+134219160 00000092 t HAL_InitTick	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:236
+134221664 00000092 t write_phase	/workspace/firmware/Platform/board.c:51
+536871088 00000100 b adc
+134228384 00000112 T _vsniprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/vsnprintf.c:57
+134228384 00000112 T _vsnprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/stdio.h:527
+134221948 00000112 t mpu6050_init.constprop.0	/workspace/firmware/Devices/mpu6050.c:16
+134228272 00000112 T vsniprintf	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/vsnprintf.c:39
+134228272 00000112 T vsnprintf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/stdio.h:274
+134230936 00000116 T memchr	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/string.h:29
+134229744 00000118 T _realloc_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:58
+134220696 00000120 t ADC_Disable.constprop.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2820
+134219772 00000120 t UART_TxISR_8BIT_FIFOEN	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4048
+134219892 00000124 t UART_TxISR_16BIT_FIFOEN	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4088
+134231052 00000124 T _sniprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/snprintf.c:33
+134231052 00000124 T _snprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/stdio.h:483
+134221824 00000124 t bus_read	/workspace/firmware/Platform/board.c:65
+134237756 00000128 T __aeabi_ui2f	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/floatunsisf.c:33
+134231176 00000132 T sniprintf	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/snprintf.c:70
+134231176 00000132 T snprintf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/stdio.h:272
+134230800 00000132 T strcmp	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/machine/arm/strcmp-armv6m.S:58
+134231308 00000140 T memcpy	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/string.h:31
+134234416 00000142 T __lesf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/lesf2.c:33
+134234416 00000142 T __ltsf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/lesf2.c:34
+536875944 00000144 b huart2
+134234268 00000146 T __gesf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/gesf2.c:33
+134234268 00000146 T __gtsf2	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/gesf2.c:34
+134237608 00000148 T __aeabi_i2f	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/floatsisf.c:33
+134220460 00000152 t bench_observe.constprop.0	/workspace/firmware/App/bench.c:61
+134222708 00000164 t UART_RxISR_16BIT	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4231
+134225984 00000164 t program_word	/workspace/firmware/Platform/internal_flash.c:27
+134227520 00000166 T memset	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/string.h:33
+134222540 00000168 t UART_RxISR_8BIT	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4154
+134229568 00000174 T memmove	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/string.h:32
+134223788 00000176 t erase_page	/workspace/firmware/Platform/internal_flash.c:11
+134228044 00000184 T _free_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:50
+134218966 00000194 t decode	/workspace/firmware/App/point_store.c:21
+134220170 00000198 t UART_WaitOnFlagUntilTimeout.constprop.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3366
+134224048 00000200 t status	/workspace/firmware/Platform/runtime.c:69
+134224248 00000204 t summary	/workspace/firmware/Platform/runtime.c:80
+134228496 00000208 T __ssputs_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf.c:175
+134232476 00000216 T __ieee754_sqrtf	/build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libm/machine/arm/../../math/ef_sqrt.c:25
+536875688 00000256 b rx_ring
+134236296 00000266 T __udivsi3
+134227772 00000272 T _malloc_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/malloc.h:42
+536875120 00000276 b store
+134218188 00000276 t transmit_next	/workspace/firmware/Platform/board.c:91
+134228704 00000280 T __ssprint_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf.c:245
+536875400 00000288 b timing
+536878140 00000312 B __sf	/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include/sys/reent.h:274
+134229864 00000328 T _printf_common	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf_i.c:49
+134219400 00000372 t HAL_GPIO_Init	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:170
+134237200 00000408 T __udivmoddi4	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/libgcc2.c:927
+134222060 00000416 t HAL_UART_Receive_IT.constprop.0.isra.0	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1421
+134222892 00000420 t UART_RxISR_16BIT_FIFOEN	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4458
+134223344 00000424 t UART_RxISR_8BIT_FIFOEN	/workspace/firmware/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4310
+134236572 00000460 T __divsi3
+134233640 00000548 T __aeabi_fdiv	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/divsf3.c:33
+134228984 00000584 T _svfiprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf.c:472
+134228984 00000584 T _svfprintf_r	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf.c:468
+134225396 00000588 t sample_pose	/workspace/firmware/Platform/runtime.c:107
+134230192 00000608 T _printf_i	/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libc/stdio/nano-vfprintf_i.c:108
+134234560 00000640 T __aeabi_fmul	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/mulsf3.c:33
+134231692 00000708 T __ieee754_acosf	/build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/thumb/v6-m/nofp/newlib/../../../../../../newlib/libm/math/ef_acos.c:39
+134220816 00000780 t initialize_adc	/workspace/firmware/Platform/board.c:182
+134232808 00000832 T __aeabi_fadd	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/addsf3.c:33
+134235200 00000908 T __aeabi_fsub	/build/gcc-arm-none-eabi-Kb2Qbx/gcc-arm-none-eabi-13.2.rel1/build/arm-none-eabi/thumb/v6-m/nofp/libgcc/../../../../../../libgcc/soft-fp/subsf3.c:33
+134224452 00000944 t sample_adc	/workspace/firmware/Platform/runtime.c:97
+134226244 00001052 T USART2_IRQHandler	/workspace/firmware/Core/Src/stm32c0xx_it.c:162
+536871424 00001800 b snapshot
+536873224 00001896 b bench
+536876088 00002048 b tx_ring
+134237908 00004972 T main	/workspace/firmware/Core/Src/main.c:80

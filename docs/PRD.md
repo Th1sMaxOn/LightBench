@@ -31,7 +31,7 @@
 | FR-11 | NACK/timeout IMU не зупиняє ADC; повтор ініціалізації не частіше 1 с. Помилка ADC завершує серію, наступні проби ADC тривають. | ЛР2, T11 |
 | FR-12 | Відновлювати підтверджені записи з внутрішньої flash після reset; відкидати обірвані/пошкоджені записи за CRC і повідомляти втрату. | ЛР3, T12: код/host пройшли; MCU/reset/power-loss не перевірено |
 | FR-13 | Обробляти run, stop, status, export, selftest, imuaddr 0x68/0x69; відхиляти невідомі й довгі рядки. Ціль короткого status ≤100 мс за відсутності черги TX. | ЛР2, T13 |
-| FR-14 | LED світиться під час серії; UART розділяє ADC/IMU faults, RX/TX overflow. Позначення сховища відповідає реалізації, pending/failed не приховуються. | ЛР2 baseline ram_volatile; ЛР3 flash/pending/failed, runtime ще не перевірено |
+| FR-14 | LED світиться під час серії; UART розділяє ADC/IMU faults, RX/TX overflow. Позначення сховища відповідає реалізації, pending/failed не приховуються. | ЛР2 baseline ram_volatile; ЛР3 flash/pending/failed спостерігалися; повний GPIO-тест залишається відкритим |
 
 T01..T13 означають LB-T01..LB-T13 у [плані перевірок](test-plan.md). Виміряні значення та обмеження наведені у [validation](validation.md).
 

@@ -1,0 +1,31 @@
+{
+  "name": "LightBench LR3 S1",
+  "version": 1,
+  "author": "LightBench",
+  "steps": [
+    {
+      "wait-serial": "project=LightBench"
+    },
+    {
+      "delay": "300ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "65000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "LightBench LR3 fault-recovery",
+  "version": 1,
+  "author": "LightBench",
+  "steps": [
+    {
+      "wait-serial": "project=LightBench"
+    },
+    {
+      "delay": "300ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "write-serial": "run\n"
+    },
+    {
+      "delay": "2000ms"
+    },
+    {
+      "write-serial": "imuaddr 0x69\n"
+    },
+    {
+      "delay": "3000ms"
+    },
+    {
+      "write-serial": "imuaddr 0x68\n"
+    },
+    {
+      "delay": "3000ms"
+    },
+    {
+      "write-serial": "stop\n"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    }
+  ]
+}

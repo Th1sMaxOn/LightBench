@@ -17,8 +17,8 @@ compiler = os.environ.get('CC', 'cc')
 gcov = os.environ.get('GCOV', 'gcov')
 flags = ['-std=c11', '-O0', '-g', '-Wall', '-Wextra', '-Werror']
 includes = [f'-I{root / part}' for part in ['firmware/Devices', 'firmware/App', 'firmware/Platform', 'tests/fakes']]
-portable = ['firmware/Devices/mpu6050.c', 'firmware/App/bench.c', 'firmware/App/pose.c', 'firmware/App/records.c', 'firmware/App/protocol.c']
-suites = ['test_bench', 'test_protocol', 'test_mpu', 'test_runtime']
+portable = ['firmware/Devices/mpu6050.c', 'firmware/App/bench.c', 'firmware/App/pose.c', 'firmware/App/records.c', 'firmware/App/protocol.c', 'firmware/App/point_store.c']
+suites = ['test_bench', 'test_protocol', 'test_mpu', 'test_runtime', 'test_point_store']
 objects = []
 instrumented = []
 for relative in portable + ['firmware/Platform/runtime.c']:

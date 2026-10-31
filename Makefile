@@ -6,9 +6,9 @@ image:
 	docker build -t $(IMAGE) docker
 
 build: image
-	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
+	docker run --rm -e LIGHTBENCH_BASE=$(shell git rev-parse --short=7 HEAD) -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
-		make -C firmware all BUILD_ID=$(shell git rev-parse --short HEAD)-$(shell cat firmware/App/*.c firmware/Platform/runtime.c | shasum -a 256 | cut -c1-8)
+		make -C firmware all
 
 clean:
 	$(MAKE) -C firmware clean

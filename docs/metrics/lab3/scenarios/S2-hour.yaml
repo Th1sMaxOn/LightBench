@@ -1,0 +1,2467 @@
+{
+  "name": "LightBench LR3 S2-hour",
+  "version": 1,
+  "author": "LightBench",
+  "steps": [
+    {
+      "wait-serial": "project=LightBench"
+    },
+    {
+      "delay": "300ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "write-serial": "run\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "write-serial": "status\n"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 10
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 100
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 1000
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "44870ms"
+    },
+    {
+      "set-control": {
+        "part-id": "ldr",
+        "name": "lux",
+        "value": 50
+      }
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "5000ms"
+    },
+    {
+      "write-serial": "stop\n"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "wait-serial": "export_end"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "name": "LightBench LR3 sampling-sweep",
+  "version": 1,
+  "author": "LightBench",
+  "steps": [
+    {
+      "wait-serial": "project=LightBench"
+    },
+    {
+      "delay": "300ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "write-serial": "run\n"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "10000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    },
+    {
+      "write-serial": "period 10\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "10000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    },
+    {
+      "write-serial": "period 5\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "10000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    },
+    {
+      "write-serial": "period 2\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "10000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    },
+    {
+      "write-serial": "period 1\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "delay": "10000ms"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "stop\n"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    }
+  ]
+}

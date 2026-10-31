@@ -39,6 +39,9 @@ C_SOURCES =  \
 Devices/mpu6050.c \
 Platform/board.c \
 Platform/runtime.c \
+Platform/measurement.c \
+Platform/internal_flash.c \
+App/point_store.c \
 App/bench.c \
 App/pose.c \
 App/records.c \
@@ -117,6 +120,9 @@ C_DEFS =  \
 -DUSE_HAL_DRIVER \
 -DSTM32C031xx
 
+ifeq ($(LAB3_DIAGNOSTIC),1)
+C_DEFS += -DLAB3_DIAGNOSTIC
+endif
 
 # AS includes
 AS_INCLUDES = 
@@ -127,6 +133,7 @@ C_INCLUDES =  \
 -IDevices \
 -IPlatform \
 -IApp \
+-I$(BUILD_DIR) \
 -IDrivers/STM32C0xx_HAL_Driver/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32C0xx/Include \
@@ -145,8 +152,7 @@ endif
 
 # Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
-BUILD_ID ?= local
-CFLAGS += -flto -fstack-usage -DBUILD_ID=\"$(BUILD_ID)\"
+CFLAGS += -flto -fstack-usage -Wstack-usage=512
 
 
 #######################################
@@ -162,6 +168,14 @@ LDFLAGS = $(MCU) -flto -fstack-usage -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
+
+.PHONY: identity-force
+identity-force:
+$(BUILD_DIR)/build_identity.h: identity-force | $(BUILD_DIR)
+	LAB3_DIAGNOSTIC=$(LAB3_DIAGNOSTIC) python3 ../tools/build_identity.py > $(BUILD_DIR)/build_identity.tmp
+	cmp -s $@ $(BUILD_DIR)/build_identity.tmp || mv $(BUILD_DIR)/build_identity.tmp $@
+	@rm -f $(BUILD_DIR)/build_identity.tmp
+$(BUILD_DIR)/runtime.o: $(BUILD_DIR)/build_identity.h
 
 
 #######################################

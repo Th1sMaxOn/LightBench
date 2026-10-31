@@ -1,0 +1,1317 @@
+{
+  "name": "LightBench LR3 S3",
+  "version": 1,
+  "author": "LightBench",
+  "steps": [
+    {
+      "wait-serial": "project=LightBench"
+    },
+    {
+      "delay": "300ms"
+    },
+    {
+      "write-serial": "period 20\n"
+    },
+    {
+      "write-serial": "metrics reset\n"
+    },
+    {
+      "write-serial": "run\n"
+    },
+    {
+      "delay": "1634ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "33ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1754ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1452ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "6ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1514ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "5ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1765ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "3ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1432ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "7ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1789ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "36ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1531ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "5ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1735ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "22ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1475ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "21ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1538ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "9ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1766ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "62ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1601ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "26ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1740ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "51ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1602ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "1ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1477ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "3ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1665ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "26ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1422ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "44ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1578ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "19ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1454ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "27ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1656ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "53ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1525ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "21ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1746ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "16ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1571ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "69ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1790ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "30ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1733ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "7ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1726ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "25ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1497ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "18ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1446ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "51ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1610ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "57ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1416ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "35ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1510ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1751ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "4ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1570ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "36ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1771ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "5ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1677ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "41ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1712ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "44ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1583ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "45ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1639ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "64ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "1522ms"
+    },
+    {
+      "write-serial": "export\n"
+    },
+    {
+      "write-serial": "status\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\nstatus\n\n"
+    },
+    {
+      "delay": "54ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 1
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "set-control": {
+        "part-id": "mark",
+        "name": "pressed",
+        "value": 0
+      }
+    },
+    {
+      "delay": "65ms"
+    },
+    {
+      "delay": "2000ms"
+    },
+    {
+      "write-serial": "stop\n"
+    },
+    {
+      "write-serial": "metrics\n"
+    },
+    {
+      "wait-serial": "MEASURE"
+    },
+    {
+      "delay": "1000ms"
+    }
+  ]
+}

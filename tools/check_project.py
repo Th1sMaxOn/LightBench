@@ -3,7 +3,7 @@ import hashlib
 import json
 import re
 root = Path(__file__).resolve().parents[1]
-allowed = {'bench.h', 'pose.h', 'records.h', 'protocol.h', 'mpu6050.h', 'stdbool.h', 'stdint.h', 'stddef.h', 'stdio.h', 'string.h', 'limits.h', 'math.h', 'stdlib.h'}
+allowed = {'point_store.h', 'bench.h', 'pose.h', 'records.h', 'protocol.h', 'mpu6050.h', 'stdbool.h', 'stdint.h', 'stddef.h', 'stdio.h', 'string.h', 'limits.h', 'math.h', 'stdlib.h'}
 for folder in ['App', 'Devices']:
     for source in (root / 'firmware' / folder).glob('*.[ch]'):
         text = source.read_text()

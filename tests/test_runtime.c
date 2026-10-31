@@ -10,6 +10,15 @@ static bool pressed, adc_ok=true, bus_ok=true, rx_over, tx_over, led;
 static size_t free_bytes=2047;
 static char output[65536], input[1024];
 static unsigned used, in_at, in_len;
+static uint8_t flash_bytes[4096];
+static void flash_read(void *c,unsigned at,void *out,unsigned n) { (void)c; memcpy(out,flash_bytes+at,n); }
+static bool flash_erase(void *c,unsigned page) { (void)c; memset(flash_bytes+page*2048,255,2048); return true; }
+static bool flash_program(void *c,unsigned at,const uint8_t bytes[8]) { (void)c; memcpy(flash_bytes+at,bytes,8); return true; }
+PointFlash board_point_flash(void) { return (PointFlash){NULL,flash_read,flash_erase,flash_program}; }
+uint32_t measurement_us(void) { return now*1000u; }
+uint32_t measurement_ms(void) { return now; }
+uint32_t measurement_stack(void) { return 0; }
+uint32_t measurement_heap(void) { return 0; }
 static BusResult bus_read(void *ctx,uint8_t addr,uint8_t reg,uint8_t *data,size_t n) {
     (void)ctx; ++now;
     if(reg==0x75) ++probes;
@@ -43,6 +52,7 @@ static void command(const char *s) {
 static void step(unsigned ms) { uint32_t end=now+ms; while(now<end) { ++now; runtime_poll(); } }
 static void click(void) { pressed=true;step(40);pressed=false;step(40); }
 int main(void) {
+    memset(flash_bytes,255,sizeof(flash_bytes));
     runtime_init();
     assert(strstr(output,"project=LightBench") && strstr(output,"adc=1 imu=1 button=ready"));
     command("stop\nrun\nrun\n"); assert(led && strstr(output,"already_running"));
@@ -74,6 +84,9 @@ int main(void) {
     command("export\n"); free_bytes=0;step(2); free_bytes=2047;step(10);
     clear_output(); command("run\n"); step(3600001);
     assert(!led && strstr(output,"reason=time_limit"));
+    clear_output(); runtime_init(); command("status\n");
+    assert(strstr(output,"recovered=3") && strstr(output,"points=3"));
+    command("metrics\n");step(30);assert(strstr(output,"METRIC name=loop"));
     puts("runtime: concurrent polling, button, export, retry timing, ADC stop, recovery, errors and hour limit passed with fake ports");
     return 0;
 }

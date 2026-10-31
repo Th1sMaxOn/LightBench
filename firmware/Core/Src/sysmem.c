@@ -28,6 +28,10 @@
  * Pointer to the current high watermark of the heap usage
  */
 static uint8_t *__sbrk_heap_end = NULL;
+uint32_t measurement_heap(void) {
+  extern uint8_t _end;
+  return __sbrk_heap_end ? (uint32_t)(__sbrk_heap_end - &_end) : 0;
+}
 
 /**
  * @brief _sbrk() allocates memory to the newlib heap and is used by malloc
@@ -53,9 +57,8 @@ static uint8_t *__sbrk_heap_end = NULL;
 void *_sbrk(ptrdiff_t incr)
 {
   extern uint8_t _end; /* Symbol defined in the linker script */
-  extern uint8_t _estack; /* Symbol defined in the linker script */
-  extern uint32_t _Min_Stack_Size; /* Symbol defined in the linker script */
-  const uint32_t stack_limit = (uint32_t)&_estack - (uint32_t)&_Min_Stack_Size;
+  extern uint32_t _Min_Heap_Size;
+  const uint32_t stack_limit = (uint32_t)&_end + (uint32_t)&_Min_Heap_Size;
   const uint8_t *max_heap = (uint8_t *)stack_limit;
   uint8_t *prev_heap_end;
 
@@ -66,7 +69,7 @@ void *_sbrk(ptrdiff_t incr)
   }
 
   /* Protect heap from growing into the reserved MSP stack */
-  if (__sbrk_heap_end + incr > max_heap)
+  if (__sbrk_heap_end + incr > max_heap || __sbrk_heap_end + incr < &_end)
   {
     errno = ENOMEM;
     return (void *)-1;

@@ -56,13 +56,13 @@ ENTRY(Reset_Handler)
 _estack = ORIGIN(RAM) + LENGTH(RAM);    /* end of RAM */
 /* Generate a link error if heap and stack don't fit into RAM */
 _Min_Heap_Size = 0x200;      /* required amount of heap  */
-_Min_Stack_Size = 0x400; /* required amount of stack */
+_Min_Stack_Size = 0x800; /* measured MSP reserve */
 
 /* Specify the memory areas */
 MEMORY
 {
 RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 12K
-/* Last 4 KiB reserved for LR3 persistence; no writer in LR2. */
+/* Last 4 KiB reserved for the two-page point journal. */
 FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 28K
 }
 

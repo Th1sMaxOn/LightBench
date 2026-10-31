@@ -1,9 +1,11 @@
 #ifndef PROJECT_BOARD_H
 #define PROJECT_BOARD_H
 #include "mpu6050.h"
+#include "point_store.h"
 #include <stdbool.h>
 #include <stdint.h>
 void board_init(void);
+PointFlash board_point_flash(void);
 SensorBus board_sensor_bus(void);
 bool board_read_light(uint16_t *value);
 bool board_button(void);

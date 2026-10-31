@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include "runtime.h"
 #include "board.h"
+#include "measurement.h"
 
 /* USER CODE END Includes */
 
@@ -78,6 +79,7 @@ int __io_putchar(int ch)
   */
 int main(void)
 {
+  measurement_paint();
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -93,6 +95,7 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+  measurement_init();
 
   /* USER CODE BEGIN SysInit */
 

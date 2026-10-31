@@ -1,0 +1,18 @@
+{
+  "vcd_sha256": "22da6e090913cd6781923ba1c3184efd7599e66822c4312171e954340f0b5bc0",
+  "vcd_end_s": 143.720780525,
+  "boot": "project=LightBench build=7eb6fca-401a17de6b40 adc=1 imu=1 button=ready store=flash uart=115200_8N1 clock=SysTick_1ms recovered=0 rejected=128 us=44000",
+  "uart_stop_bit_errors": 1,
+  "button_high_pulses": 143,
+  "point_edges": 132,
+  "paired_button_to_point": 131,
+  "completed_exports": 74,
+  "button_edge_during_export_count": 85,
+  "point_during_export_count": 81,
+  "overlap_latency_ms": {
+    "min": 29.128325,
+    "avg": 31.434950294117648,
+    "max": 35.20845
+  },
+  "note": "Automatic 1Hz generator, not human presses; export interval from decoded export_begin to export_end UART lines; only complete windows counted. ADC/IMU probe channel times independent of SysTick resolution."
+}

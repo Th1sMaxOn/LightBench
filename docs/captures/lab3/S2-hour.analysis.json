@@ -1,0 +1,21 @@
+{
+  "vcd_sha256": "3e6e1187bf2190540c52696aafb71816db8188aa7cc418ecfcd55e8c0fded0a2",
+  "vcd_end_s": 5264.9574224,
+  "boot": "project=LightBench build=7eb6fca-401a17de6b40 adc=1 imu=1 button=ready store=flash uart=115200_8N1 clock=SysTick_1ms recovered=0 rejected=128 us=44000",
+  "status_count_first_3625s": 3626,
+  "bad_stop_bits": 0,
+  "first_status_ns_ms": [
+    1053422650,
+    1046
+  ],
+  "last_status_ns_ms": [
+    3623979840825,
+    3624048
+  ],
+  "status_monotonic": true,
+  "paired_vcd_minus_mcu_ms": -75.58182499976829,
+  "physical_s": 3622.926418175,
+  "mcu_s": 3623.002,
+  "point_edges": 38,
+  "flash_pulses": 1
+}

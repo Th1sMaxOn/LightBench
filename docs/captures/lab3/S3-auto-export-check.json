@@ -1,0 +1,668 @@
+[
+  {
+    "rows": 6,
+    "overwritten": 0,
+    "rejected_pairs": 2,
+    "crc32": "a756fcb4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 10,
+    "overwritten": 0,
+    "rejected_pairs": 4,
+    "crc32": "0ab42a85",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 14,
+    "overwritten": 0,
+    "rejected_pairs": 8,
+    "crc32": "c2d441ce",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 18,
+    "overwritten": 0,
+    "rejected_pairs": 11,
+    "crc32": "93e900a3",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 22,
+    "overwritten": 0,
+    "rejected_pairs": 12,
+    "crc32": "46d0035e",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 26,
+    "overwritten": 0,
+    "rejected_pairs": 14,
+    "crc32": "e71a3fe5",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 30,
+    "overwritten": 0,
+    "rejected_pairs": 15,
+    "crc32": "113433f6",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 34,
+    "overwritten": 0,
+    "rejected_pairs": 17,
+    "crc32": "cc4d61a8",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 38,
+    "overwritten": 0,
+    "rejected_pairs": 20,
+    "crc32": "4b235698",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 40,
+    "overwritten": 0,
+    "rejected_pairs": 21,
+    "crc32": "0dbf0e5f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 40,
+    "overwritten": 0,
+    "rejected_pairs": 21,
+    "crc32": "0dbf0e5f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 41,
+    "overwritten": 0,
+    "rejected_pairs": 22,
+    "crc32": "77494c95",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 42,
+    "overwritten": 0,
+    "rejected_pairs": 23,
+    "crc32": "6a58bd21",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 43,
+    "overwritten": 0,
+    "rejected_pairs": 23,
+    "crc32": "673273b2",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 44,
+    "overwritten": 0,
+    "rejected_pairs": 24,
+    "crc32": "a8d03b66",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 45,
+    "overwritten": 0,
+    "rejected_pairs": 24,
+    "crc32": "6b1db3c6",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 46,
+    "overwritten": 0,
+    "rejected_pairs": 24,
+    "crc32": "56646ba9",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 47,
+    "overwritten": 0,
+    "rejected_pairs": 25,
+    "crc32": "990058f8",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 48,
+    "overwritten": 0,
+    "rejected_pairs": 26,
+    "crc32": "f8f203a9",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 49,
+    "overwritten": 0,
+    "rejected_pairs": 27,
+    "crc32": "12bae2d6",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 50,
+    "overwritten": 0,
+    "rejected_pairs": 27,
+    "crc32": "fc955d53",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 51,
+    "overwritten": 0,
+    "rejected_pairs": 27,
+    "crc32": "af94ffb5",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 53,
+    "overwritten": 0,
+    "rejected_pairs": 28,
+    "crc32": "40f4982f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 54,
+    "overwritten": 0,
+    "rejected_pairs": 29,
+    "crc32": "f12c78a3",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 55,
+    "overwritten": 0,
+    "rejected_pairs": 29,
+    "crc32": "d23636d0",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 56,
+    "overwritten": 0,
+    "rejected_pairs": 30,
+    "crc32": "16875a59",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 58,
+    "overwritten": 0,
+    "rejected_pairs": 32,
+    "crc32": "314ae097",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 59,
+    "overwritten": 0,
+    "rejected_pairs": 33,
+    "crc32": "ecaf5849",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 60,
+    "overwritten": 0,
+    "rejected_pairs": 33,
+    "crc32": "ebcae2f7",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 62,
+    "overwritten": 0,
+    "rejected_pairs": 35,
+    "crc32": "b63e0312",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 63,
+    "overwritten": 0,
+    "rejected_pairs": 35,
+    "crc32": "b3413cb7",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 1,
+    "rejected_pairs": 36,
+    "crc32": "8d9b52b7",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 2,
+    "rejected_pairs": 36,
+    "crc32": "a3f235e4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 4,
+    "rejected_pairs": 35,
+    "crc32": "af1a0f3b",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 5,
+    "rejected_pairs": 36,
+    "crc32": "a9117b33",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 6,
+    "rejected_pairs": 36,
+    "crc32": "42cde3a1",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 8,
+    "rejected_pairs": 36,
+    "crc32": "9738b22a",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 9,
+    "rejected_pairs": 35,
+    "crc32": "e5a46e5f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 11,
+    "rejected_pairs": 35,
+    "crc32": "559a9216",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 12,
+    "rejected_pairs": 34,
+    "crc32": "5ce36776",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 13,
+    "rejected_pairs": 33,
+    "crc32": "5e558cf4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 15,
+    "rejected_pairs": 32,
+    "crc32": "466e4469",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 16,
+    "rejected_pairs": 33,
+    "crc32": "8ec21f6f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 18,
+    "rejected_pairs": 32,
+    "crc32": "e560cdca",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 19,
+    "rejected_pairs": 33,
+    "crc32": "a364f0ed",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 21,
+    "rejected_pairs": 33,
+    "crc32": "c06c1f42",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 22,
+    "rejected_pairs": 34,
+    "crc32": "f7554e8a",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 24,
+    "rejected_pairs": 32,
+    "crc32": "c7a1ec66",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 25,
+    "rejected_pairs": 32,
+    "crc32": "838047e3",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 27,
+    "rejected_pairs": 33,
+    "crc32": "c4f263d3",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 28,
+    "rejected_pairs": 33,
+    "crc32": "b9072441",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 30,
+    "rejected_pairs": 34,
+    "crc32": "4b485d7f",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 31,
+    "rejected_pairs": 34,
+    "crc32": "c2971a61",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 33,
+    "rejected_pairs": 33,
+    "crc32": "d0e34d43",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 35,
+    "rejected_pairs": 34,
+    "crc32": "a4db6aa1",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 36,
+    "rejected_pairs": 34,
+    "crc32": "bacbc53b",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 38,
+    "rejected_pairs": 34,
+    "crc32": "30963ce4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 39,
+    "rejected_pairs": 34,
+    "crc32": "8f952f0c",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 41,
+    "rejected_pairs": 33,
+    "crc32": "84305f40",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 43,
+    "rejected_pairs": 33,
+    "crc32": "31aba8df",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 44,
+    "rejected_pairs": 32,
+    "crc32": "8aa68aaa",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 45,
+    "rejected_pairs": 32,
+    "crc32": "16bb4009",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 47,
+    "rejected_pairs": 33,
+    "crc32": "899f999b",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 49,
+    "rejected_pairs": 31,
+    "crc32": "9d24316c",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 50,
+    "rejected_pairs": 31,
+    "crc32": "f3a72efb",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 52,
+    "rejected_pairs": 31,
+    "crc32": "8ffc3d1e",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 53,
+    "rejected_pairs": 32,
+    "crc32": "92b8c90d",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 55,
+    "rejected_pairs": 32,
+    "crc32": "5e65c1ad",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 56,
+    "rejected_pairs": 31,
+    "crc32": "9bbf5bb1",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 58,
+    "rejected_pairs": 31,
+    "crc32": "7ce2d2a4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 60,
+    "rejected_pairs": 31,
+    "crc32": "c2feac5c",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 62,
+    "rejected_pairs": 30,
+    "crc32": "c301f71a",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 64,
+    "rejected_pairs": 30,
+    "crc32": "bb8dc8a4",
+    "series": [
+      1
+    ]
+  },
+  {
+    "rows": 64,
+    "overwritten": 65,
+    "rejected_pairs": 30,
+    "crc32": "c3325350",
+    "series": [
+      1
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "generated": "2026-10-30T08:40:32.677362+02:00",
+  "firmware_id": "7eb6fca-401a17de6b40",
+  "files": {
+    "manifest.json": {
+      "bytes": 2125,
+      "sha256": "b08a10a346b4bbeb6f42508aec062a2a9ca4cd1a649cca1fef52db2485a68c69"
+    },
+    "S1.vcd": {
+      "bytes": 23683346,
+      "sha256": "705e7758615d9ea6c9401a34626a0d741a4eb8585ef4de52952263e252cacd7f"
+    },
+    "S1.uart.txt": {
+      "bytes": 24998,
+      "sha256": "e28a05ae309bc84a3576d4cc1bb89edc95fecbe8ecbf2219db8cbc63112d9ec0"
+    },
+    "S1.analysis.json": {
+      "bytes": 991,
+      "sha256": "c52b368e429dca50ee512434f57e1606e7f0d54f5fc4f6ddfe5813efc0e45498"
+    },
+    "S2-hour.vcd": {
+      "bytes": 142339023,
+      "sha256": "3e6e1187bf2190540c52696aafb71816db8188aa7cc418ecfcd55e8c0fded0a2"
+    },
+    "S2-hour.analysis.json": {
+      "bytes": 627,
+      "sha256": "50a6ea34862e2e15839185cbd5c1a0c80aeb95eb5088b13d9c0836cecec0b661"
+    },
+    "S2.uart.txt": {
+      "bytes": 934738,
+      "sha256": "edb899c39d10ba6a6ff3ceae9558a5cb9bf869e0ea4aa74e5cf508b41252fbc1"
+    },
+    "S2-continuation-01.uart.txt": {
+      "bytes": 1628848,
+      "sha256": "070f1803a968616cf684da588e5ee26f863d1a119462efd5a63ca706121d8961"
+    },
+    "S3-auto-fixture.json": {
+      "bytes": 3028,
+      "sha256": "fe1cf25839c571c7ef4fd64d411d71725d58c070ec24c510cb3c91a4743b7568"
+    },
+    "S3-auto.vcd": {
+      "bytes": 81343068,
+      "sha256": "22da6e090913cd6781923ba1c3184efd7599e66822c4312171e954340f0b5bc0"
+    },
+    "S3-auto.uart.txt": {
+      "bytes": 796824,
+      "sha256": "7b4e34104bb83c279113a4fae0a5f5175f0de4fc4d19ee8b37c4e72b4aac7414"
+    },
+    "S3-auto.uart.session.json": {
+      "bytes": 268582,
+      "sha256": "5d33cbe17d64f85e6f1bb403e6437fb0d951aa32cc47fada7963da976627e9bd"
+    },
+    "S3-auto.events.json": {
+      "bytes": 20522,
+      "sha256": "3f22c370bc2a5b741bb5c8f2575d1688440768c619ccfe134acbd7febeb9af8f"
+    },
+    "S3-auto-export-check.json": {
+      "bytes": 9507,
+      "sha256": "7045040d533c5955acdf38e6710c5931261b2f702696fcc8528cc051f80e67f3"
+    },
+    "fault.vcd": {
+      "bytes": 63859631,
+      "sha256": "8d9f96f4d4e1554f1025473c7f8169c8ebdd5e67dd5b6de4d1a931a6830f1387"
+    },
+    "fault-sweep.uart.txt": {
+      "bytes": 23969,
+      "sha256": "51851ad7d96881380984dc6734dacf5f2215a1bbdb5243648f639b4463cc0e85"
+    },
+    "fault-sweep.uart.session.json": {
+      "bytes": 2583,
+      "sha256": "66240767a887e09ddb6d912f73abd2acd6ccdd1fbf2abc246d4ca6aa688e1d18"
+    },
+    "fault-sweep-schedule.json": {
+      "bytes": 1626,
+      "sha256": "0d1ff1dbf88c3f46a6a5afb4af0120e76221e58555676aea33dd2338ec09414a"
+    },
+    "uart-sweep.vcd": {
+      "bytes": 12247847,
+      "sha256": "0a6c01ff2939bfb5106c2c91dd188fdc74bd704492506f7dc4649c99ee3be2e7"
+    },
+    "uart-sweep.uart.txt": {
+      "bytes": 108328,
+      "sha256": "80acb40d3acdd2b7a1e99166ccd1818fccfe1c979f2d070f49eec7d9f7429412"
+    },
+    "uart-sweep.uart.session.json": {
+      "bytes": 52233,
+      "sha256": "b6038b1bee51ef71646a0aee8b785dddf8ab4fe1ecfcf03fe6a79340b68d6c97"
+    },
+    "uart-sweep-schedule.json": {
+      "bytes": 37675,
+      "sha256": "484fd41f52d5c7e86771157e5a2e248ef8a03a40f079666a631a940ad796b8b9"
+    }
+  }
+}

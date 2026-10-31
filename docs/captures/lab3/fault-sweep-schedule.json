@@ -1,0 +1,114 @@
+[
+  {
+    "after_seconds": 1,
+    "text": "run"
+  },
+  {
+    "after_seconds": 2,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 4,
+    "text": "imuaddr 0x69"
+  },
+  {
+    "after_seconds": 8,
+    "text": "status"
+  },
+  {
+    "after_seconds": 10,
+    "text": "imuaddr 0x68"
+  },
+  {
+    "after_seconds": 14,
+    "text": "status"
+  },
+  {
+    "after_seconds": 15,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 17,
+    "text": "period 20"
+  },
+  {
+    "after_seconds": 17.5,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 27,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 27.2,
+    "text": "status"
+  },
+  {
+    "after_seconds": 28,
+    "text": "period 10"
+  },
+  {
+    "after_seconds": 28.5,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 38,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 38.2,
+    "text": "status"
+  },
+  {
+    "after_seconds": 39,
+    "text": "period 5"
+  },
+  {
+    "after_seconds": 39.5,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 49,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 49.2,
+    "text": "status"
+  },
+  {
+    "after_seconds": 50,
+    "text": "period 2"
+  },
+  {
+    "after_seconds": 50.5,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 60,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 60.2,
+    "text": "status"
+  },
+  {
+    "after_seconds": 61,
+    "text": "period 1"
+  },
+  {
+    "after_seconds": 61.5,
+    "text": "metrics reset"
+  },
+  {
+    "after_seconds": 71,
+    "text": "metrics"
+  },
+  {
+    "after_seconds": 71.2,
+    "text": "status"
+  },
+  {
+    "after_seconds": 73,
+    "text": "stop"
+  }
+]

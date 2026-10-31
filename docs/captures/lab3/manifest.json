@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-29T19:24:37.948144+02:00",
+  "build_id": "7eb6fca-401a17de6b40",
+  "head": "7eb6fcae869c1f2fea951a2694d8ae4dae44d329",
+  "measurement": "SysTick, 1 ms; microsecond fields are scaled millisecond values",
+  "clock_validated_on_mcu": false,
+  "flash_persistence_validated": false,
+  "files_sha256": {
+    "firmware/build/systick/firmware.elf": "620f86877273314e973cd62c8575900f2111ecf7f448ad6ff84e71202403a58d",
+    "firmware/build/systick/firmware.hex": "707963a4f38f190ffb19b621b29db8e925ea5883c06479a98a68d31fd3261ffb",
+    "firmware/build/systick/firmware.bin": "c5cfd03885517675c180c4482ee5b4188d37022c24a3e0bd3b29707268d41503",
+    "firmware/build/systick/build_identity.h": "3b36dbe67708ed80aa5159b6f0a734c5a4c880dcece7a770c638d5dfde417aa8",
+    "firmware/Platform/measurement.c": "2cf8b746c006116bc62c9bc6ffefd6ec33f7eb02179654136729c232b4d34b70",
+    "firmware/Platform/runtime.c": "d35b5df7d434d570ba2ec82ed1152cba7757f96b0245c74fc01470b5ed2ea9a8",
+    "firmware/Platform/internal_flash.c": "f59807dd57c37494db5a6e28471a57b0aded2f597314c62eb432f6251d631d6b",
+    "diagram-lab3.json": "acf83bc28b0087e79ae8a9679a68ce2e4f411fecfd29296d08ed88af91ab2eb6",
+    "diagram-lab3-hour.json": "5581e7f6461e94c65a1df3e755290be39577ed03cfcaf2cd29f54f34b65bf293",
+    "tools/lab3_metrics.py": "fde9b890bc601607a991bbc215f381a70a0c3e06f408e9a23ae2a1348001d68c",
+    "../../../Lab03/Work/systick-20261029/scenarios/S1.yaml": "576276cdb3da4c4425869ef46e59d0f063f02f891bb774dcb76b4611b2ca2cb9",
+    "../../../Lab03/Work/systick-20261029/scenarios/S2-hour.yaml": "59dee890190150ceb1904989cbe72b58c76f84c22a63cad52fee346bfe4544ea",
+    "../../../Lab03/Work/systick-20261029/scenarios/S3.yaml": "c0f20a3b5e66670643844d993c6e0defe50c5797f077afc991c861cbf1cd2f1a",
+    "../../../Lab03/Work/systick-20261029/scenarios/fault-recovery.yaml": "23e18b2e4b6e0a05c769e35a86c61624d1a2b71560e689e094914afc99865115",
+    "../../../Lab03/Work/systick-20261029/scenarios/sampling-sweep.yaml": "77b96de0edbbd9e1ab9dbbe3d865aec9414ab19fc3b74142d67b53c1eea2ca0b"
+  },
+  "flash_linker_bytes": 27504,
+  "ram_linker_bytes": 10104
+}

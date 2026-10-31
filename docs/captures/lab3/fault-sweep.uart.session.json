@@ -1,0 +1,122 @@
+{
+  "started_at": "2026-10-30T08:31:57.275617+02:00",
+  "duration_seconds": 78.0211473750096,
+  "port": 4503,
+  "end_reason": "duration_elapsed",
+  "commands": [
+    {
+      "wall_seconds": 1.0436040839995258,
+      "command": "run"
+    },
+    {
+      "wall_seconds": 2.0477106670005014,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 4.0475494590064045,
+      "command": "imuaddr 0x69"
+    },
+    {
+      "wall_seconds": 8.054469334005262,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 10.04144670900132,
+      "command": "imuaddr 0x68"
+    },
+    {
+      "wall_seconds": 14.042926292007905,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 15.04845524999837,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 17.04577158400207,
+      "command": "period 20"
+    },
+    {
+      "wall_seconds": 17.534893042000476,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 27.04394775000401,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 27.23542329200427,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 28.047424000003957,
+      "command": "period 10"
+    },
+    {
+      "wall_seconds": 28.534187750003184,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 38.0416898340045,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 38.22976933400787,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 39.04130337500828,
+      "command": "period 5"
+    },
+    {
+      "wall_seconds": 39.533667791998596,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 49.0540700420097,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 49.24848291699891,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 50.001572499997565,
+      "command": "period 2"
+    },
+    {
+      "wall_seconds": 50.531296708999434,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 60.01019337499747,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 60.20832962500572,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 61.00692304200493,
+      "command": "period 1"
+    },
+    {
+      "wall_seconds": 61.50478641700465,
+      "command": "metrics reset"
+    },
+    {
+      "wall_seconds": 71.01667754200753,
+      "command": "metrics"
+    },
+    {
+      "wall_seconds": 71.21233391700662,
+      "command": "status"
+    },
+    {
+      "wall_seconds": 73.01824304201,
+      "command": "stop"
+    }
+  ],
+  "uart_bytes": 23969,
+  "clock": "Host monotonic schedule; UART time_ms comes from the simulated MCU"
+}

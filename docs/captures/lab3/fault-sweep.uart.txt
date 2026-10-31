@@ -1,0 +1,187 @@
+status ms=13046 series=0 running=0 adc=1 raw=3413 light_ms=13044 imu=1 angle_cdeg=0 pose_ms=13046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=run result=ok ms=13355
+status ms=14046 series=1 running=1 adc=1 raw=3413 light_ms=14044 imu=1 angle_cdeg=0 pose_ms=14046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+metrics_reset us=14356000
+status ms=15046 series=1 running=1 adc=1 raw=3413 light_ms=15044 imu=1 angle_cdeg=0 pose_ms=15046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=16046 series=1 running=1 adc=1 raw=3413 light_ms=16044 imu=1 angle_cdeg=0 pose_ms=16046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=imuaddr address=105
+probe=imu result=1 ms=16356
+status ms=17046 series=1 running=1 adc=1 raw=3413 light_ms=17044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+probe=imu result=1 ms=17356
+status ms=18046 series=1 running=1 adc=1 raw=3413 light_ms=18044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+probe=imu result=1 ms=18356
+status ms=19046 series=1 running=1 adc=1 raw=3413 light_ms=19044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+probe=imu result=1 ms=19356
+status ms=20046 series=1 running=1 adc=1 raw=3413 light_ms=20044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+probe=imu result=1 ms=20356
+status ms=20364 series=1 running=1 adc=1 raw=3413 light_ms=20344 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=21046 series=1 running=1 adc=1 raw=3413 light_ms=21044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+probe=imu result=1 ms=21356
+status ms=22046 series=1 running=1 adc=1 raw=3413 light_ms=22044 imu=0 angle_cdeg=invalid pose_ms=16356 flags=26 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=imuaddr address=104
+probe=imu result=0 ms=22351
+status ms=23046 series=1 running=1 adc=1 raw=3413 light_ms=23044 imu=1 angle_cdeg=0 pose_ms=23046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=24046 series=1 running=1 adc=1 raw=3413 light_ms=24044 imu=1 angle_cdeg=0 pose_ms=24046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=25046 series=1 running=1 adc=1 raw=3413 light_ms=25044 imu=1 angle_cdeg=0 pose_ms=25046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=26046 series=1 running=1 adc=1 raw=3413 light_ms=26044 imu=1 angle_cdeg=0 pose_ms=26046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=26351 series=1 running=1 adc=1 raw=3413 light_ms=26344 imu=1 angle_cdeg=0 pose_ms=26346 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=27046 series=1 running=1 adc=1 raw=3413 light_ms=27044 imu=1 angle_cdeg=0 pose_ms=27046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=250737 min_us=0 avg_us=40 max_us=9000
+METRIC name=adc n=650 min_us=0 avg_us=0 max_us=0
+METRIC name=imu n=350 min_us=2000 avg_us=2000 max_us=2000
+METRIC name=retry n=7 min_us=1000 avg_us=1571 max_us=4000
+METRIC name=rx n=28 min_us=0 avg_us=642 max_us=7000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=13 min_us=6000 avg_us=6000 max_us=6000
+METRIC name=adc_interval n=650 min_us=14000 avg_us=20003 max_us=26000
+METRIC name=imu_interval n=351 min_us=20000 avg_us=37102 max_us=6020000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=27395000 elapsed_us=13039000 busy_us=813000 missed_adc=0 missed_imu=0 stack=1344 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=27395 resolution_us=1000
+status ms=28046 series=1 running=1 adc=1 raw=3413 light_ms=28044 imu=1 angle_cdeg=0 pose_ms=28046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=29046 series=1 running=1 adc=1 raw=3413 light_ms=29044 imu=1 angle_cdeg=0 pose_ms=29046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+period_ms=20
+metrics_reset us=29844000
+status ms=30046 series=1 running=1 adc=1 raw=3413 light_ms=30039 imu=1 angle_cdeg=0 pose_ms=30041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=31046 series=1 running=1 adc=1 raw=3413 light_ms=31039 imu=1 angle_cdeg=0 pose_ms=31041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=32046 series=1 running=1 adc=1 raw=3413 light_ms=32039 imu=1 angle_cdeg=0 pose_ms=32041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=33046 series=1 running=1 adc=1 raw=3413 light_ms=33039 imu=1 angle_cdeg=0 pose_ms=33041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=34046 series=1 running=1 adc=1 raw=3413 light_ms=34039 imu=1 angle_cdeg=0 pose_ms=34041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=35046 series=1 running=1 adc=1 raw=3413 light_ms=35039 imu=1 angle_cdeg=0 pose_ms=35041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=36046 series=1 running=1 adc=1 raw=3413 light_ms=36039 imu=1 angle_cdeg=0 pose_ms=36041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=37046 series=1 running=1 adc=1 raw=3413 light_ms=37039 imu=1 angle_cdeg=0 pose_ms=37041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=38046 series=1 running=1 adc=1 raw=3413 light_ms=38039 imu=1 angle_cdeg=0 pose_ms=38041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=39046 series=1 running=1 adc=1 raw=3413 light_ms=39039 imu=1 angle_cdeg=0 pose_ms=39041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=176142 min_us=0 avg_us=42 max_us=7000
+METRIC name=adc n=475 min_us=0 avg_us=0 max_us=0
+METRIC name=imu n=476 min_us=2000 avg_us=2002 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=6 min_us=0 avg_us=166 max_us=1000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=10 min_us=6000 avg_us=6000 max_us=6000
+METRIC name=adc_interval n=476 min_us=18000 avg_us=20000 max_us=22000
+METRIC name=imu_interval n=476 min_us=20000 avg_us=20000 max_us=20000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=39390000 elapsed_us=9546000 busy_us=1017000 missed_adc=0 missed_imu=0 stack=1344 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=39391 resolution_us=1000
+status ms=39547 series=1 running=1 adc=1 raw=3413 light_ms=39539 imu=1 angle_cdeg=0 pose_ms=39541 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=40046 series=1 running=1 adc=1 raw=3413 light_ms=40039 imu=1 angle_cdeg=0 pose_ms=40041 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+period_ms=10
+metrics_reset us=40848000
+status ms=41048 series=1 running=1 adc=1 raw=3413 light_ms=41046 imu=1 angle_cdeg=0 pose_ms=41048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=42048 series=1 running=1 adc=1 raw=3413 light_ms=42046 imu=1 angle_cdeg=0 pose_ms=42048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=43048 series=1 running=1 adc=1 raw=3413 light_ms=43046 imu=1 angle_cdeg=0 pose_ms=43048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=44048 series=1 running=1 adc=1 raw=3413 light_ms=44036 imu=1 angle_cdeg=0 pose_ms=44048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=45048 series=1 running=1 adc=1 raw=3413 light_ms=45036 imu=1 angle_cdeg=0 pose_ms=45048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=46048 series=1 running=1 adc=1 raw=3413 light_ms=46046 imu=1 angle_cdeg=0 pose_ms=46048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=47048 series=1 running=1 adc=1 raw=3413 light_ms=47046 imu=1 angle_cdeg=0 pose_ms=47048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=48048 series=1 running=1 adc=1 raw=3413 light_ms=48046 imu=1 angle_cdeg=0 pose_ms=48048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=49048 series=1 running=1 adc=1 raw=3413 light_ms=49046 imu=1 angle_cdeg=0 pose_ms=49048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=50048 series=1 running=1 adc=1 raw=3413 light_ms=50046 imu=1 angle_cdeg=0 pose_ms=50048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=150651 min_us=0 avg_us=50 max_us=9000
+METRIC name=adc n=950 min_us=0 avg_us=2 max_us=1000
+METRIC name=imu n=951 min_us=2000 avg_us=2000 max_us=2000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=6 min_us=0 avg_us=166 max_us=1000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=10 min_us=6000 avg_us=6000 max_us=6000
+METRIC name=adc_interval n=952 min_us=2000 avg_us=10002 max_us=18000
+METRIC name=imu_interval n=952 min_us=10000 avg_us=10002 max_us=12000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=50392000 elapsed_us=9544000 busy_us=1974000 missed_adc=0 missed_imu=0 stack=1344 heap=0 period_ms=10 rx_lost=0 tx_lost=0 hal_ms=50393 resolution_us=1000
+status ms=50543 series=1 running=1 adc=1 raw=3413 light_ms=50536 imu=1 angle_cdeg=0 pose_ms=50538 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=51048 series=1 running=1 adc=1 raw=3413 light_ms=51036 imu=1 angle_cdeg=0 pose_ms=51048 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+period_ms=5
+metrics_reset us=51850000
+status ms=52049 series=1 running=1 adc=1 raw=3413 light_ms=52047 imu=1 angle_cdeg=0 pose_ms=52049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=53049 series=1 running=1 adc=1 raw=3413 light_ms=53047 imu=1 angle_cdeg=0 pose_ms=53049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=54049 series=1 running=1 adc=1 raw=3413 light_ms=54047 imu=1 angle_cdeg=0 pose_ms=54049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=55049 series=1 running=1 adc=1 raw=3413 light_ms=55047 imu=1 angle_cdeg=0 pose_ms=55049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=56049 series=1 running=1 adc=1 raw=3413 light_ms=56047 imu=1 angle_cdeg=0 pose_ms=56049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=57049 series=1 running=1 adc=1 raw=3413 light_ms=57047 imu=1 angle_cdeg=0 pose_ms=57049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=58049 series=1 running=1 adc=1 raw=3413 light_ms=58047 imu=1 angle_cdeg=0 pose_ms=58049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=59049 series=1 running=1 adc=1 raw=3413 light_ms=59047 imu=1 angle_cdeg=0 pose_ms=59049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=60049 series=1 running=1 adc=1 raw=3413 light_ms=60047 imu=1 angle_cdeg=0 pose_ms=60049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=61049 series=1 running=1 adc=1 raw=3413 light_ms=61047 imu=1 angle_cdeg=0 pose_ms=61049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=100522 min_us=0 avg_us=82 max_us=9000
+METRIC name=adc n=1903 min_us=0 avg_us=10 max_us=1000
+METRIC name=imu n=1904 min_us=2000 avg_us=2000 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=2 min_us=0 avg_us=500 max_us=1000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=10 min_us=6000 avg_us=6000 max_us=6000
+METRIC name=adc_interval n=1910 min_us=3000 avg_us=5002 max_us=8000
+METRIC name=imu_interval n=1911 min_us=3000 avg_us=5002 max_us=9000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=61426000 elapsed_us=9576000 busy_us=3920000 missed_adc=1 missed_imu=1 stack=1344 heap=0 period_ms=5 rx_lost=0 tx_lost=0 hal_ms=61426 resolution_us=1000
+status ms=61559 series=1 running=1 adc=1 raw=3413 light_ms=61557 imu=1 angle_cdeg=0 pose_ms=61559 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=62049 series=1 running=1 adc=1 raw=3413 light_ms=62042 imu=1 angle_cdeg=0 pose_ms=62049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+period_ms=2
+metrics_reset us=62840000
+status ms=63049 series=1 running=1 adc=1 raw=3413 light_ms=63047 imu=1 angle_cdeg=0 pose_ms=63049 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=64050 series=1 running=1 adc=1 raw=3413 light_ms=64048 imu=1 angle_cdeg=0 pose_ms=64050 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=65052 series=1 running=1 adc=1 raw=3413 light_ms=65049 imu=1 angle_cdeg=0 pose_ms=65051 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=66053 series=1 running=1 adc=1 raw=3413 light_ms=66051 imu=1 angle_cdeg=0 pose_ms=66053 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=67055 series=1 running=1 adc=1 raw=3413 light_ms=67052 imu=1 angle_cdeg=0 pose_ms=67054 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=68056 series=1 running=1 adc=1 raw=3413 light_ms=68054 imu=1 angle_cdeg=0 pose_ms=68056 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=69057 series=1 running=1 adc=1 raw=3413 light_ms=69055 imu=1 angle_cdeg=0 pose_ms=69057 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=70059 series=1 running=1 adc=1 raw=3413 light_ms=70056 imu=1 angle_cdeg=0 pose_ms=70058 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=71060 series=1 running=1 adc=1 raw=3413 light_ms=71058 imu=1 angle_cdeg=0 pose_ms=71060 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=72062 series=1 running=1 adc=1 raw=3413 light_ms=72059 imu=1 angle_cdeg=0 pose_ms=72061 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=3700 min_us=2000 avg_us=2560 max_us=9000
+METRIC name=adc n=3702 min_us=0 avg_us=113 max_us=1000
+METRIC name=imu n=3703 min_us=2000 avg_us=2346 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=2 min_us=0 avg_us=500 max_us=1000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=10 min_us=6000 avg_us=6400 max_us=7000
+METRIC name=adc_interval n=3709 min_us=2000 avg_us=2569 max_us=9000
+METRIC name=imu_interval n=3710 min_us=2000 avg_us=2570 max_us=10000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=72391000 elapsed_us=9551000 busy_us=9360000 missed_adc=1062 missed_imu=1062 stack=1344 heap=0 period_ms=2 rx_lost=0 tx_lost=0 hal_ms=72391 resolution_us=1000
+status ms=72522 series=1 running=1 adc=1 raw=3413 light_ms=72519 imu=1 angle_cdeg=0 pose_ms=72521 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=73062 series=1 running=1 adc=1 raw=3413 light_ms=73060 imu=1 angle_cdeg=0 pose_ms=73062 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+period_ms=1
+metrics_reset us=73821000
+status ms=74062 series=1 running=1 adc=1 raw=3413 light_ms=74059 imu=1 angle_cdeg=0 pose_ms=74061 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=75063 series=1 running=1 adc=1 raw=3413 light_ms=75060 imu=1 angle_cdeg=0 pose_ms=75062 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=76064 series=1 running=1 adc=1 raw=3413 light_ms=76062 imu=1 angle_cdeg=0 pose_ms=76064 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=77065 series=1 running=1 adc=1 raw=3413 light_ms=77063 imu=1 angle_cdeg=0 pose_ms=77065 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=78067 series=1 running=1 adc=1 raw=3413 light_ms=78064 imu=1 angle_cdeg=0 pose_ms=78066 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=79068 series=1 running=1 adc=1 raw=3413 light_ms=79066 imu=1 angle_cdeg=0 pose_ms=79068 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=80069 series=1 running=1 adc=1 raw=3413 light_ms=80067 imu=1 angle_cdeg=0 pose_ms=80069 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=81071 series=1 running=1 adc=1 raw=3413 light_ms=81068 imu=1 angle_cdeg=0 pose_ms=81070 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=82072 series=1 running=1 adc=1 raw=3413 light_ms=82069 imu=1 angle_cdeg=0 pose_ms=82071 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=83073 series=1 running=1 adc=1 raw=3413 light_ms=83071 imu=1 angle_cdeg=0 pose_ms=83073 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+METRIC name=loop n=3702 min_us=2000 avg_us=2555 max_us=9000
+METRIC name=adc n=3704 min_us=0 avg_us=82 max_us=1000
+METRIC name=imu n=3705 min_us=2000 avg_us=2369 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=2 min_us=0 avg_us=500 max_us=1000
+METRIC name=button n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=status n=10 min_us=6000 avg_us=6400 max_us=7000
+METRIC name=adc_interval n=3711 min_us=2000 avg_us=2575 max_us=9000
+METRIC name=imu_interval n=3712 min_us=2000 avg_us=2576 max_us=10000
+METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0
+MEASURE us=83400000 elapsed_us=9579000 busy_us=9294000 missed_adc=5864 missed_imu=5863 stack=1344 heap=0 period_ms=1 rx_lost=0 tx_lost=0 hal_ms=83401 resolution_us=1000
+status ms=83529 series=1 running=1 adc=1 raw=3413 light_ms=83526 imu=1 angle_cdeg=0 pose_ms=83528 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=84073 series=1 running=1 adc=1 raw=3413 light_ms=84070 imu=1 angle_cdeg=0 pose_ms=84072 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=85074 series=1 running=1 adc=1 raw=3413 light_ms=85072 imu=1 angle_cdeg=0 pose_ms=85074 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=stop result=ok ms=85329
+summary series=1 reason=command adc_n=13560 pose_n=13261 angle_n=13261 mean_raw=3413 min_raw=3413 max_raw=3413 mean_cdeg=0
+quality adc_fail=0 imu_fail=2 adc_gaps=0 pose_gaps=1
+status ms=86075 series=1 running=0 adc=1 raw=3413 light_ms=86073 imu=1 angle_cdeg=0 pose_ms=86075 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=87075 series=1 running=0 adc=1 raw=3413 light_ms=87073 imu=1 angle_cdeg=0 pose_ms=87075 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=88075 series=1 running=0 adc=1 raw=3413 light_ms=88072 imu=1 angle_cdeg=0 pose_ms=88075 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=89075 series=1 running=0 adc=1 raw=3413 light_ms=89072 imu=1 angle_cdeg=0 pose_ms=89074 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+status ms=90075 series=1 running=0 adc=1 raw=3413 light_ms=90072 imu=1 angle_cdeg=0 pose_ms=90074 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0

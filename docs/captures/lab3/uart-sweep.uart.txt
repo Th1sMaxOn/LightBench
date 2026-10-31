@@ -1,0 +1,734 @@
+reply=point result=not_running
+status ms=9046 series=0 running=0 adc=1 raw=3413 light_ms=9044 imu=1 angle_cdeg=0 pose_ms=9046 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=run result=ok ms=9196
+point seq=1 series=1 ms=9526 edge_ms=9496 raw=3413 angle_cdeg=0 flags=0 light_ms=9524 pose_ms=9526
+fault=flash seq=0 pending=1
+status ms=10046 series=1 running=1 adc=1 raw=3413 light_ms=10044 imu=1 angle_cdeg=0 pose_ms=10046 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+metrics_reset us=10189000
+point seq=2 series=1 ms=10526 edge_ms=10496 raw=3413 angle_cdeg=0 flags=0 light_ms=10524 pose_ms=10526
+status ms=11046 series=1 running=1 adc=1 raw=3413 light_ms=11044 imu=1 angle_cdeg=0 pose_ms=11046 flags=0 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+point seq=3 series=1 ms=11526 edge_ms=11496 raw=3413 angle_cdeg=0 flags=0 light_ms=11524 pose_ms=11526
+status ms=12046 series=1 running=1 adc=1 raw=3413 light_ms=12044 imu=1 angle_cdeg=0 pose_ms=12046 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+status ms=12197 series=1 running=1 adc=1 raw=3413 light_ms=12184 imu=1 angle_cdeg=0 pose_ms=12186 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+export_begin count=3 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+export_end count=3 crc32=4cc6e2c1
+point seq=4 series=1 ms=12526 edge_ms=12496 raw=3413 angle_cdeg=0 flags=0 light_ms=12524 pose_ms=12526
+status ms=13046 series=1 running=1 adc=1 raw=3413 light_ms=13044 imu=1 angle_cdeg=0 pose_ms=13046 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+status ms=13188 series=1 running=1 adc=1 raw=3413 light_ms=13184 imu=1 angle_cdeg=0 pose_ms=13186 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+point seq=5 series=1 ms=13526 edge_ms=13496 raw=3413 angle_cdeg=0 flags=0 light_ms=13524 pose_ms=13526
+status ms=14046 series=1 running=1 adc=1 raw=3413 light_ms=14044 imu=1 angle_cdeg=0 pose_ms=14046 flags=0 points=5 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=4 failed=1
+status ms=14197 series=1 running=1 adc=1 raw=3413 light_ms=14184 imu=1 angle_cdeg=0 pose_ms=14186 flags=0 points=5 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=4 failed=1
+export_begin count=5 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+export_end count=5 crc32=ddeb12cc
+point seq=6 series=1 ms=14526 edge_ms=14496 raw=3413 angle_cdeg=0 flags=16 light_ms=14504 pose_ms=14526
+status ms=15046 series=1 running=1 adc=1 raw=3413 light_ms=15044 imu=1 angle_cdeg=0 pose_ms=15046 flags=0 points=6 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=5 failed=1
+status ms=15197 series=1 running=1 adc=1 raw=3413 light_ms=15184 imu=1 angle_cdeg=0 pose_ms=15186 flags=0 points=6 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=5 failed=1
+point seq=7 series=1 ms=15526 edge_ms=15496 raw=3413 angle_cdeg=0 flags=0 light_ms=15524 pose_ms=15526
+status ms=16046 series=1 running=1 adc=1 raw=3413 light_ms=16044 imu=1 angle_cdeg=0 pose_ms=16046 flags=0 points=7 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=6 failed=1
+point seq=8 series=1 ms=16526 edge_ms=16496 raw=3413 angle_cdeg=0 flags=0 light_ms=16524 pose_ms=16526
+METRIC name=loop n=113995 min_us=0 avg_us=45 max_us=10000
+METRIC name=adc n=326 min_us=0 avg_us=0 max_us=0
+METRIC name=imu n=326 min_us=2000 avg_us=2012 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=30 min_us=0 avg_us=900 max_us=7000
+METRIC name=button n=20 min_us=0 avg_us=1050 max_us=3000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=12 min_us=1000 avg_us=3500 max_us=5000
+METRIC name=status n=6 min_us=6000 avg_us=6000 max_us=6000
+METRIC name=adc_interval n=326 min_us=15000 avg_us=20000 max_us=25000
+METRIC name=imu_interval n=326 min_us=19000 avg_us=20003 max_us=21000
+METRIC name=reaction n=7 min_us=30000 avg_us=30000 max_us=30000
+MEASURE us=16747000 elapsed_us=6558000 busy_us=788000 missed_adc=0 missed_imu=0 stack=1320 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=16748 resolution_us=1000
+status ms=17046 series=1 running=1 adc=1 raw=3413 light_ms=17044 imu=1 angle_cdeg=0 pose_ms=17046 flags=0 points=8 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=7 failed=1
+status ms=17192 series=1 running=1 adc=1 raw=3413 light_ms=17184 imu=1 angle_cdeg=0 pose_ms=17186 flags=0 points=8 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=7 failed=1
+export_begin count=8 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+export_end count=8 crc32=4e710447
+status ms=17417 series=1 running=1 adc=1 raw=3413 light_ms=17404 imu=1 angle_cdeg=0 pose_ms=17406 flags=0 points=8 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=7 failed=1
+point seq=9 series=1 ms=17526 edge_ms=17496 raw=3413 angle_cdeg=0 flags=0 light_ms=17524 pose_ms=17526
+status ms=17601 series=1 running=1 adc=1 raw=3413 light_ms=17584 imu=1 angle_cdeg=0 pose_ms=17586 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+status ms=17801 series=1 running=1 adc=1 raw=3413 light_ms=17784 imu=1 angle_cdeg=0 pose_ms=17786 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+status ms=18001 series=1 running=1 adc=1 raw=3413 light_ms=17986 imu=1 angle_cdeg=0 pose_ms=17986 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+status ms=18046 series=1 running=1 adc=1 raw=3413 light_ms=18044 imu=1 angle_cdeg=0 pose_ms=18046 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+status ms=18186 series=1 running=1 adc=1 raw=3413 light_ms=18184 imu=1 angle_cdeg=0 pose_ms=18186 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+status ms=18386 series=1 running=1 adc=1 raw=3413 light_ms=18384 imu=1 angle_cdeg=0 pose_ms=18386 flags=0 points=9 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=8 failed=1
+point seq=10 series=1 ms=18526 edge_ms=18496 raw=3413 angle_cdeg=0 flags=0 light_ms=18524 pose_ms=18526
+status ms=18610 series=1 running=1 adc=1 raw=3413 light_ms=18604 imu=1 angle_cdeg=0 pose_ms=18606 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+status ms=18810 series=1 running=1 adc=1 raw=3413 light_ms=18804 imu=1 angle_cdeg=0 pose_ms=18806 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+status ms=19010 series=1 running=1 adc=1 raw=3413 light_ms=19004 imu=1 angle_cdeg=0 pose_ms=19006 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+status ms=19046 series=1 running=1 adc=1 raw=3413 light_ms=19044 imu=1 angle_cdeg=0 pose_ms=19046 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+status ms=19193 series=1 running=1 adc=1 raw=3413 light_ms=19184 imu=1 angle_cdeg=0 pose_ms=19186 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+export_begin count=10 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+export_end count=10 crc32=a8be9b87
+status ms=19421 series=1 running=1 adc=1 raw=3413 light_ms=19404 imu=1 angle_cdeg=0 pose_ms=19406 flags=0 points=10 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=9 failed=1
+point seq=11 series=1 ms=19527 edge_ms=19497 raw=3413 angle_cdeg=0 flags=0 light_ms=19524 pose_ms=19526
+status ms=19601 series=1 running=1 adc=1 raw=3413 light_ms=19584 imu=1 angle_cdeg=0 pose_ms=19586 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+status ms=19793 series=1 running=1 adc=1 raw=3413 light_ms=19784 imu=1 angle_cdeg=0 pose_ms=19786 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+status ms=19993 series=1 running=1 adc=1 raw=3413 light_ms=19984 imu=1 angle_cdeg=0 pose_ms=19986 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+status ms=20046 series=1 running=1 adc=1 raw=3413 light_ms=20044 imu=1 angle_cdeg=0 pose_ms=20046 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+status ms=20193 series=1 running=1 adc=1 raw=3413 light_ms=20184 imu=1 angle_cdeg=0 pose_ms=20186 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+status ms=20397 series=1 running=1 adc=1 raw=3413 light_ms=20384 imu=1 angle_cdeg=0 pose_ms=20386 flags=0 points=11 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=10 failed=1
+point seq=12 series=1 ms=20527 edge_ms=20497 raw=3413 angle_cdeg=0 flags=0 light_ms=20524 pose_ms=20526
+status ms=20606 series=1 running=1 adc=1 raw=3413 light_ms=20604 imu=1 angle_cdeg=0 pose_ms=20606 flags=0 points=12 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=11 failed=1
+status ms=20806 series=1 running=1 adc=1 raw=3413 light_ms=20804 imu=1 angle_cdeg=0 pose_ms=20806 flags=0 points=12 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=11 failed=1
+status ms=21006 series=1 running=1 adc=1 raw=3413 light_ms=21004 imu=1 angle_cdeg=0 pose_ms=21006 flags=0 points=12 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=11 failed=1
+status ms=21046 series=1 running=1 adc=1 raw=3413 light_ms=21044 imu=1 angle_cdeg=0 pose_ms=21046 flags=0 points=12 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=11 failed=1
+point seq=13 series=1 ms=21527 edge_ms=21497 raw=3413 angle_cdeg=0 flags=0 light_ms=21524 pose_ms=21526
+METRIC name=loop n=192127 min_us=0 avg_us=48 max_us=10000
+METRIC name=adc n=576 min_us=0 avg_us=5 max_us=1000
+METRIC name=imu n=576 min_us=2000 avg_us=2026 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=102 min_us=0 avg_us=1607 max_us=7000
+METRIC name=button n=35 min_us=0 avg_us=1142 max_us=3000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=34 min_us=1000 avg_us=3794 max_us=5000
+METRIC name=status n=11 min_us=6000 avg_us=6090 max_us=7000
+METRIC name=adc_interval n=576 min_us=15000 avg_us=20003 max_us=25000
+METRIC name=imu_interval n=576 min_us=16000 avg_us=20003 max_us=24000
+METRIC name=reaction n=12 min_us=30000 avg_us=30000 max_us=30000
+MEASURE us=21741000 elapsed_us=11552000 busy_us=1573000 missed_adc=0 missed_imu=0 stack=1344 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=21742 resolution_us=1000
+status ms=22046 series=1 running=1 adc=1 raw=3413 light_ms=22044 imu=1 angle_cdeg=0 pose_ms=22046 flags=0 points=13 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=12 failed=1
+status ms=22190 series=1 running=1 adc=1 raw=3413 light_ms=22184 imu=1 angle_cdeg=0 pose_ms=22186 flags=0 points=13 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=12 failed=1
+export_begin count=13 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+status ms=22284 series=1 running=1 adc=1 raw=3413 light_ms=22264 imu=1 angle_cdeg=0 pose_ms=22266 flags=0 points=13 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=12 failed=1
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+export_end count=13 crc32=d77bf919
+status ms=22372 series=1 running=1 adc=1 raw=3413 light_ms=22364 imu=1 angle_cdeg=0 pose_ms=22366 flags=0 points=13 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=12 failed=1
+status ms=22506 series=1 running=1 adc=1 raw=3413 light_ms=22504 imu=1 angle_cdeg=0 pose_ms=22506 flags=0 points=13 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=12 failed=1
+point seq=14 series=1 ms=22527 edge_ms=22497 raw=3413 angle_cdeg=0 flags=0 light_ms=22524 pose_ms=22526
+status ms=22614 series=1 running=1 adc=1 raw=3413 light_ms=22604 imu=1 angle_cdeg=0 pose_ms=22606 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=22714 series=1 running=1 adc=1 raw=3413 light_ms=22704 imu=1 angle_cdeg=0 pose_ms=22706 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=22810 series=1 running=1 adc=1 raw=3413 light_ms=22804 imu=1 angle_cdeg=0 pose_ms=22806 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=22906 series=1 running=1 adc=1 raw=3413 light_ms=22904 imu=1 angle_cdeg=0 pose_ms=22906 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23006 series=1 running=1 adc=1 raw=3413 light_ms=23004 imu=1 angle_cdeg=0 pose_ms=23006 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23046 series=1 running=1 adc=1 raw=3413 light_ms=23044 imu=1 angle_cdeg=0 pose_ms=23046 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23072 series=1 running=1 adc=1 raw=3413 light_ms=23064 imu=1 angle_cdeg=0 pose_ms=23066 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23168 series=1 running=1 adc=1 raw=3413 light_ms=23164 imu=1 angle_cdeg=0 pose_ms=23166 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23318 series=1 running=1 adc=1 raw=3413 light_ms=23304 imu=1 angle_cdeg=0 pose_ms=23306 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23410 series=1 running=1 adc=1 raw=3413 light_ms=23404 imu=1 angle_cdeg=0 pose_ms=23406 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+status ms=23502 series=1 running=1 adc=1 raw=3413 light_ms=23484 imu=1 angle_cdeg=0 pose_ms=23486 flags=0 points=14 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=13 failed=1
+point seq=15 series=1 ms=23527 edge_ms=23497 raw=3413 angle_cdeg=0 flags=0 light_ms=23524 pose_ms=23526
+status ms=23614 series=1 running=1 adc=1 raw=3413 light_ms=23604 imu=1 angle_cdeg=0 pose_ms=23606 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=23706 series=1 running=1 adc=1 raw=3413 light_ms=23704 imu=1 angle_cdeg=0 pose_ms=23706 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=23802 series=1 running=1 adc=1 raw=3413 light_ms=23786 imu=1 angle_cdeg=0 pose_ms=23786 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=23891 series=1 running=1 adc=1 raw=3413 light_ms=23884 imu=1 angle_cdeg=0 pose_ms=23886 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=23981 series=1 running=1 adc=1 raw=3413 light_ms=23964 imu=1 angle_cdeg=0 pose_ms=23966 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=24046 series=1 running=1 adc=1 raw=3413 light_ms=24044 imu=1 angle_cdeg=0 pose_ms=24046 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=24072 series=1 running=1 adc=1 raw=3413 light_ms=24064 imu=1 angle_cdeg=0 pose_ms=24066 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=24173 series=1 running=1 adc=1 raw=3413 light_ms=24164 imu=1 angle_cdeg=0 pose_ms=24166 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+status ms=24327 series=1 running=1 adc=1 raw=3413 light_ms=24324 imu=1 angle_cdeg=0 pose_ms=24326 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+export_begin count=15 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+status ms=24378 series=1 running=1 adc=1 raw=3413 light_ms=24366 imu=1 angle_cdeg=0 pose_ms=24368 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+14,1,22527,22524,22526,3413,0,0,0
+15,1,23527,23524,23526,3413,0,0,0
+export_end count=15 crc32=4f44ea7c
+status ms=24476 series=1 running=1 adc=1 raw=3413 light_ms=24464 imu=1 angle_cdeg=0 pose_ms=24466 flags=0 points=15 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=14 failed=1
+point seq=16 series=1 ms=24527 edge_ms=24497 raw=3413 angle_cdeg=0 flags=0 light_ms=24524 pose_ms=24526
+status ms=24601 series=1 running=1 adc=1 raw=3413 light_ms=24584 imu=1 angle_cdeg=0 pose_ms=24586 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=24693 series=1 running=1 adc=1 raw=3413 light_ms=24684 imu=1 angle_cdeg=0 pose_ms=24686 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=24789 series=1 running=1 adc=1 raw=3413 light_ms=24784 imu=1 angle_cdeg=0 pose_ms=24786 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=24883 series=1 running=1 adc=1 raw=3413 light_ms=24864 imu=1 angle_cdeg=0 pose_ms=24866 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=24978 series=1 running=1 adc=1 raw=3413 light_ms=24964 imu=1 angle_cdeg=0 pose_ms=24966 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25046 series=1 running=1 adc=1 raw=3413 light_ms=25024 imu=1 angle_cdeg=0 pose_ms=25046 flags=16 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25076 series=1 running=1 adc=1 raw=3413 light_ms=25064 imu=1 angle_cdeg=0 pose_ms=25066 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25182 series=1 running=1 adc=1 raw=3413 light_ms=25166 imu=1 angle_cdeg=0 pose_ms=25166 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25277 series=1 running=1 adc=1 raw=3413 light_ms=25264 imu=1 angle_cdeg=0 pose_ms=25266 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25377 series=1 running=1 adc=1 raw=3413 light_ms=25364 imu=1 angle_cdeg=0 pose_ms=25366 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+status ms=25473 series=1 running=1 adc=1 raw=3413 light_ms=25464 imu=1 angle_cdeg=0 pose_ms=25466 flags=0 points=16 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=15 failed=1
+point seq=17 series=1 ms=25527 edge_ms=25497 raw=3413 angle_cdeg=0 flags=0 light_ms=25524 pose_ms=25526
+status ms=25603 series=1 running=1 adc=1 raw=3413 light_ms=25584 imu=1 angle_cdeg=0 pose_ms=25586 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=25695 series=1 running=1 adc=1 raw=3413 light_ms=25684 imu=1 angle_cdeg=0 pose_ms=25686 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=25794 series=1 running=1 adc=1 raw=3413 light_ms=25784 imu=1 angle_cdeg=0 pose_ms=25786 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=25890 series=1 running=1 adc=1 raw=3413 light_ms=25884 imu=1 angle_cdeg=0 pose_ms=25886 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=25981 series=1 running=1 adc=1 raw=3413 light_ms=25966 imu=1 angle_cdeg=0 pose_ms=25966 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=26046 series=1 running=1 adc=1 raw=3413 light_ms=26044 imu=1 angle_cdeg=0 pose_ms=26046 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+status ms=26074 series=1 running=1 adc=1 raw=3413 light_ms=26064 imu=1 angle_cdeg=0 pose_ms=26066 flags=0 points=17 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=16 failed=1
+point seq=18 series=1 ms=26527 edge_ms=26497 raw=3413 angle_cdeg=0 flags=0 light_ms=26524 pose_ms=26526
+METRIC name=loop n=262011 min_us=0 avg_us=50 max_us=17000
+METRIC name=adc n=826 min_us=0 avg_us=7 max_us=1000
+METRIC name=imu n=826 min_us=2000 avg_us=2037 max_us=3000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=239 min_us=0 avg_us=1912 max_us=10000
+METRIC name=button n=50 min_us=0 avg_us=1160 max_us=4000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=66 min_us=1000 avg_us=3924 max_us=5000
+METRIC name=status n=16 min_us=6000 avg_us=6062 max_us=7000
+METRIC name=adc_interval n=826 min_us=12000 avg_us=20000 max_us=29000
+METRIC name=imu_interval n=826 min_us=12000 avg_us=20000 max_us=29000
+METRIC name=reaction n=17 min_us=30000 avg_us=30000 max_us=30000
+MEASURE us=26752000 elapsed_us=16563000 busy_us=2568000 missed_adc=0 missed_imu=0 stack=1396 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=26752 resolution_us=1000
+status ms=27046 series=1 running=1 adc=1 raw=3413 light_ms=27044 imu=1 angle_cdeg=0 pose_ms=27046 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+status ms=27193 series=1 running=1 adc=1 raw=3413 light_ms=27184 imu=1 angle_cdeg=0 pose_ms=27186 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+status ms=27230 series=1 running=1 adc=1 raw=3413 light_ms=27226 imu=1 angle_cdeg=0 pose_ms=27226 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+export_begin count=18 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+status ms=27325 series=1 running=1 adc=1 raw=3413 light_ms=27304 imu=1 angle_cdeg=0 pose_ms=27306 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+status ms=27334 series=1 running=1 adc=1 raw=3413 light_ms=27304 imu=1 angle_cdeg=0 pose_ms=27306 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+status ms=27376 series=1 running=1 adc=1 raw=3413 light_ms=27364 imu=1 angle_cdeg=0 pose_ms=27366 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+status ms=27423 series=1 running=1 adc=1 raw=3413 light_ms=27406 imu=1 angle_cdeg=0 pose_ms=27409 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+14,1,22527,22524,22526,3413,0,0,0
+15,1,23527,23524,23526,3413,0,0,0
+16,1,24527,24524,24526,3413,0,0,0
+17,1,25527,25524,25526,3413,0,0,0
+18,1,26527,26524,26526,3413,0,0,0
+export_end count=18 crc32=1d6e5cdb
+status ms=27472 series=1 running=1 adc=1 raw=3413 light_ms=27464 imu=1 angle_cdeg=0 pose_ms=27466 flags=0 points=18 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=17 failed=1
+point seq=19 series=1 ms=27527 edge_ms=27497 raw=3413 angle_cdeg=0 flags=0 light_ms=27524 pose_ms=27526
+status ms=27532 series=1 running=1 adc=1 raw=3413 light_ms=27524 imu=1 angle_cdeg=0 pose_ms=27526 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27572 series=1 running=1 adc=1 raw=3413 light_ms=27564 imu=1 angle_cdeg=0 pose_ms=27566 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27631 series=1 running=1 adc=1 raw=3413 light_ms=27624 imu=1 angle_cdeg=0 pose_ms=27626 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27672 series=1 running=1 adc=1 raw=3413 light_ms=27664 imu=1 angle_cdeg=0 pose_ms=27666 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27722 series=1 running=1 adc=1 raw=3413 light_ms=27704 imu=1 angle_cdeg=0 pose_ms=27706 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27773 series=1 running=1 adc=1 raw=3413 light_ms=27764 imu=1 angle_cdeg=0 pose_ms=27766 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27872 series=1 running=1 adc=1 raw=3413 light_ms=27864 imu=1 angle_cdeg=0 pose_ms=27866 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27879 series=1 running=1 adc=1 raw=3413 light_ms=27864 imu=1 angle_cdeg=0 pose_ms=27866 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27922 series=1 running=1 adc=1 raw=3413 light_ms=27904 imu=1 angle_cdeg=0 pose_ms=27906 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=27973 series=1 running=1 adc=1 raw=3413 light_ms=27964 imu=1 angle_cdeg=0 pose_ms=27966 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28046 series=1 running=1 adc=1 raw=3413 light_ms=28044 imu=1 angle_cdeg=0 pose_ms=28046 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28055 series=1 running=1 adc=1 raw=3413 light_ms=28044 imu=1 angle_cdeg=0 pose_ms=28046 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28072 series=1 running=1 adc=1 raw=3413 light_ms=28064 imu=1 angle_cdeg=0 pose_ms=28066 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28123 series=1 running=1 adc=1 raw=3413 light_ms=28104 imu=1 angle_cdeg=0 pose_ms=28106 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28172 series=1 running=1 adc=1 raw=3413 light_ms=28164 imu=1 angle_cdeg=0 pose_ms=28166 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28271 series=1 running=1 adc=1 raw=3413 light_ms=28264 imu=1 angle_cdeg=0 pose_ms=28266 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28281 series=1 running=1 adc=1 raw=3413 light_ms=28264 imu=1 angle_cdeg=0 pose_ms=28266 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28322 series=1 running=1 adc=1 raw=3413 light_ms=28304 imu=1 angle_cdeg=0 pose_ms=28306 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28373 series=1 running=1 adc=1 raw=3413 light_ms=28364 imu=1 angle_cdeg=0 pose_ms=28366 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28464 series=1 running=1 adc=1 raw=3413 light_ms=28444 imu=1 angle_cdeg=0 pose_ms=28446 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28473 series=1 running=1 adc=1 raw=3413 light_ms=28470 imu=1 angle_cdeg=0 pose_ms=28473 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+status ms=28523 series=1 running=1 adc=1 raw=3413 light_ms=28504 imu=1 angle_cdeg=0 pose_ms=28506 flags=0 points=19 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=18 failed=1
+point seq=20 series=1 ms=28535 edge_ms=28497 raw=3413 angle_cdeg=0 flags=0 light_ms=28532 pose_ms=28534
+status ms=28572 series=1 running=1 adc=1 raw=3413 light_ms=28564 imu=1 angle_cdeg=0 pose_ms=28566 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28668 series=1 running=1 adc=1 raw=3413 light_ms=28664 imu=1 angle_cdeg=0 pose_ms=28666 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28675 series=1 running=1 adc=1 raw=3413 light_ms=28664 imu=1 angle_cdeg=0 pose_ms=28666 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28727 series=1 running=1 adc=1 raw=3413 light_ms=28724 imu=1 angle_cdeg=0 pose_ms=28726 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28776 series=1 running=1 adc=1 raw=3413 light_ms=28764 imu=1 angle_cdeg=0 pose_ms=28766 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28866 series=1 running=1 adc=1 raw=3413 light_ms=28864 imu=1 angle_cdeg=0 pose_ms=28866 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28878 series=1 running=1 adc=1 raw=3413 light_ms=28864 imu=1 angle_cdeg=0 pose_ms=28866 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28922 series=1 running=1 adc=1 raw=3413 light_ms=28906 imu=1 angle_cdeg=0 pose_ms=28906 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=28973 series=1 running=1 adc=1 raw=3413 light_ms=28964 imu=1 angle_cdeg=0 pose_ms=28966 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29046 series=1 running=1 adc=1 raw=3413 light_ms=29044 imu=1 angle_cdeg=0 pose_ms=29046 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29053 series=1 running=1 adc=1 raw=3413 light_ms=29044 imu=1 angle_cdeg=0 pose_ms=29046 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29077 series=1 running=1 adc=1 raw=3413 light_ms=29064 imu=1 angle_cdeg=0 pose_ms=29066 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29127 series=1 running=1 adc=1 raw=3413 light_ms=29124 imu=1 angle_cdeg=0 pose_ms=29126 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29172 series=1 running=1 adc=1 raw=3413 light_ms=29164 imu=1 angle_cdeg=0 pose_ms=29166 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29272 series=1 running=1 adc=1 raw=3413 light_ms=29264 imu=1 angle_cdeg=0 pose_ms=29266 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+status ms=29282 series=1 running=1 adc=1 raw=3413 light_ms=29264 imu=1 angle_cdeg=0 pose_ms=29266 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+export_begin count=20 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+status ms=29323 series=1 running=1 adc=1 raw=3413 light_ms=29306 imu=1 angle_cdeg=0 pose_ms=29308 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+status ms=29377 series=1 running=1 adc=1 raw=3413 light_ms=29364 imu=1 angle_cdeg=0 pose_ms=29366 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+14,1,22527,22524,22526,3413,0,0,0
+15,1,23527,23524,23526,3413,0,0,0
+16,1,24527,24524,24526,3413,0,0,0
+17,1,25527,25524,25526,3413,0,0,0
+18,1,26527,26524,26526,3413,0,0,0
+19,1,27527,27524,27526,3413,0,0,0
+20,1,28535,28532,28534,3413,0,0,0
+status ms=29424 series=1 running=1 adc=1 raw=3413 light_ms=29407 imu=1 angle_cdeg=0 pose_ms=29409 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+export_end count=20 crc32=c3ed34f8
+status ms=29473 series=1 running=1 adc=1 raw=3413 light_ms=29464 imu=1 angle_cdeg=0 pose_ms=29466 flags=0 points=20 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=19 failed=1
+point seq=21 series=1 ms=29527 edge_ms=29497 raw=3413 angle_cdeg=0 flags=0 light_ms=29524 pose_ms=29526
+status ms=29532 series=1 running=1 adc=1 raw=3413 light_ms=29524 imu=1 angle_cdeg=0 pose_ms=29526 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29574 series=1 running=1 adc=1 raw=3413 light_ms=29564 imu=1 angle_cdeg=0 pose_ms=29566 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29631 series=1 running=1 adc=1 raw=3413 light_ms=29624 imu=1 angle_cdeg=0 pose_ms=29626 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29673 series=1 running=1 adc=1 raw=3413 light_ms=29664 imu=1 angle_cdeg=0 pose_ms=29666 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29723 series=1 running=1 adc=1 raw=3413 light_ms=29706 imu=1 angle_cdeg=0 pose_ms=29706 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29773 series=1 running=1 adc=1 raw=3413 light_ms=29764 imu=1 angle_cdeg=0 pose_ms=29766 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29863 series=1 running=1 adc=1 raw=3413 light_ms=29844 imu=1 angle_cdeg=0 pose_ms=29846 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29873 series=1 running=1 adc=1 raw=3413 light_ms=29870 imu=1 angle_cdeg=0 pose_ms=29872 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29923 series=1 running=1 adc=1 raw=3413 light_ms=29904 imu=1 angle_cdeg=0 pose_ms=29906 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=29972 series=1 running=1 adc=1 raw=3413 light_ms=29964 imu=1 angle_cdeg=0 pose_ms=29966 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30046 series=1 running=1 adc=1 raw=3413 light_ms=30044 imu=1 angle_cdeg=0 pose_ms=30046 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30055 series=1 running=1 adc=1 raw=3413 light_ms=30044 imu=1 angle_cdeg=0 pose_ms=30046 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30072 series=1 running=1 adc=1 raw=3413 light_ms=30065 imu=1 angle_cdeg=0 pose_ms=30067 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30123 series=1 running=1 adc=1 raw=3413 light_ms=30104 imu=1 angle_cdeg=0 pose_ms=30106 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30178 series=1 running=1 adc=1 raw=3413 light_ms=30164 imu=1 angle_cdeg=0 pose_ms=30166 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30273 series=1 running=1 adc=1 raw=3413 light_ms=30264 imu=1 angle_cdeg=0 pose_ms=30266 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30280 series=1 running=1 adc=1 raw=3413 light_ms=30264 imu=1 angle_cdeg=0 pose_ms=30266 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30323 series=1 running=1 adc=1 raw=3413 light_ms=30304 imu=1 angle_cdeg=0 pose_ms=30306 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30373 series=1 running=1 adc=1 raw=3413 light_ms=30364 imu=1 angle_cdeg=0 pose_ms=30366 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30464 series=1 running=1 adc=1 raw=3413 light_ms=30444 imu=1 angle_cdeg=0 pose_ms=30446 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30473 series=1 running=1 adc=1 raw=3413 light_ms=30470 imu=1 angle_cdeg=0 pose_ms=30473 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+status ms=30522 series=1 running=1 adc=1 raw=3413 light_ms=30504 imu=1 angle_cdeg=0 pose_ms=30506 flags=0 points=21 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=20 failed=1
+point seq=22 series=1 ms=30534 edge_ms=30497 raw=3413 angle_cdeg=0 flags=0 light_ms=30532 pose_ms=30534
+status ms=30573 series=1 running=1 adc=1 raw=3413 light_ms=30564 imu=1 angle_cdeg=0 pose_ms=30566 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30670 series=1 running=1 adc=1 raw=3413 light_ms=30666 imu=1 angle_cdeg=0 pose_ms=30666 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30678 series=1 running=1 adc=1 raw=3413 light_ms=30666 imu=1 angle_cdeg=0 pose_ms=30666 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30727 series=1 running=1 adc=1 raw=3413 light_ms=30724 imu=1 angle_cdeg=0 pose_ms=30726 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30777 series=1 running=1 adc=1 raw=3413 light_ms=30764 imu=1 angle_cdeg=0 pose_ms=30766 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30868 series=1 running=1 adc=1 raw=3413 light_ms=30864 imu=1 angle_cdeg=0 pose_ms=30866 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30874 series=1 running=1 adc=1 raw=3413 light_ms=30864 imu=1 angle_cdeg=0 pose_ms=30866 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30927 series=1 running=1 adc=1 raw=3413 light_ms=30924 imu=1 angle_cdeg=0 pose_ms=30926 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=30976 series=1 running=1 adc=1 raw=3413 light_ms=30964 imu=1 angle_cdeg=0 pose_ms=30966 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=31046 series=1 running=1 adc=1 raw=3413 light_ms=31044 imu=1 angle_cdeg=0 pose_ms=31046 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=31053 series=1 running=1 adc=1 raw=3413 light_ms=31044 imu=1 angle_cdeg=0 pose_ms=31046 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+status ms=31076 series=1 running=1 adc=1 raw=3413 light_ms=31064 imu=1 angle_cdeg=0 pose_ms=31066 flags=0 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+fault=imu bus=2 ms=31134
+status ms=31135 series=1 running=1 adc=1 raw=3413 light_ms=31124 imu=0 angle_cdeg=invalid pose_ms=31134 flags=2 points=22 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=21 failed=1
+point seq=23 series=1 ms=31527 edge_ms=31497 raw=3413 angle_cdeg=65535 flags=26 light_ms=31524 pose_ms=31134
+METRIC name=loop n=316364 min_us=0 avg_us=55 max_us=26000
+METRIC name=adc n=1076 min_us=0 avg_us=8 max_us=1000
+METRIC name=imu n=1046 min_us=2000 avg_us=2071 max_us=11000
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=rx n=402 min_us=0 avg_us=2888 max_us=18000
+METRIC name=button n=65 min_us=0 avg_us=1215 max_us=5000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=108 min_us=1000 avg_us=3990 max_us=5000
+METRIC name=status n=21 min_us=6000 avg_us=6142 max_us=7000
+METRIC name=adc_interval n=1076 min_us=8000 avg_us=20000 max_us=39000
+METRIC name=imu_interval n=1045 min_us=11000 avg_us=20019 max_us=40000
+METRIC name=reaction n=22 min_us=30000 avg_us=30681 max_us=38000
+MEASURE us=31742000 elapsed_us=21553000 busy_us=3982000 missed_adc=0 missed_imu=1 stack=1396 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=31743 resolution_us=1000
+status ms=32046 series=1 running=1 adc=1 raw=3413 light_ms=32044 imu=0 angle_cdeg=invalid pose_ms=31134 flags=26 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+probe=imu result=0 ms=32137
+status ms=32202 series=1 running=1 adc=1 raw=3413 light_ms=32184 imu=1 angle_cdeg=0 pose_ms=32186 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32209 series=1 running=1 adc=1 raw=3413 light_ms=32184 imu=1 angle_cdeg=0 pose_ms=32186 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32227 series=1 running=1 adc=1 raw=3413 light_ms=32224 imu=1 angle_cdeg=0 pose_ms=32226 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32252 series=1 running=1 adc=1 raw=3413 light_ms=32244 imu=1 angle_cdeg=0 pose_ms=32246 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32278 series=1 running=1 adc=1 raw=3413 light_ms=32264 imu=1 angle_cdeg=0 pose_ms=32266 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+export_begin count=23 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+status ms=32302 series=1 running=1 adc=1 raw=3413 light_ms=32287 imu=1 angle_cdeg=0 pose_ms=32289 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+status ms=32328 series=1 running=1 adc=1 raw=3413 light_ms=32312 imu=1 angle_cdeg=0 pose_ms=32314 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+status ms=32353 series=1 running=1 adc=1 raw=3413 light_ms=32345 imu=1 angle_cdeg=0 pose_ms=32347 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+status ms=32379 series=1 running=1 adc=1 raw=3413 light_ms=32366 imu=1 angle_cdeg=0 pose_ms=32368 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+status ms=32405 series=1 running=1 adc=1 raw=3413 light_ms=32388 imu=1 angle_cdeg=0 pose_ms=32390 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+14,1,22527,22524,22526,3413,0,0,0
+status ms=32432 series=1 running=1 adc=1 raw=3413 light_ms=32424 imu=1 angle_cdeg=0 pose_ms=32426 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32451 series=1 running=1 adc=1 raw=3413 light_ms=32444 imu=1 angle_cdeg=0 pose_ms=32446 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32477 series=1 running=1 adc=1 raw=3413 light_ms=32466 imu=1 angle_cdeg=0 pose_ms=32466 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+status ms=32501 series=1 running=1 adc=1 raw=3413 light_ms=32486 imu=1 angle_cdeg=0 pose_ms=32488 flags=0 points=23 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=22 failed=1
+point seq=24 series=1 ms=32527 edge_ms=32497 raw=3413 angle_cdeg=0 flags=0 light_ms=32524 pose_ms=32526
+status ms=32532 series=1 running=1 adc=1 raw=3413 light_ms=32524 imu=1 angle_cdeg=0 pose_ms=32526 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32552 series=1 running=1 adc=1 raw=3413 light_ms=32544 imu=1 angle_cdeg=0 pose_ms=32546 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32576 series=1 running=1 adc=1 raw=3413 light_ms=32564 imu=1 angle_cdeg=0 pose_ms=32566 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32601 series=1 running=1 adc=1 raw=3413 light_ms=32586 imu=1 angle_cdeg=0 pose_ms=32588 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32627 series=1 running=1 adc=1 raw=3413 light_ms=32624 imu=1 angle_cdeg=0 pose_ms=32626 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32652 series=1 running=1 adc=1 raw=3413 light_ms=32644 imu=1 angle_cdeg=0 pose_ms=32646 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32702 series=1 running=1 adc=1 raw=3413 light_ms=32684 imu=1 angle_cdeg=0 pose_ms=32686 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=1 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32727 series=1 running=1 adc=1 raw=3413 light_ms=32724 imu=1 angle_cdeg=0 pose_ms=32726 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=1 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32752 series=1 running=1 adc=1 raw=3413 light_ms=32744 imu=1 angle_cdeg=0 pose_ms=32746 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=1 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32802 series=1 running=1 adc=1 raw=3413 light_ms=32784 imu=1 angle_cdeg=0 pose_ms=32786 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=2 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32827 series=1 running=1 adc=1 raw=3413 light_ms=32824 imu=1 angle_cdeg=0 pose_ms=32826 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=2 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32852 series=1 running=1 adc=1 raw=3413 light_ms=32844 imu=1 angle_cdeg=0 pose_ms=32846 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=2 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32901 series=1 running=1 adc=1 raw=3413 light_ms=32884 imu=1 angle_cdeg=0 pose_ms=32886 flags=0 points=24 overwritten=0 rx_lost=0 tx_lost=3 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+fault=imu bus=2 ms=32934
+status ms=32935 series=1 running=1 adc=1 raw=3413 light_ms=32924 imu=0 angle_cdeg=invalid pose_ms=32934 flags=2 points=24 overwritten=0 rx_lost=0 tx_lost=3 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=32952 series=1 running=1 adc=1 raw=3413 light_ms=32944 imu=0 angle_cdeg=invalid pose_ms=32934 flags=2 points=24 overwritten=0 rx_lost=0 tx_lost=3 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33001 series=1 running=1 adc=1 raw=3413 light_ms=32984 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=4 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33027 series=1 running=1 adc=1 raw=3413 light_ms=33024 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=4 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33052 series=1 running=1 adc=1 raw=3413 light_ms=33044 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=5 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33102 series=1 running=1 adc=1 raw=3413 light_ms=33084 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=6 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33127 series=1 running=1 adc=1 raw=3413 light_ms=33124 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=6 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33176 series=1 running=1 adc=1 raw=3413 light_ms=33164 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=7 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33201 series=1 running=1 adc=1 raw=3413 light_ms=33185 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=7 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33227 series=1 running=1 adc=1 raw=3413 light_ms=33224 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=7 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33276 series=1 running=1 adc=1 raw=3413 light_ms=33264 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=8 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33302 series=1 running=1 adc=1 raw=3413 light_ms=33285 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=8 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33327 series=1 running=1 adc=1 raw=3413 light_ms=33324 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=8 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33377 series=1 running=1 adc=1 raw=3413 light_ms=33364 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=9 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33401 series=1 running=1 adc=1 raw=3413 light_ms=33386 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=9 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33426 series=1 running=1 adc=1 raw=3413 light_ms=33424 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=9 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33477 series=1 running=1 adc=1 raw=3413 light_ms=33464 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=10 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33502 series=1 running=1 adc=1 raw=3413 light_ms=33486 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=10 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33526 series=1 running=1 adc=1 raw=3413 light_ms=33524 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=24 overwritten=0 rx_lost=0 tx_lost=10 store=flash pending=1 committed=0 rejected=128 lost=23 failed=1
+status ms=33577 series=1 running=1 adc=1 raw=3413 light_ms=33564 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=12 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33602 series=1 running=1 adc=1 raw=3413 light_ms=33586 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=12 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33651 series=1 running=1 adc=1 raw=3413 light_ms=33644 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=13 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33676 series=1 running=1 adc=1 raw=3413 light_ms=33664 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=13 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33701 series=1 running=1 adc=1 raw=3413 light_ms=33685 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=13 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33752 series=1 running=1 adc=1 raw=3413 light_ms=33744 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=14 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33776 series=1 running=1 adc=1 raw=3413 light_ms=33764 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=14 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33801 series=1 running=1 adc=1 raw=3413 light_ms=33785 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=14 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33848 series=1 running=1 adc=1 raw=3413 light_ms=33844 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=15 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33877 series=1 running=1 adc=1 raw=3413 light_ms=33864 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=15 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33910 series=1 running=1 adc=1 raw=3413 light_ms=33904 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=15 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=33932 series=1 running=1 adc=1 raw=3413 light_ms=33924 imu=0 angle_cdeg=invalid pose_ms=32934 flags=26 points=25 overwritten=0 rx_lost=0 tx_lost=15 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+probe=imu result=0 ms=33945
+status ms=33974 series=1 running=1 adc=1 raw=3413 light_ms=33964 imu=1 angle_cdeg=0 pose_ms=33966 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=16 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34003 series=1 running=1 adc=1 raw=3413 light_ms=33984 imu=1 angle_cdeg=0 pose_ms=33986 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=16 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34046 series=1 running=1 adc=1 raw=3413 light_ms=34044 imu=1 angle_cdeg=0 pose_ms=34046 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=17 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34078 series=1 running=1 adc=1 raw=3413 light_ms=34064 imu=1 angle_cdeg=0 pose_ms=34066 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=18 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34103 series=1 running=1 adc=1 raw=3413 light_ms=34087 imu=1 angle_cdeg=0 pose_ms=34089 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=18 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34153 series=1 running=1 adc=1 raw=3413 light_ms=34144 imu=1 angle_cdeg=0 pose_ms=34146 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=19 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34178 series=1 running=1 adc=1 raw=3413 light_ms=34164 imu=1 angle_cdeg=0 pose_ms=34166 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=19 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34202 series=1 running=1 adc=1 raw=3413 light_ms=34187 imu=1 angle_cdeg=0 pose_ms=34189 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=19 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34253 series=1 running=1 adc=1 raw=3413 light_ms=34244 imu=1 angle_cdeg=0 pose_ms=34246 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=20 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+reply=export result=busy
+status ms=34279 series=1 running=1 adc=1 raw=3413 light_ms=34264 imu=1 angle_cdeg=0 pose_ms=34266 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=20 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34302 series=1 running=1 adc=1 raw=3413 light_ms=34288 imu=1 angle_cdeg=0 pose_ms=34290 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=20 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34353 series=1 running=1 adc=1 raw=3413 light_ms=34344 imu=1 angle_cdeg=0 pose_ms=34346 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=21 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34372 series=1 running=1 adc=1 raw=3413 light_ms=34364 imu=1 angle_cdeg=0 pose_ms=34366 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=21 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34423 series=1 running=1 adc=1 raw=3413 light_ms=34404 imu=1 angle_cdeg=0 pose_ms=34406 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=22 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34448 series=1 running=1 adc=1 raw=3413 light_ms=34444 imu=1 angle_cdeg=0 pose_ms=34446 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=22 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34474 series=1 running=1 adc=1 raw=3413 light_ms=34464 imu=1 angle_cdeg=0 pose_ms=34466 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=22 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+status ms=34502 series=1 running=1 adc=1 raw=3413 light_ms=34484 imu=1 angle_cdeg=0 pose_ms=34486 flags=0 points=25 overwritten=0 rx_lost=0 tx_lost=22 store=flash pending=1 committed=0 rejected=128 lost=24 failed=1
+point seq=26 series=1 ms=34527 edge_ms=34497 raw=3413 angle_cdeg=0 flags=0 light_ms=34524 pose_ms=34526
+status ms=34552 series=1 running=1 adc=1 raw=3413 light_ms=34546 imu=1 angle_cdeg=0 pose_ms=34546 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=23 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34598 series=1 running=1 adc=1 raw=3413 light_ms=34584 imu=1 angle_cdeg=0 pose_ms=34586 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=24 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34623 series=1 running=1 adc=1 raw=3413 light_ms=34607 imu=1 angle_cdeg=0 pose_ms=34609 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=24 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34649 series=1 running=1 adc=1 raw=3413 light_ms=34644 imu=1 angle_cdeg=0 pose_ms=34646 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=24 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34704 series=1 running=1 adc=1 raw=3413 light_ms=34684 imu=1 angle_cdeg=0 pose_ms=34686 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=25 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34727 series=1 running=1 adc=1 raw=3413 light_ms=34724 imu=1 angle_cdeg=0 pose_ms=34726 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=25 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34753 series=1 running=1 adc=1 raw=3413 light_ms=34744 imu=1 angle_cdeg=0 pose_ms=34746 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=25 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34798 series=1 running=1 adc=1 raw=3413 light_ms=34784 imu=1 angle_cdeg=0 pose_ms=34786 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=26 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34823 series=1 running=1 adc=1 raw=3413 light_ms=34808 imu=1 angle_cdeg=0 pose_ms=34810 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=26 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34848 series=1 running=1 adc=1 raw=3413 light_ms=34844 imu=1 angle_cdeg=0 pose_ms=34846 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=26 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34898 series=1 running=1 adc=1 raw=3413 light_ms=34884 imu=1 angle_cdeg=0 pose_ms=34886 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=27 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34923 series=1 running=1 adc=1 raw=3413 light_ms=34907 imu=1 angle_cdeg=0 pose_ms=34909 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=27 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34948 series=1 running=1 adc=1 raw=3413 light_ms=34944 imu=1 angle_cdeg=0 pose_ms=34946 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=27 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=34997 series=1 running=1 adc=1 raw=3413 light_ms=34984 imu=1 angle_cdeg=0 pose_ms=34986 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=28 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35030 series=1 running=1 adc=1 raw=3413 light_ms=35024 imu=1 angle_cdeg=0 pose_ms=35026 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=28 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35046 series=1 running=1 adc=1 raw=3413 light_ms=35044 imu=1 angle_cdeg=0 pose_ms=35046 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=28 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35073 series=1 running=1 adc=1 raw=3413 light_ms=35064 imu=1 angle_cdeg=0 pose_ms=35066 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=29 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35122 series=1 running=1 adc=1 raw=3413 light_ms=35104 imu=1 angle_cdeg=0 pose_ms=35106 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=30 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35147 series=1 running=1 adc=1 raw=3413 light_ms=35144 imu=1 angle_cdeg=0 pose_ms=35146 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=30 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35173 series=1 running=1 adc=1 raw=3413 light_ms=35164 imu=1 angle_cdeg=0 pose_ms=35166 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=30 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35231 series=1 running=1 adc=1 raw=3413 light_ms=35224 imu=1 angle_cdeg=0 pose_ms=35226 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=31 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35248 series=1 running=1 adc=1 raw=3413 light_ms=35244 imu=1 angle_cdeg=0 pose_ms=35246 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=31 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35277 series=1 running=1 adc=1 raw=3413 light_ms=35264 imu=1 angle_cdeg=0 pose_ms=35266 flags=0 points=26 overwritten=0 rx_lost=0 tx_lost=31 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+fault=imu bus=2 ms=35334
+status ms=35335 series=1 running=1 adc=1 raw=3413 light_ms=35324 imu=0 angle_cdeg=invalid pose_ms=35334 flags=2 points=26 overwritten=0 rx_lost=0 tx_lost=32 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35352 series=1 running=1 adc=1 raw=3413 light_ms=35344 imu=0 angle_cdeg=invalid pose_ms=35334 flags=2 points=26 overwritten=0 rx_lost=0 tx_lost=32 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35377 series=1 running=1 adc=1 raw=3413 light_ms=35364 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=26 overwritten=0 rx_lost=0 tx_lost=32 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35427 series=1 running=1 adc=1 raw=3413 light_ms=35424 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=26 overwritten=0 rx_lost=0 tx_lost=33 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35452 series=1 running=1 adc=1 raw=3413 light_ms=35444 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=26 overwritten=0 rx_lost=0 tx_lost=33 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35501 series=1 running=1 adc=1 raw=3413 light_ms=35484 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=26 overwritten=0 rx_lost=0 tx_lost=34 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+status ms=35526 series=1 running=1 adc=1 raw=3413 light_ms=35524 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=26 overwritten=0 rx_lost=0 tx_lost=34 store=flash pending=1 committed=0 rejected=128 lost=25 failed=1
+point seq=27 series=1 ms=35535 edge_ms=35497 raw=3413 angle_cdeg=65535 flags=26 light_ms=35524 pose_ms=35334
+status ms=35576 series=1 running=1 adc=1 raw=3413 light_ms=35564 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=35 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35602 series=1 running=1 adc=1 raw=3413 light_ms=35585 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=35 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35651 series=1 running=1 adc=1 raw=3413 light_ms=35644 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=36 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35676 series=1 running=1 adc=1 raw=3413 light_ms=35664 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=36 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35702 series=1 running=1 adc=1 raw=3413 light_ms=35685 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=36 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35751 series=1 running=1 adc=1 raw=3413 light_ms=35744 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=37 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35777 series=1 running=1 adc=1 raw=3413 light_ms=35764 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=37 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35802 series=1 running=1 adc=1 raw=3413 light_ms=35786 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=37 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35852 series=1 running=1 adc=1 raw=3413 light_ms=35844 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=38 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35876 series=1 running=1 adc=1 raw=3413 light_ms=35864 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=38 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35902 series=1 running=1 adc=1 raw=3413 light_ms=35885 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=38 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35952 series=1 running=1 adc=1 raw=3413 light_ms=35944 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=39 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=35977 series=1 running=1 adc=1 raw=3413 light_ms=35964 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=39 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=36026 series=1 running=1 adc=1 raw=3413 light_ms=36024 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=40 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=36046 series=1 running=1 adc=1 raw=3413 light_ms=36044 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=40 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=36077 series=1 running=1 adc=1 raw=3413 light_ms=36064 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=41 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=36126 series=1 running=1 adc=1 raw=3413 light_ms=36124 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+status ms=36152 series=1 running=1 adc=1 raw=3413 light_ms=36144 imu=0 angle_cdeg=invalid pose_ms=35334 flags=26 points=27 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=26 failed=1
+15,1,23527,23524,23526,3413,0,0,0
+16,1,24527,24524,24526,3413,0,0,0
+17,1,25527,25524,25526,3413,0,0,0
+18,1,26527,26524,26526,3413,0,0,0
+19,1,27527,27524,27526,3413,0,0,0
+20,1,28535,28532,28534,3413,0,0,0
+21,1,29527,29524,29526,3413,0,0,0
+22,1,30534,30532,30534,3413,0,0,0
+23,1,31527,31524,31134,3413,65535,26,0
+export_end count=23 crc32=873f7e97
+probe=imu result=0 ms=36338
+point seq=28 series=1 ms=36527 edge_ms=36497 raw=3413 angle_cdeg=0 flags=0 light_ms=36524 pose_ms=36526
+METRIC name=loop n=353583 min_us=0 avg_us=61 max_us=26000
+METRIC name=adc n=1326 min_us=0 avg_us=12 max_us=1000
+METRIC name=imu n=1175 min_us=2000 avg_us=2108 max_us=11000
+METRIC name=retry n=3 min_us=4000 avg_us=5000 max_us=6000
+METRIC name=rx n=665 min_us=0 avg_us=3857 max_us=18000
+METRIC name=button n=80 min_us=0 avg_us=1262 max_us=5000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=133 min_us=1000 avg_us=4037 max_us=5000
+METRIC name=status n=26 min_us=6000 avg_us=6538 max_us=10000
+METRIC name=adc_interval n=1327 min_us=6000 avg_us=20000 max_us=39000
+METRIC name=imu_interval n=1176 min_us=6000 avg_us=22568 max_us=1023000
+METRIC name=reaction n=27 min_us=30000 avg_us=31148 max_us=38000
+MEASURE us=36757000 elapsed_us=26568000 busy_us=5901000 missed_adc=0 missed_imu=1 stack=1428 heap=0 period_ms=20 rx_lost=0 tx_lost=42 hal_ms=36757 resolution_us=1000
+status ms=37046 series=1 running=1 adc=1 raw=3413 light_ms=37044 imu=1 angle_cdeg=0 pose_ms=37046 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37198 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37205 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37215 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37224 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37234 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=12 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37244 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=12 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37253 series=1 running=1 adc=1 raw=3413 light_ms=37184 imu=1 angle_cdeg=0 pose_ms=37186 flags=12 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37266 series=1 running=1 adc=1 raw=3413 light_ms=37263 imu=1 angle_cdeg=0 pose_ms=37265 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37277 series=1 running=1 adc=1 raw=3413 light_ms=37263 imu=1 angle_cdeg=0 pose_ms=37265 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37290 series=1 running=1 adc=1 raw=3413 light_ms=37286 imu=1 angle_cdeg=0 pose_ms=37288 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37299 series=1 running=1 adc=1 raw=3413 light_ms=37286 imu=1 angle_cdeg=0 pose_ms=37288 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37314 series=1 running=1 adc=1 raw=3413 light_ms=37309 imu=1 angle_cdeg=0 pose_ms=37311 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37324 series=1 running=1 adc=1 raw=3413 light_ms=37309 imu=1 angle_cdeg=0 pose_ms=37311 flags=0 points=28 overwritten=0 rx_lost=0 tx_lost=42 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+fault=imu bus=2 ms=37356
+status ms=37357 series=1 running=1 adc=1 raw=3413 light_ms=37346 imu=0 angle_cdeg=invalid pose_ms=37356 flags=2 points=28 overwritten=0 rx_lost=0 tx_lost=43 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37389 series=1 running=1 adc=1 raw=3413 light_ms=37384 imu=0 angle_cdeg=invalid pose_ms=37356 flags=18 points=28 overwritten=0 rx_lost=0 tx_lost=45 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37422 series=1 running=1 adc=1 raw=3413 light_ms=37405 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=28 overwritten=0 rx_lost=0 tx_lost=47 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37454 series=1 running=1 adc=1 raw=3413 light_ms=37444 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=28 overwritten=0 rx_lost=0 tx_lost=48 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37489 series=1 running=1 adc=1 raw=3413 light_ms=37484 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=28 overwritten=0 rx_lost=0 tx_lost=50 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37523 series=1 running=1 adc=1 raw=3413 light_ms=37505 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=28 overwritten=0 rx_lost=0 tx_lost=52 store=flash pending=1 committed=0 rejected=128 lost=27 failed=1
+status ms=37565 series=1 running=1 adc=1 raw=3413 light_ms=37564 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=55 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37598 series=1 running=1 adc=1 raw=3413 light_ms=37584 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=57 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37640 series=1 running=1 adc=1 raw=3413 light_ms=37629 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=59 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37664 series=1 running=1 adc=1 raw=3413 light_ms=37664 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=60 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37697 series=1 running=1 adc=1 raw=3413 light_ms=37687 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=62 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37731 series=1 running=1 adc=1 raw=3413 light_ms=37724 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=63 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37765 series=1 running=1 adc=1 raw=3413 light_ms=37764 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=65 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37797 series=1 running=1 adc=1 raw=3413 light_ms=37784 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=67 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37840 series=1 running=1 adc=1 raw=3413 light_ms=37829 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=69 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37864 series=1 running=1 adc=1 raw=3413 light_ms=37864 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=70 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37902 series=1 running=1 adc=1 raw=3413 light_ms=37884 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=72 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37942 series=1 running=1 adc=1 raw=3413 light_ms=37924 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=74 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=37973 series=1 running=1 adc=1 raw=3413 light_ms=37964 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=76 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38014 series=1 running=1 adc=1 raw=3413 light_ms=38004 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=78 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38039 series=1 running=1 adc=1 raw=3413 light_ms=38030 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=79 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38076 series=1 running=1 adc=1 raw=3413 light_ms=38064 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=82 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38103 series=1 running=1 adc=1 raw=3413 light_ms=38086 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=83 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38153 series=1 running=1 adc=1 raw=3413 light_ms=38144 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=86 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38178 series=1 running=1 adc=1 raw=3413 light_ms=38169 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=87 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38211 series=1 running=1 adc=1 raw=3413 light_ms=38209 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=89 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38254 series=1 running=1 adc=1 raw=3413 light_ms=38245 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=91 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38278 series=1 running=1 adc=1 raw=3413 light_ms=38270 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=92 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38313 series=1 running=1 adc=1 raw=3413 light_ms=38304 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=94 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38347 series=1 running=1 adc=1 raw=3413 light_ms=38344 imu=0 angle_cdeg=invalid pose_ms=37356 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=96 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+probe=imu result=0 ms=38360
+fault=imu bus=2 ms=38394
+status ms=38395 series=1 running=1 adc=1 raw=3413 light_ms=38384 imu=0 angle_cdeg=invalid pose_ms=38394 flags=2 points=29 overwritten=0 rx_lost=0 tx_lost=98 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38419 series=1 running=1 adc=1 raw=3413 light_ms=38411 imu=0 angle_cdeg=invalid pose_ms=38394 flags=2 points=29 overwritten=0 rx_lost=0 tx_lost=99 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38465 series=1 running=1 adc=1 raw=3413 light_ms=38464 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=102 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38490 series=1 running=1 adc=1 raw=3413 light_ms=38484 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=103 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+status ms=38531 series=1 running=1 adc=1 raw=3413 light_ms=38524 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=29 overwritten=0 rx_lost=0 tx_lost=105 store=flash pending=1 committed=0 rejected=128 lost=28 failed=1
+point seq=30 series=1 ms=38548 edge_ms=38506 raw=3413 angle_cdeg=65535 flags=26 light_ms=38547 pose_ms=38394
+status ms=38573 series=1 running=1 adc=1 raw=3413 light_ms=38564 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=108 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38616 series=1 running=1 adc=1 raw=3413 light_ms=38604 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=110 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38652 series=1 running=1 adc=1 raw=3413 light_ms=38644 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=111 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38677 series=1 running=1 adc=1 raw=3413 light_ms=38675 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=113 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38711 series=1 running=1 adc=1 raw=3413 light_ms=38708 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=115 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38752 series=1 running=1 adc=1 raw=3413 light_ms=38744 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=117 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38786 series=1 running=1 adc=1 raw=3413 light_ms=38784 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=119 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38827 series=1 running=1 adc=1 raw=3413 light_ms=38824 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=121 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38852 series=1 running=1 adc=1 raw=3413 light_ms=38844 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=122 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38885 series=1 running=1 adc=1 raw=3413 light_ms=38884 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=124 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38927 series=1 running=1 adc=1 raw=3413 light_ms=38924 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=126 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38961 series=1 running=1 adc=1 raw=3413 light_ms=38944 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=127 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=38985 series=1 running=1 adc=1 raw=3413 light_ms=38984 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=129 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39027 series=1 running=1 adc=1 raw=3413 light_ms=39024 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=131 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39058 series=1 running=1 adc=1 raw=3413 light_ms=39044 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=133 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39102 series=1 running=1 adc=1 raw=3413 light_ms=39084 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=136 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39127 series=1 running=1 adc=1 raw=3413 light_ms=39124 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=137 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39160 series=1 running=1 adc=1 raw=3413 light_ms=39144 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=139 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39202 series=1 running=1 adc=1 raw=3413 light_ms=39184 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=141 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39231 series=1 running=1 adc=1 raw=3413 light_ms=39224 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=142 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39264 series=1 running=1 adc=1 raw=3413 light_ms=39247 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=144 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+reply=export result=busy
+status ms=39298 series=1 running=1 adc=1 raw=3413 light_ms=39284 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=146 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39336 series=1 running=1 adc=1 raw=3413 light_ms=39324 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=148 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39377 series=1 running=1 adc=1 raw=3413 light_ms=39366 imu=0 angle_cdeg=invalid pose_ms=38394 flags=26 points=30 overwritten=0 rx_lost=0 tx_lost=150 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+probe=imu result=0 ms=39397
+status ms=39407 series=1 running=1 adc=1 raw=3413 light_ms=39404 imu=1 angle_cdeg=0 pose_ms=39406 flags=0 points=30 overwritten=0 rx_lost=0 tx_lost=151 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39439 series=1 running=1 adc=1 raw=3413 light_ms=39426 imu=1 angle_cdeg=0 pose_ms=39426 flags=0 points=30 overwritten=0 rx_lost=0 tx_lost=153 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39474 series=1 running=1 adc=1 raw=3413 light_ms=39464 imu=1 angle_cdeg=0 pose_ms=39466 flags=0 points=30 overwritten=0 rx_lost=0 tx_lost=155 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+status ms=39514 series=1 running=1 adc=1 raw=3413 light_ms=39505 imu=1 angle_cdeg=0 pose_ms=39507 flags=0 points=30 overwritten=0 rx_lost=0 tx_lost=157 store=flash pending=1 committed=0 rejected=128 lost=29 failed=1
+fault=imu bus=2 ms=39534
+point seq=31 series=1 ms=39535 edge_ms=39497 raw=3413 angle_cdeg=65535 flags=2 light_ms=39524 pose_ms=39534
+status ms=39560 series=1 running=1 adc=1 raw=3413 light_ms=39524 imu=0 angle_cdeg=invalid pose_ms=39534 flags=2 points=31 overwritten=0 rx_lost=0 tx_lost=160 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39602 series=1 running=1 adc=1 raw=3413 light_ms=39584 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=162 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39627 series=1 running=1 adc=1 raw=3413 light_ms=39624 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=163 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39677 series=1 running=1 adc=1 raw=3413 light_ms=39667 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=166 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39702 series=1 running=1 adc=1 raw=3413 light_ms=39693 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=167 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39735 series=1 running=1 adc=1 raw=3413 light_ms=39724 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=169 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39777 series=1 running=1 adc=1 raw=3413 light_ms=39767 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=171 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39802 series=1 running=1 adc=1 raw=3413 light_ms=39793 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=172 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39835 series=1 running=1 adc=1 raw=3413 light_ms=39824 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=174 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39875 series=1 running=1 adc=1 raw=3413 light_ms=39864 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=176 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39910 series=1 running=1 adc=1 raw=3413 light_ms=39907 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=178 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39952 series=1 running=1 adc=1 raw=3413 light_ms=39944 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=180 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=39977 series=1 running=1 adc=1 raw=3413 light_ms=39968 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=181 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40011 series=1 running=1 adc=1 raw=3413 light_ms=40008 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=183 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40052 series=1 running=1 adc=1 raw=3413 light_ms=40044 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=185 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40077 series=1 running=1 adc=1 raw=3413 light_ms=40068 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=187 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40111 series=1 running=1 adc=1 raw=3413 light_ms=40108 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=189 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40152 series=1 running=1 adc=1 raw=3413 light_ms=40144 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=191 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40177 series=1 running=1 adc=1 raw=3413 light_ms=40168 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=192 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40211 series=1 running=1 adc=1 raw=3413 light_ms=40209 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=194 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40252 series=1 running=1 adc=1 raw=3413 light_ms=40244 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=196 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40285 series=1 running=1 adc=1 raw=3413 light_ms=40284 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=198 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40327 series=1 running=1 adc=1 raw=3413 light_ms=40324 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=200 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40352 series=1 running=1 adc=1 raw=3413 light_ms=40344 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=201 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40385 series=1 running=1 adc=1 raw=3413 light_ms=40384 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=203 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40427 series=1 running=1 adc=1 raw=3413 light_ms=40424 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=205 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40452 series=1 running=1 adc=1 raw=3413 light_ms=40444 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=206 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+status ms=40486 series=1 running=1 adc=1 raw=3413 light_ms=40484 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=31 overwritten=0 rx_lost=0 tx_lost=208 store=flash pending=1 committed=0 rejected=128 lost=30 failed=1
+point seq=32 series=1 ms=40527 edge_ms=40497 raw=3413 angle_cdeg=65535 flags=26 light_ms=40524 pose_ms=39534
+status ms=40538 series=1 running=1 adc=1 raw=3413 light_ms=40524 imu=0 angle_cdeg=invalid pose_ms=39534 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=211 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+probe=imu result=0 ms=40552
+status ms=40577 series=1 running=1 adc=1 raw=3413 light_ms=40570 imu=1 angle_cdeg=0 pose_ms=40572 flags=0 points=32 overwritten=0 rx_lost=0 tx_lost=213 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+fault=imu bus=2 ms=40618
+status ms=40619 series=1 running=1 adc=1 raw=3413 light_ms=40608 imu=0 angle_cdeg=invalid pose_ms=40618 flags=2 points=32 overwritten=0 rx_lost=0 tx_lost=215 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40652 series=1 running=1 adc=1 raw=3413 light_ms=40644 imu=0 angle_cdeg=invalid pose_ms=40618 flags=18 points=32 overwritten=0 rx_lost=0 tx_lost=217 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40686 series=1 running=1 adc=1 raw=3413 light_ms=40684 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=219 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40726 series=1 running=1 adc=1 raw=3413 light_ms=40724 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=221 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40752 series=1 running=1 adc=1 raw=3413 light_ms=40744 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=222 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40786 series=1 running=1 adc=1 raw=3413 light_ms=40784 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=224 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40818 series=1 running=1 adc=1 raw=3413 light_ms=40809 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=225 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40860 series=1 running=1 adc=1 raw=3413 light_ms=40844 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=228 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40894 series=1 running=1 adc=1 raw=3413 light_ms=40884 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=229 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40927 series=1 running=1 adc=1 raw=3413 light_ms=40924 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=231 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=40960 series=1 running=1 adc=1 raw=3413 light_ms=40944 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=233 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=41002 series=1 running=1 adc=1 raw=3413 light_ms=40984 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=235 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=41027 series=1 running=1 adc=1 raw=3413 light_ms=41024 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=236 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=41061 series=1 running=1 adc=1 raw=3413 light_ms=41044 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=238 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=41094 series=1 running=1 adc=1 raw=3413 light_ms=41084 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=240 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+status ms=41127 series=1 running=1 adc=1 raw=3413 light_ms=41124 imu=0 angle_cdeg=invalid pose_ms=40618 flags=26 points=32 overwritten=0 rx_lost=0 tx_lost=242 store=flash pending=1 committed=0 rejected=128 lost=31 failed=1
+export_begin count=28 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,9526,9524,9526,3413,0,0,0
+2,1,10526,10524,10526,3413,0,0,0
+3,1,11526,11524,11526,3413,0,0,0
+4,1,12526,12524,12526,3413,0,0,0
+5,1,13526,13524,13526,3413,0,0,0
+6,1,14526,14504,14526,3413,0,16,0
+7,1,15526,15524,15526,3413,0,0,0
+8,1,16526,16524,16526,3413,0,0,0
+9,1,17526,17524,17526,3413,0,0,0
+10,1,18526,18524,18526,3413,0,0,0
+11,1,19527,19524,19526,3413,0,0,0
+12,1,20527,20524,20526,3413,0,0,0
+13,1,21527,21524,21526,3413,0,0,0
+14,1,22527,22524,22526,3413,0,0,0
+15,1,23527,23524,23526,3413,0,0,0
+16,1,24527,24524,24526,3413,0,0,0
+17,1,25527,25524,25526,3413,0,0,0
+18,1,26527,26524,26526,3413,0,0,0
+19,1,27527,27524,27526,3413,0,0,0
+20,1,28535,28532,28534,3413,0,0,0
+21,1,29527,29524,29526,3413,0,0,0
+22,1,30534,30532,30534,3413,0,0,0
+23,1,31527,31524,31134,3413,65535,26,0
+24,1,32527,32524,32526,3413,0,0,0
+25,1,33535,33524,32934,3413,65535,26,0
+26,1,34527,34524,34526,3413,0,0,0
+27,1,35535,35524,35334,3413,65535,26,0
+28,1,36527,36524,36526,3413,0,0,0
+export_end count=28 crc32=0f2f9c3f
+point seq=33 series=1 ms=41527 edge_ms=41497 raw=3413 angle_cdeg=65535 flags=26 light_ms=41524 pose_ms=40618
+probe=imu result=0 ms=41621
+METRIC name=loop n=378959 min_us=0 avg_us=69 max_us=69000
+METRIC name=adc n=1571 min_us=0 avg_us=23 max_us=1000
+METRIC name=imu n=1221 min_us=2000 avg_us=2140 max_us=11000
+METRIC name=retry n=7 min_us=4000 avg_us=5000 max_us=6000
+METRIC name=rx n=1053 min_us=0 avg_us=4776 max_us=65000
+METRIC name=button n=95 min_us=0 avg_us=1305 max_us=5000
+METRIC name=store n=0 min_us=0 avg_us=0 max_us=0
+METRIC name=export n=163 min_us=1000 avg_us=4073 max_us=5000
+METRIC name=status n=31 min_us=6000 avg_us=6612 max_us=10000
+METRIC name=adc_interval n=1571 min_us=3000 avg_us=20050 max_us=78000
+METRIC name=imu_interval n=1222 min_us=6000 avg_us=25793 max_us=1029000
+METRIC name=reaction n=32 min_us=30000 avg_us=31593 max_us=42000
+MEASURE us=41733000 elapsed_us=31544000 busy_us=8734000 missed_adc=4 missed_imu=4 stack=1428 heap=0 period_ms=20 rx_lost=0 tx_lost=245 hal_ms=41733 resolution_us=1000
+status ms=42070 series=1 running=1 adc=1 raw=3413 light_ms=42064 imu=1 angle_cdeg=0 pose_ms=42066 flags=0 points=33 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=32 failed=1
+point seq=34 series=1 ms=42527 edge_ms=42497 raw=3413 angle_cdeg=0 flags=0 light_ms=42524 pose_ms=42526
+status ms=43070 series=1 running=1 adc=1 raw=3413 light_ms=43064 imu=1 angle_cdeg=0 pose_ms=43066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=stop result=ok ms=43214
+summary series=1 reason=command adc_n=1697 pose_n=1340 angle_n=1340 mean_raw=3413 min_raw=3413 max_raw=3413 mean_cdeg=0
+quality adc_fail=0 imu_fail=7 adc_gaps=2 pose_gaps=8
+reply=point result=not_running
+status ms=44070 series=1 running=0 adc=1 raw=3413 light_ms=44064 imu=1 angle_cdeg=0 pose_ms=44066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=point result=not_running
+status ms=45070 series=1 running=0 adc=1 raw=3413 light_ms=45064 imu=1 angle_cdeg=0 pose_ms=45066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=point result=not_running
+status ms=46070 series=1 running=0 adc=1 raw=3413 light_ms=46064 imu=1 angle_cdeg=0 pose_ms=46066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=point result=not_running
+status ms=47070 series=1 running=0 adc=1 raw=3413 light_ms=47064 imu=1 angle_cdeg=0 pose_ms=47066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=point result=not_running
+status ms=48070 series=1 running=0 adc=1 raw=3413 light_ms=48064 imu=1 angle_cdeg=0 pose_ms=48066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1
+reply=point result=not_running
+status ms=49070 series=1 running=0 adc=1 raw=3413 light_ms=49064 imu=1 angle_cdeg=0 pose_ms=49066 flags=0 points=34 overwritten=0 rx_lost=0 tx_lost=245 store=flash pending=1 committed=0 rejected=128 lost=33 failed=1

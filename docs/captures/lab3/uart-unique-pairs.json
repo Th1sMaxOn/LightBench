@@ -1,0 +1,26 @@
+{
+  "source_sha256": "0a6c01ff2939bfb5106c2c91dd188fdc74bd704492506f7dc4649c99ee3be2e7",
+  "rx_bad_stop": 0,
+  "tx_bad_stop": 0,
+  "pairs": [
+    {
+      "command": "run",
+      "rx_last_stop_ns": 9199905156,
+      "tx_first_start_ns": 9200520425,
+      "tx_last_stop_ns": 9204832431,
+      "rx_to_reply_start_ms": 0.615269,
+      "rx_to_reply_end_ms": 4.927275,
+      "reply": "reply=run result=ok ms=9196"
+    },
+    {
+      "command": "stop",
+      "rx_last_stop_ns": 43217384331,
+      "tx_first_start_ns": 43218024725,
+      "tx_last_stop_ns": 43222638431,
+      "rx_to_reply_start_ms": 0.640394,
+      "rx_to_reply_end_ms": 5.2541,
+      "reply": "reply=stop result=ok ms=43214"
+    }
+  ],
+  "scope": "Unique run and stop commands only; periodic status responses cannot be reliably attributed; heavily loaded stop may be queued. Timestamps based on simulated UART wire, not application execution markers."
+}

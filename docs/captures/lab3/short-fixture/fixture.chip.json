@@ -1,0 +1,1 @@
+{"name":"LightBench test I2C device and SDA clamp","author":"LightBench","pins":["SCL","SDA","FAULT","READY","PHASE"]}

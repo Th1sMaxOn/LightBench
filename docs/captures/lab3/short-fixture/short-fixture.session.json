@@ -1,0 +1,129 @@
+{
+  "started_at": "2026-11-01T15:09:40.680167+02:00",
+  "duration_s": 20.696986958006164,
+  "port": 4531,
+  "end_reason": "mcu_20s",
+  "commands": [
+    {
+      "wall_s": 0.00036383300903253257,
+      "command": "run"
+    },
+    {
+      "wall_s": 0.00036383300903253257,
+      "command": "status"
+    },
+    {
+      "wall_s": 0.7135713750030845,
+      "command": "status"
+    },
+    {
+      "wall_s": 1.4176800000132062,
+      "command": "status"
+    },
+    {
+      "wall_s": 2.1270514580246527,
+      "command": "status"
+    },
+    {
+      "wall_s": 2.8282656250230502,
+      "command": "status"
+    },
+    {
+      "wall_s": 3.567351083009271,
+      "command": "status"
+    },
+    {
+      "wall_s": 4.305415083013941,
+      "command": "status"
+    },
+    {
+      "wall_s": 5.035808208020171,
+      "command": "status"
+    },
+    {
+      "wall_s": 5.764978792023612,
+      "command": "status"
+    },
+    {
+      "wall_s": 6.507893458008766,
+      "command": "status"
+    },
+    {
+      "wall_s": 7.250323375017615,
+      "command": "status"
+    },
+    {
+      "wall_s": 7.988762375025544,
+      "command": "status"
+    },
+    {
+      "wall_s": 8.716245625022566,
+      "command": "status"
+    },
+    {
+      "wall_s": 9.418984625022858,
+      "command": "status"
+    },
+    {
+      "wall_s": 10.124464749998879,
+      "command": "status"
+    },
+    {
+      "wall_s": 10.830547000019578,
+      "command": "status"
+    },
+    {
+      "wall_s": 11.558659208007157,
+      "command": "status"
+    },
+    {
+      "wall_s": 12.291089833015576,
+      "command": "status"
+    },
+    {
+      "wall_s": 13.04195733301458,
+      "command": "status"
+    },
+    {
+      "wall_s": 13.77420512502431,
+      "command": "status"
+    },
+    {
+      "wall_s": 14.507917458016891,
+      "command": "status"
+    },
+    {
+      "wall_s": 15.247058833017945,
+      "command": "status"
+    },
+    {
+      "wall_s": 15.980372333026025,
+      "command": "status"
+    },
+    {
+      "wall_s": 16.72519175001071,
+      "command": "status"
+    },
+    {
+      "wall_s": 17.42834833302186,
+      "command": "status"
+    },
+    {
+      "wall_s": 18.180303708009887,
+      "command": "status"
+    },
+    {
+      "wall_s": 18.932498833019054,
+      "command": "status"
+    },
+    {
+      "wall_s": 19.664113125007134,
+      "command": "status"
+    },
+    {
+      "wall_s": 20.388587000023108,
+      "command": "status"
+    }
+  ],
+  "clock": "commands host monotonic; status ms MCU clock"
+}

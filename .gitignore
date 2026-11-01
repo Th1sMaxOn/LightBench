@@ -12,3 +12,7 @@ tests/build/
 
 __pycache__/
 *.pyc
+
+# Local authoring exports and preparation files
+**/report-source/
+/docs/evidence/report-qa.json

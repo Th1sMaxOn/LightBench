@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "author": "LightBench",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 30,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "mark",
+      "top": 200,
+      "left": 290,
+      "attrs": {
+        "color": "blue",
+        "label": "Reference point",
+        "key": "M"
+      }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr",
+      "top": 60,
+      "left": 290,
+      "attrs": {
+        "lux": "10"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -160,
+      "left": 150,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -130,
+      "left": 150,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": -100,
+      "left": 520,
+      "attrs": {
+        "channelNames": "SDA,SCL,UART_TX,UART_RX,ADC_MARK,IMU_MARK,READY,FAULT_PHASE",
+        "bufferSize": "4000000",
+        "triggerMode": "off"
+      }
+    },
+    {
+      "type": "chip-fixture",
+      "id": "fixture",
+      "top": -100,
+      "left": 290,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "nucleo:3V3.1",
+      "ldr:VCC",
+      "red",
+      []
+    ],
+    [
+      "nucleo:GND.1",
+      "ldr:GND",
+      "black",
+      []
+    ],
+    [
+      "nucleo:3V3.1",
+      "r1:1",
+      "red",
+      []
+    ],
+    [
+      "nucleo:3V3.1",
+      "r2:1",
+      "red",
+      []
+    ],
+    [
+      "ldr:AO",
+      "nucleo:PA0",
+      "purple",
+      []
+    ],
+    [
+      "nucleo:GND.1",
+      "logic:GND",
+      "black",
+      []
+    ],
+    [
+      "nucleo:3V3.1",
+      "mark:1.l",
+      "red",
+      []
+    ],
+    [
+      "mark:2.l",
+      "nucleo:PA1",
+      "orange",
+      []
+    ],
+    [
+      "nucleo:PB8",
+      "fixture:SCL",
+      "",
+      []
+    ],
+    [
+      "nucleo:PB9",
+      "fixture:SDA",
+      "",
+      []
+    ],
+    [
+      "nucleo:PB9",
+      "fixture:FAULT",
+      "",
+      []
+    ],
+    [
+      "r1:2",
+      "nucleo:PB8",
+      "",
+      []
+    ],
+    [
+      "r2:2",
+      "nucleo:PB9",
+      "",
+      []
+    ],
+    [
+      "nucleo:PB9",
+      "logic:D0",
+      "",
+      []
+    ],
+    [
+      "nucleo:PB8",
+      "logic:D1",
+      "",
+      []
+    ],
+    [
+      "nucleo:PA2",
+      "logic:D2",
+      "",
+      []
+    ],
+    [
+      "nucleo:PA3",
+      "logic:D3",
+      "",
+      []
+    ],
+    [
+      "nucleo:PA4",
+      "logic:D4",
+      "",
+      []
+    ],
+    [
+      "nucleo:PB1",
+      "logic:D5",
+      "",
+      []
+    ],
+    [
+      "fixture:READY",
+      "logic:D6",
+      "",
+      []
+    ],
+    [
+      "fixture:PHASE",
+      "logic:D7",
+      "",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

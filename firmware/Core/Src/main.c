@@ -106,7 +106,17 @@ int main(void)
   MX_I2C1_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+#ifdef LAB4_DIAGNOSTIC
+  board_init();
+  extern void rtos_diagnostic_start(void);
+  rtos_diagnostic_start();
+#else
   runtime_init();
+#ifdef LAB4
+  extern void rtos_start(void);
+  rtos_start();
+#endif
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */

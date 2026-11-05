@@ -1,6 +1,6 @@
 [wokwi]
 version = 1
-firmware = 'firmware/build/firmware.hex'
-elf = 'firmware/build/firmware.elf'
-vcdFile = 'wokwi.vcd'
-rfc2217ServerPort = 4503
+firmware = "docs/firmware/lab4/firmware.hex"
+elf = "docs/firmware/lab4/firmware.elf"
+vcdFile = 'local/demo/recording.vcd'
+rfc2217ServerPort = 48444

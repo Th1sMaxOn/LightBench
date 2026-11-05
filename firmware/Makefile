@@ -38,6 +38,9 @@ BUILD_DIR = build
 C_SOURCES =  \
 Devices/mpu6050.c \
 Platform/board.c \
+Platform/light_input.c \
+Platform/serial_tx.c \
+Platform/imu_transport.c \
 Platform/runtime.c \
 Platform/measurement.c \
 Platform/internal_flash.c \
@@ -161,10 +164,28 @@ CFLAGS += -flto -fstack-usage -Wstack-usage=512
 # link script
 LDSCRIPT = STM32C031C6Tx_FLASH.ld
 
+
+ifeq ($(LAB4),1)
+C_SOURCES += Platform/rtos.c Platform/text_format.c
+ifneq ($(DIAGNOSTIC),)
+C_SOURCES += Platform/os_experiments.c
+C_SOURCES += Middlewares/FreeRTOS/portable/MemMang/heap_4.c
+C_DEFS += -DLAB4_DIAGNOSTIC=$(DIAGNOSTIC) -DLAB4_STACK_CHECK=$(or $(STACK_CHECK),2)
+endif
+C_SOURCES += Middlewares/FreeRTOS/tasks.c Middlewares/FreeRTOS/queue.c Middlewares/FreeRTOS/list.c Middlewares/FreeRTOS/portable/GCC/ARM_CM0/port.c
+C_DEFS += -DLAB4 -DLAB4_TICK_HZ=$(or $(TICK_HZ),1000) -DLAB4_HEAP=$(or $(RTOS_HEAP),4096)
+C_INCLUDES += -IMiddlewares/FreeRTOS/include -IMiddlewares/FreeRTOS/portable/GCC/ARM_CM0
+LDSCRIPT = STM32C031C6Tx_RTOS.ld
+endif
+
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
 LDFLAGS = $(MCU) -flto -fstack-usage -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,--print-memory-usage
+
+ifeq ($(LAB4),1)
+LDFLAGS += -nostartfiles
+endif
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
@@ -172,10 +193,14 @@ all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET
 .PHONY: identity-force
 identity-force:
 $(BUILD_DIR)/build_identity.h: identity-force | $(BUILD_DIR)
-	LAB3_DIAGNOSTIC=$(LAB3_DIAGNOSTIC) python3 ../tools/build_identity.py > $(BUILD_DIR)/build_identity.tmp
+	LAB3_DIAGNOSTIC=$(LAB3_DIAGNOSTIC) LAB4=$(LAB4) DIAGNOSTIC=$(DIAGNOSTIC) TICK_HZ=$(TICK_HZ) RTOS_HEAP=$(RTOS_HEAP) STACK_CHECK=$(STACK_CHECK) OPT=$(OPT) python3 ../tools/build_identity.py > $(BUILD_DIR)/build_identity.tmp
 	cmp -s $@ $(BUILD_DIR)/build_identity.tmp || mv $(BUILD_DIR)/build_identity.tmp $@
 	@rm -f $(BUILD_DIR)/build_identity.tmp
 $(BUILD_DIR)/runtime.o: $(BUILD_DIR)/build_identity.h
+ifeq ($(LAB4),1)
+$(BUILD_DIR)/portasm.o: CFLAGS += -fno-lto
+$(BUILD_DIR)/port.o: CFLAGS += -fno-lto
+endif
 
 
 #######################################

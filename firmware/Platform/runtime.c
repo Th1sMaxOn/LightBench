@@ -5,10 +5,41 @@
 #include "protocol.h"
 #include "measurement.h"
 #include "build_identity.h"
+#ifdef LAB4
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "rtos.h"
+typedef struct { uint32_t at, start, release_us; int32_t mg[3]; uint16_t raw; uint8_t kind, result; } Acquisition;
+static QueueHandle_t samples;
+static QueueHandle_t imu_commands;
+#if configSUPPORT_STATIC_ALLOCATION
+static StaticQueue_t samples_control;
+static uint8_t samples_storage[8 * sizeof(Acquisition)];
+static StaticQueue_t imu_commands_control;
+static uint8_t imu_commands_storage[8];
+#endif
+static uint32_t imu_command_lost;
+volatile uint32_t rtos_sample_lost;
+#endif
 #include <stdarg.h>
 #include <stdio.h>
+#ifdef LAB4
+#include "text_format.h"
+#undef snprintf
+#undef vsnprintf
+#define snprintf lb_snprintf
+#define vsnprintf lb_vsnprintf
+#endif
 #include <string.h>
 
+#ifdef LAB4
+#define MEASUREMENT_RESOLUTION_US 1000u
+#define UPTIME_CLOCK "TIM14_1ms"
+#else
+#define MEASUREMENT_RESOLUTION_US 1000u
+#define UPTIME_CLOCK "SysTick_1ms"
+#endif
 #ifndef BUILD_ID
 #define BUILD_ID "development"
 #endif
@@ -22,7 +53,8 @@ enum { M_LOOP, M_ADC, M_IMU, M_RETRY, M_RX, M_BUTTON, M_STORE, M_EXPORT,
        M_STATUS, M_ADC_INTERVAL, M_IMU_INTERVAL, M_REACTION, M_COUNT };
 static Timing timing[M_COUNT];
 static uint32_t busy_us, epoch_us, adc_previous, imu_previous, missed_adc, missed_imu;
-static unsigned report_at, period_ms=20;
+static unsigned report_at;
+static volatile unsigned period_ms=20;
 static void metric(unsigned id, uint32_t elapsed) {
     Timing *s=&timing[id];
     if(!s->n || elapsed<s->min) s->min=elapsed;
@@ -33,12 +65,19 @@ static uint32_t measured(unsigned id, uint32_t start) {
     uint32_t elapsed=measurement_us()-start;
     metric(id,elapsed); return elapsed;
 }
-static void interval(unsigned id, uint32_t *previous) {
-    uint32_t now=measurement_us();
+static void interval_at(unsigned id, uint32_t *previous, uint32_t now) {
     if(*previous) metric(id,now-*previous);
     *previous=now;
 }
-static bool imu_ready, exporting;
+static void interval(unsigned id, uint32_t *previous) {
+    interval_at(id,previous,measurement_us());
+}
+static bool
+#ifdef LAB4
+volatile
+#endif
+imu_ready;
+static bool exporting;
 static unsigned export_row, export_stage;
 static uint32_t export_crc;
 static uint32_t last_adc, last_imu, last_retry, last_status;
@@ -50,11 +89,10 @@ static bool line(const char *format, ...) {
     va_start(args, format);
     int n = vsnprintf(bytes, sizeof(bytes), format, args);
     va_end(args);
-    if (n < 0 || (size_t)n >= sizeof(bytes) || board_tx_free() < (size_t)n) {
+    if (n < 0 || (size_t)n >= sizeof(bytes) || !board_tx_write((const uint8_t *)bytes, (size_t)n)) {
         ++tx_losses;
         return false;
     }
-    for (int i = 0; i < n; ++i) (void)board_put_char(bytes[i]);
     return true;
 }
 static const char *result_name(BenchResult result) {
@@ -119,12 +157,25 @@ static void sample_pose(void) {
     }
     (void)measured(M_IMU,start);
 }
+#ifdef LAB4
+static void request_imu(uint8_t request) {
+    if(xQueueSend(imu_commands,&request,0)!=pdTRUE)
+        (void)line("reply=error reason=imu_command_queue_full lost=%lu\r\n",
+                   (unsigned long)++imu_command_lost);
+}
+#endif
 static void execute(BenchCommand cmd, uint32_t now) {
     switch (cmd) {
     case CMD_METRICS: report_at=0; break;
     case CMD_METRICS_RESET:
+#ifdef LAB4
+        taskENTER_CRITICAL();
+#endif
         memset(timing,0,sizeof(timing)); busy_us=0; epoch_us=measurement_us();
         adc_previous=imu_previous=0; missed_adc=missed_imu=0;
+#ifdef LAB4
+        taskEXIT_CRITICAL();
+#endif
         (void)line("metrics_reset us=%lu\r\n",(unsigned long)epoch_us); break;
     case CMD_PERIOD20: case CMD_PERIOD10: case CMD_PERIOD5: case CMD_PERIOD2: case CMD_PERIOD1: {
         static const unsigned periods[]={20,10,5,2,1};
@@ -150,6 +201,14 @@ static void execute(BenchCommand cmd, uint32_t now) {
             exporting = true; export_row = 0; export_stage = 0;
         }
         break;
+#ifdef LAB4
+    case CMD_SELFTEST: request_imu(3); break;
+    case CMD_ADDR68: case CMD_ADDR69:
+        request_imu(cmd==CMD_ADDR68?1:2);
+        bench_pose(&bench,NULL,false,now);
+        (void)line("reply=imuaddr address=%u\r\n",cmd==CMD_ADDR68?104:105);
+        break;
+#else
     case CMD_SELFTEST: {
         BusResult result = mpu6050_init(&imu);
         imu_ready = result == BUS_OK;
@@ -168,6 +227,7 @@ static void execute(BenchCommand cmd, uint32_t now) {
         bench_pose(&bench, NULL, false, now);
         (void)line("reply=imuaddr address=%u\r\n", imu.address);
         break;
+#endif
     case CMD_UNKNOWN: case CMD_BAD_LINE:
         (void)line("reply=error reason=%s\r\n", cmd == CMD_UNKNOWN ? "unknown_command" : "invalid_line");
         break;
@@ -203,17 +263,28 @@ void runtime_init(void) {
     memset(timing,0,sizeof(timing)); report_at=M_COUNT+1;
     busy_us=0; epoch_us=measurement_us();
     adc_previous=imu_previous=missed_adc=missed_imu=0; period_ms=20;
-    imu = (Mpu6050){board_sensor_bus(), 0x68};
+    mpu6050_attach(&imu, board_sensor_bus(), 0x68);
     imu_ready = mpu6050_init(&imu) == BUS_OK;
     last_retry = measurement_ms();
     sample_adc();
     if (imu_ready) sample_pose();
     last_adc = last_imu = last_status = measurement_ms();
-    (void)line("project=LightBench build=%s adc=%u imu=%u button=ready store=flash uart=115200_8N1 clock=SysTick_1ms recovered=%u rejected=%lu us=%lu\r\n",
+    (void)line("project=LightBench build=%s adc=%u imu=%u button=ready store=flash uart=115200_8N1 clock=" UPTIME_CLOCK " recovered=%u rejected=%lu us=%lu\r\n",
         BUILD_ID, bench.light.valid, imu_ready,bench.history.count,(unsigned long)store.rejected,(unsigned long)measurement_us());
     board_led(false);
+#ifdef LAB4
+#if configSUPPORT_STATIC_ALLOCATION
+    samples=xQueueCreateStatic(8,sizeof(Acquisition),samples_storage,&samples_control);
+    imu_commands=xQueueCreateStatic(8,sizeof(uint8_t),imu_commands_storage,&imu_commands_control);
+#else
+    samples=xQueueCreate(8,sizeof(Acquisition));
+    imu_commands=xQueueCreate(8,sizeof(uint8_t));
+#endif
+    configASSERT(samples && imu_commands);
+#endif
 }
 void runtime_poll(void) {
+    board_tx_service();
     uint32_t loop_start=measurement_us(), start;
     uint32_t now = measurement_ms();
     if (bench_expire(&bench, now)) summary("time_limit");
@@ -227,6 +298,25 @@ void runtime_poll(void) {
         if (cmd != CMD_NONE) execute(cmd, measurement_ms());
     }
     if(received) busy_us+=measured(M_RX,start);
+#ifdef LAB4
+    Acquisition a;
+    while(xQueueReceive(samples,&a,0)==pdTRUE) {
+        if(a.kind==0) {
+            interval_at(M_ADC_INTERVAL,&adc_previous,a.release_us);
+            bool active=bench.running; bench_light(&bench,a.raw,a.result==0,a.at);
+            if(active&&!bench.running) summary("adc_fault");
+            metric(M_ADC,a.start);
+        } else if(a.kind==1) {
+            interval_at(M_IMU_INTERVAL,&imu_previous,a.release_us);
+            bench_pose(&bench,a.mg,a.result==BUS_OK,a.at); metric(M_IMU,a.start);
+            if(a.result!=BUS_OK) (void)line("fault=imu bus=%u ms=%lu\r\n",a.result,(unsigned long)a.at);
+        } else {
+            if(a.result!=BUS_OK) bench_pose(&bench,NULL,false,a.at);
+            (void)line("probe=imu result=%u ms=%lu\r\n",a.result,(unsigned long)a.at);
+            if(a.kind==3) (void)line("selftest adc=%u imu=%u button=ready bus=%u ms=%lu\r\n",bench.light.valid,a.result==BUS_OK,a.result,(unsigned long)a.at);
+        }
+    }
+#else
     now = measurement_ms();
     if ((uint32_t)(now - last_adc) >= period_ms) {
         unsigned due=(now-last_adc)/period_ms; missed_adc+=due-1;
@@ -248,6 +338,7 @@ void runtime_poll(void) {
         last_imu+=due*period_ms;
         if(imu_ready) { start=measurement_us(); sample_pose(); busy_us+=measurement_us()-start; }
     }
+#endif
     now = measurement_ms();
     start=measurement_us();
     bool button=board_button(), changed=button!=bench.button_candidate;
@@ -283,11 +374,61 @@ void runtime_poll(void) {
             (void)line("METRIC name=%s n=%lu min_us=%lu avg_us=%lu max_us=%lu\r\n",names[report_at],(unsigned long)s.n,(unsigned long)s.min,(unsigned long)(s.n?s.sum/s.n:0),(unsigned long)s.max);
         } else {
             uint32_t elapsed=measurement_us()-epoch_us;
-            (void)line("MEASURE us=%lu elapsed_us=%lu busy_us=%lu missed_adc=%lu missed_imu=%lu stack=%lu heap=%lu period_ms=%u rx_lost=%lu tx_lost=%lu hal_ms=%lu resolution_us=1000\r\n",
+            (void)line("MEASURE us=%lu elapsed_us=%lu busy_us=%lu missed_adc=%lu missed_imu=%lu stack=%lu heap=%lu period_ms=%u rx_lost=%lu tx_lost=%lu hal_ms=%lu resolution_us=%u\r\n",
                 (unsigned long)measurement_us(),(unsigned long)elapsed,(unsigned long)busy_us,
-                (unsigned long)missed_adc,(unsigned long)missed_imu,(unsigned long)measurement_stack(),(unsigned long)measurement_heap(),period_ms,(unsigned long)rx_losses,(unsigned long)tx_losses,(unsigned long)HAL_GetTick());
+                (unsigned long)missed_adc,(unsigned long)missed_imu,(unsigned long)measurement_stack(),(unsigned long)measurement_heap(),period_ms,(unsigned long)rx_losses,(unsigned long)tx_losses,(unsigned long)HAL_GetTick(),MEASUREMENT_RESOLUTION_US);
         }
+#ifdef LAB4
+        if(report_at==M_COUNT) rtos_report();
+#endif
         ++report_at;
     }
     (void)measured(M_LOOP,loop_start);
 }
+
+#ifdef LAB4
+static void submit(Acquisition *a) {
+    if(xQueueSend(samples,a,0)!=pdTRUE) {
+        taskENTER_CRITICAL(); ++rtos_sample_lost; taskEXIT_CRITICAL();
+    }
+}
+static void periodic(TickType_t *last,uint32_t *missed) {
+    TickType_t ticks=pdMS_TO_TICKS(period_ms); if(!ticks) ticks=1;
+    TickType_t now=xTaskGetTickCount();
+    if((TickType_t)(now-*last)>=ticks) {
+        taskENTER_CRITICAL(); *missed+=(now-*last)/ticks; taskEXIT_CRITICAL();
+        *last=now;
+    }
+    xTaskDelayUntil(last,ticks);
+}
+void runtime_adc_task(void *arg) {
+    (void)arg; TickType_t last=xTaskGetTickCount();
+    for(;;) {
+        periodic(&last,&missed_adc); Acquisition a={.kind=0};
+        uint32_t start=measurement_us(); a.release_us=start;
+        a.result=board_read_light(&a.raw)?0:1;
+        a.at=measurement_ms(); a.start=measurement_us()-start; submit(&a);
+    }
+}
+void runtime_imu_task(void *arg) {
+    (void)arg; TickType_t last=xTaskGetTickCount();
+    for(;;) {
+        periodic(&last,&missed_imu);
+        uint8_t request=0;
+        (void)xQueueReceive(imu_commands,&request,0);
+        if(request==1||request==2) { imu.address=request==1?0x68:0x69; imu_ready=false; last_retry=measurement_ms()-1000u; }
+        if(request==3 || (!imu_ready&&(uint32_t)(measurement_ms()-last_retry)>=1000u)) {
+            last_retry=measurement_ms(); BusResult result=mpu6050_init(&imu); imu_ready=result==BUS_OK;
+            Acquisition a={.kind=request==3?3:2,.result=result,.at=measurement_ms()}; submit(&a);
+        }
+        if(imu_ready) {
+            Acquisition a={.kind=1}; ImuSample sample={0}; uint32_t start=measurement_us();
+            a.release_us=start;
+            board_imu_marker(true); a.result=mpu6050_read(&imu,&sample); board_imu_marker(false);
+            memcpy(a.mg,sample.accel_mg,sizeof(a.mg)); a.at=measurement_ms(); a.start=measurement_us()-start;
+            if(a.result!=BUS_OK) { imu_ready=false; last_retry=a.at; }
+            submit(&a);
+        }
+    }
+}
+#endif

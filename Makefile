@@ -8,7 +8,7 @@ image:
 build: image
 	docker run --rm -e LIGHTBENCH_BASE=$(shell git rev-parse --short=7 HEAD) -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
-		make -C firmware all
+		make -C firmware BUILD_DIR=build-adc-independent all
 
 clean:
 	$(MAKE) -C firmware clean
@@ -19,9 +19,16 @@ check:
 test: check
 	$(MAKE) -C tests test
 	python3 tests/test_export.py
+	python3 tests/test_check_project.py
 sanitize: check
 	$(MAKE) -C tests sanitize
 test-linux: image
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace --user "$(shell id -u):$(shell id -g)" $(IMAGE) make test sanitize
 coverage: image
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace --user "$(shell id -u):$(shell id -g)" $(IMAGE) python3 tools/coverage.py
+
+.PHONY: build-lab4 build-lab4-diagnostic
+build-lab4: image
+	docker run --rm -e LIGHTBENCH_BASE=$(shell git rev-parse --short=7 HEAD) -v "$(CURDIR):/workspace" -w /workspace $(IMAGE) make -C firmware LAB4=1 BUILD_DIR=build-lab4-final all
+build-lab4-diagnostic: image
+	docker run --rm -e LIGHTBENCH_BASE=$(shell git rev-parse --short=7 HEAD) -v "$(CURDIR):/workspace" -w /workspace $(IMAGE) make -C firmware LAB4=1 DIAGNOSTIC=1 BUILD_DIR=build-lab4-diag all

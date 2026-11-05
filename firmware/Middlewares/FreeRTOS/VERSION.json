@@ -1,0 +1,6 @@
+{
+  "version": "V10.5.1",
+  "source": "https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V10.5.1",
+  "archive_sha256": "89af32b7568c504624f712c21fe97f7311c55fccb7ae6163cda7adde1cde7f62",
+  "port": "GCC/ARM_CM0; ARMv6-M Cortex-M0+"
+}

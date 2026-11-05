@@ -1,34 +1,70 @@
 #include "mpu6050.h"
+#include <string.h>
 
-static int32_t signed_word(const uint8_t *data) {
-    uint32_t word = ((uint32_t)data[0] << 8) | data[1];
-    return word < 32768u ? (int32_t)word : (int32_t)word - 65536;
+/* InvenSense RM-MPU-6000A-00, register descriptions: retain 50 Hz / 2g /
+ * 250dps, verify configuration before allowing a sample to reach LightBench. */
+enum { RATE_REGISTER = 0x19, FRAME_REGISTER = 0x3b, POWER_REGISTER = 0x6b, ID_REGISTER = 0x75 };
+
+void mpu6050_attach(Mpu6050 *device, Mpu6050Bus io, uint8_t address) {
+    *device = (Mpu6050){ .io = io, .address = address, .configured = false };
 }
 
-void mpu6050_decode(const uint8_t bytes[14], ImuSample *sample) {
-    for (size_t axis = 0; axis < 3; ++axis) {
-        sample->accel_mg[axis] = signed_word(bytes + 2 * axis) * 1000 / 16384;
-        sample->gyro_mdps[axis] = signed_word(bytes + 8 + 2 * axis) * 1000 / 131;
-    }
-    sample->temperature_mc = signed_word(bytes + 6) * 1000 / 340 + 36530;
+static BusResult access_registers(Mpu6050 *d, const MpuRegisterAccess *request) {
+    if (!d || !d->io.transfer || (d->address != 0x68 && d->address != 0x69)) return BUS_ERROR;
+    return d->io.transfer(d->io.context, d->address, request);
 }
 
 BusResult mpu6050_init(Mpu6050 *device) {
-    uint8_t id = 0;
-    BusResult result = device->bus.read(device->bus.context, device->address, 0x75, &id, 1);
+    if (!device) return BUS_ERROR;
+    device->configured = false;
+    uint8_t identity = 0;
+    MpuRegisterAccess request = { .reg = ID_REGISTER, .count = 1, .receive = &identity };
+    BusResult result = access_registers(device, &request);
     if (result != BUS_OK) return result;
-    if (id != 0x68) return BUS_ERROR;
-    const uint8_t config[][2] = {{0x6b, 0x01}, {0x19, 0x13}, {0x1a, 0x03}, {0x1b, 0}, {0x1c, 0}};
-    for (size_t index = 0; index < sizeof(config) / sizeof(config[0]); ++index) {
-        result = device->bus.write(device->bus.context, device->address, config[index][0], &config[index][1], 1);
-        if (result != BUS_OK) return result;
-    }
+    if (identity != 0x68) return BUS_ERROR;
+    const uint8_t wake = 1;
+    request = (MpuRegisterAccess){ .reg = POWER_REGISTER, .count = 1, .transmit = &wake };
+    result = access_registers(device, &request);
+    if (result != BUS_OK) return result;
+    const uint8_t settings[4] = { 19, 3, 0, 0 };
+    request = (MpuRegisterAccess){ .reg = RATE_REGISTER, .count = sizeof(settings), .transmit = settings };
+    result = access_registers(device, &request);
+    if (result != BUS_OK) return result;
+    uint8_t actual[4] = {0};
+    request = (MpuRegisterAccess){ .reg = RATE_REGISTER, .count = sizeof(actual), .receive = actual };
+    result = access_registers(device, &request);
+    if (result != BUS_OK) return result;
+    if (memcmp(settings, actual, sizeof(actual))) return BUS_ERROR;
+    request = (MpuRegisterAccess){ .reg = POWER_REGISTER, .count = 1, .receive = &identity };
+    result = access_registers(device, &request);
+    if (result != BUS_OK) return result;
+    if (identity != wake) return BUS_ERROR;
+    device->configured = true;
     return BUS_OK;
 }
 
+void mpu6050_decode(const uint8_t bytes[14], ImuSample *sample) {
+    int32_t fields[7];
+    for (unsigned field = 0; field != 7; ++field) {
+        const uint8_t *pair = &bytes[2 * field];
+        fields[field] = (int32_t)((uint32_t)pair[0] * 256u + pair[1]);
+        if (pair[0] & 0x80u) fields[field] -= 65536;
+    }
+    ImuSample decoded;
+    for (unsigned axis = 0; axis != 3; ++axis) {
+        decoded.accel_mg[axis] = fields[axis] * 1000 / 16384;
+        decoded.gyro_mdps[axis] = fields[axis + 4] * 1000 / 131;
+    }
+    decoded.temperature_mc = 36530 + fields[3] * 1000 / 340;
+    *sample = decoded;
+}
+
 BusResult mpu6050_read(Mpu6050 *device, ImuSample *sample) {
-    uint8_t bytes[14];
-    BusResult result = device->bus.read(device->bus.context, device->address, 0x3b, bytes, sizeof(bytes));
-    if (result == BUS_OK) mpu6050_decode(bytes, sample);
+    if (!device || !sample || !device->configured) return BUS_ERROR;
+    uint8_t frame[14];
+    const MpuRegisterAccess request = { .reg = FRAME_REGISTER, .count = sizeof(frame), .receive = frame };
+    BusResult result = access_registers(device, &request);
+    if (result == BUS_OK) mpu6050_decode(frame, sample);
+    else device->configured = false;
     return result;
 }

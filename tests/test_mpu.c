@@ -4,47 +4,73 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
-typedef struct { BusResult result; uint8_t id; unsigned reads,writes,fail_write; } Bus;
-static const uint8_t registers[]={0x6b,0x19,0x1a,0x1b,0x1c};
-static const uint8_t values[]={1,0x13,3,0,0};
+typedef struct {
+    uint8_t registers[128];
+    unsigned operations, fail_at;
+    BusResult failure;
+    bool ignore_settings;
+} RegisterModel;
 static const uint8_t vector[14]={0x40,0,0xc0,0,0x20,0,0,0,0,0x83,0xff,0x7d,0,0};
-static BusResult read_bus(void *ctx,uint8_t addr,uint8_t reg,uint8_t *out,size_t n) {
-    Bus *b=ctx; assert(addr==0x68); ++b->reads;
-    if(b->result!=BUS_OK) return b->result;
-    if(reg==0x75) { assert(n==1); *out=b->id; }
-    else { assert(reg==0x3b && n==14); memcpy(out,vector,n); }
+static BusResult access(void *ctx, uint8_t address, const MpuRegisterAccess *q) {
+    RegisterModel *m=ctx;
+    assert(address==0x68 || address==0x69);
+    assert(q->count && q->reg+q->count<=sizeof(m->registers));
+    assert(!!q->receive != !!q->transmit);
+    ++m->operations;
+    if (m->operations==m->fail_at) {
+        if(q->receive) q->receive[0]=0xaa; /* Failed reads may partially fill scratch. */
+        return m->failure;
+    }
+    if(q->receive) memcpy(q->receive,m->registers+q->reg,q->count);
+    else if (!(m->ignore_settings && q->reg==0x19))
+        memcpy(m->registers+q->reg,q->transmit,q->count);
     return BUS_OK;
 }
-static BusResult write_bus(void *ctx,uint8_t addr,uint8_t reg,const uint8_t *data,size_t n) {
-    Bus *b=ctx; assert(addr==0x68 && n==1);
-    assert(reg==registers[b->writes] && *data==values[b->writes]);
-    ++b->writes; return b->writes==b->fail_write ? BUS_NACK : BUS_OK;
+static void reset(RegisterModel *m, Mpu6050 *d) {
+    memset(m,0,sizeof(*m)); m->registers[0x75]=0x68;
+    memcpy(m->registers+0x3b,vector,sizeof(vector));
+    mpu6050_attach(d,(Mpu6050Bus){m,access},0x68);
 }
 int main(void) {
-    Bus b={.id=0x68}; Mpu6050 d={{&b,read_bus,write_bus},0x68};
-    assert(mpu6050_init(&d)==BUS_OK && b.writes==5);
-    ImuSample s; assert(mpu6050_read(&d,&s)==BUS_OK);
+    RegisterModel model; Mpu6050 d; reset(&model,&d);
+    ImuSample s;
+    assert(mpu6050_read(&d,&s)==BUS_ERROR && model.operations==0);
+    assert(mpu6050_init(&d)==BUS_OK && d.configured);
+    assert(model.registers[0x6b]==1 && model.registers[0x19]==19);
+    assert(model.registers[0x1a]==3 && model.registers[0x1b]==0 && model.registers[0x1c]==0);
+    unsigned init_operations=model.operations;
+    assert(mpu6050_read(&d,&s)==BUS_OK);
     assert(s.accel_mg[0]==1000 && s.accel_mg[1]==-1000 && s.accel_mg[2]==500);
     assert(s.gyro_mdps[0]==1000 && s.gyro_mdps[1]==-1000 && s.temperature_mc==36530);
     const uint8_t edges[14]={0x7f,0xff,0x80,0,0,0,0xff,0xff,0x7f,0xff,0x80,0,0,0};
     mpu6050_decode(edges,&s);
     assert(s.accel_mg[0]==1999 && s.accel_mg[1]==-2000);
     assert(s.gyro_mdps[0]==250129 && s.gyro_mdps[1]==-250137);
-    for(unsigned i=BUS_NACK;i<=BUS_ERROR;++i) {
-        b.result=(BusResult)i; unsigned writes=b.writes;
-        assert(mpu6050_init(&d)==(BusResult)i && b.writes==writes);
-        ImuSample before=s; assert(mpu6050_read(&d,&s)==(BusResult)i);
+    for(unsigned failure=BUS_NACK;failure<=BUS_ERROR;++failure) {
+        for(unsigned operation=1;operation<=init_operations;++operation) {
+            reset(&model,&d); model.fail_at=operation; model.failure=(BusResult)failure;
+            assert(mpu6050_init(&d)==(BusResult)failure && !d.configured);
+            unsigned calls=model.operations;
+            assert(mpu6050_read(&d,&s)==BUS_ERROR && model.operations==calls);
+            model.fail_at=0; assert(mpu6050_init(&d)==BUS_OK);
+        }
+        reset(&model,&d); assert(mpu6050_init(&d)==BUS_OK);
+        model.fail_at=model.operations+1; model.failure=(BusResult)failure;
+        ImuSample before=s;
+        assert(mpu6050_read(&d,&s)==(BusResult)failure && !d.configured);
         assert(!memcmp(&before,&s,sizeof(s)));
     }
-    b.result=BUS_OK; b.id=0x69; assert(mpu6050_init(&d)==BUS_ERROR);
-    b.id=0x68;
-    for(unsigned i=1;i<=5;++i) {
-        b.writes=0; b.fail_write=i;
-        assert(mpu6050_init(&d)==BUS_NACK && b.writes==i);
-    }
+    reset(&model,&d); model.registers[0x75]=0x69;
+    assert(mpu6050_init(&d)==BUS_ERROR && !d.configured);
+    reset(&model,&d); model.ignore_settings=true;
+    assert(mpu6050_init(&d)==BUS_ERROR && !d.configured);
+    reset(&model,&d); d.address=0x69; assert(mpu6050_init(&d)==BUS_OK);
+    reset(&model,&d); d.address=0x80; assert(mpu6050_init(&d)==BUS_ERROR && !model.operations);
+    reset(&model,&d); d.io.transfer=NULL; assert(mpu6050_init(&d)==BUS_ERROR);
+    assert(mpu6050_init(NULL)==BUS_ERROR && mpu6050_read(NULL,&s)==BUS_ERROR);
     mpu6050_decode(captured_pose,&s);
     assert(s.accel_mg[0]==1000 && s.accel_mg[1]==0 && s.accel_mg[2]==0);
     assert(s.temperature_mc==24001 && pose_angle(s.accel_mg)==9000);
-    puts("mpu: config sequence, signed scales, NACK/timeout/error/ID and output preservation passed; synthetic boundaries plus own Wokwi fixture");
+    puts("mpu: units/extrema, verified configuration, every I/O failure, atomic sample and re-init passed");
     return 0;
 }

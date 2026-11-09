@@ -2,15 +2,15 @@
 """Instrument portable modules once while running the independent test suites."""
 from pathlib import Path
 import json
+import gzip
 import os
 import platform
-import re
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
 output = root / 'tests/build' / ('coverage-' + platform.system() + '-' + platform.machine())
 output.mkdir(parents=True, exist_ok=True)
-for pattern in ['*.gcda', '*.gcno', '*.gcov', '*.o']:
+for pattern in ['*.gcda', '*.gcno', '*.gcov', '*.gcov.json.gz', '*.o']:
     for item in output.glob(pattern):
         item.unlink()
 compiler = os.environ.get('CC', 'cc')
@@ -40,32 +40,25 @@ runner.write_text('\n'.join(f'int unit_{suite}(void);' for suite in suites) + '\
 subprocess.run([compiler, *flags, str(runner), *objects, '--coverage', '-lm', '-o', str(output / 'suite')], check=True)
 subprocess.run([str(output / 'suite')], check=True, cwd=output)
 for gcno in instrumented:
-    subprocess.run([gcov, '-b', '-c', str(gcno)], check=True, cwd=output, stdout=subprocess.DEVNULL)
+    subprocess.run([gcov, '-b', '-c', '--json-format', str(gcno)], check=True, cwd=output, stdout=subprocess.DEVNULL)
 results = []
-for annotation in sorted(output.glob('*.gcov')):
-    text = annotation.read_text()
-    source = next(line.split('Source:', 1)[1] for line in text.splitlines() if 'Source:' in line)
-    if source not in [str(root / item) for item in portable]:
-        continue
-    lines = executed = branches = taken = 0
-    uncovered = []
-    for line in text.splitlines():
-        if line.startswith('branch '):
-            branches += 1
-            match = re.search(r'taken (\d+)', line)
-            taken += bool(match and int(match.group(1)) > 0)
-        elif ':' in line:
-            fields = line.split(':', 2)
-            count = fields[0].strip()
-            if count == '-' or len(fields) != 3:
-                continue
-            lines += 1
-            hit = count not in {'#####', '====='} and count.rstrip('*').isdigit() and int(count.rstrip('*')) > 0
-            executed += hit
-            if not hit:
-                uncovered.append(int(fields[1]))
-    results.append({'source': str(Path(source).relative_to(root)), 'lines': lines, 'executed': executed,
-                    'branches': branches, 'taken': taken, 'uncovered_lines': uncovered})
+for annotation in sorted(output.glob('*.gcov.json.gz')):
+    with gzip.open(annotation, 'rt') as stream:
+        report = json.load(stream)
+    if report['format_version'].split('.')[0] != '1':
+        raise SystemExit('Unsupported gcov JSON format')
+    for file in report['files']:
+        source = Path(file['file'])
+        if str(source) not in [str(root / item) for item in portable]:
+            continue
+        entries = file['lines']
+        branches = [branch for entry in entries for branch in entry['branches']]
+        results.append({'source': str(source.relative_to(root)), 'lines': len(entries),
+                        'executed': sum(entry['count'] > 0 for entry in entries),
+                        'branches': len(branches), 'taken': sum(branch['count'] > 0 for branch in branches),
+                        'uncovered_lines': [entry['line_number'] for entry in entries if not entry['count']]})
+if {item['source'] for item in results} != set(portable) or len(results) != len(portable):
+    raise SystemExit('Coverage data missing or duplicated')
 totals = {key: sum(item[key] for item in results) for key in ['lines', 'executed', 'branches', 'taken']}
 totals['line_percent'] = round(100 * totals['executed'] / totals['lines'], 2)
 totals['branch_taken_percent'] = round(100 * totals['taken'] / totals['branches'], 2)

@@ -19,21 +19,20 @@ uint32_t measurement_us(void) { return now*1000u; }
 uint32_t measurement_ms(void) { return now; }
 uint32_t measurement_stack(void) { return 0; }
 uint32_t measurement_heap(void) { return 0; }
-static BusResult bus_read(void *ctx,uint8_t addr,uint8_t reg,uint8_t *data,size_t n) {
+static uint8_t device_registers[128];
+static BusResult register_access(void *ctx,uint8_t addr,const MpuRegisterAccess *q) {
     (void)ctx; ++now;
-    if(reg==0x75) ++probes;
+    if(q->reg==0x75 && q->receive) ++probes;
     if(addr!=0x68 || !bus_ok) return BUS_NACK;
-    memset(data,0,n);
-    if(reg==0x75) { assert(n==1); data[0]=0x68; }
-    else { assert(reg==0x3b && n==14); data[4]=0x40; }
+    if(q->transmit) memcpy(device_registers+q->reg,q->transmit,q->count);
+    else if(q->reg==0x75) { assert(q->count==1); q->receive[0]=0x68; }
+    else if(q->reg==0x3b) { assert(q->count==14); memset(q->receive,0,q->count); q->receive[4]=0x40; }
+    else memcpy(q->receive,device_registers+q->reg,q->count);
     return BUS_OK;
-}
-static BusResult bus_write(void *ctx,uint8_t a,uint8_t r,const uint8_t *d,size_t n) {
-    (void)ctx;(void)a;(void)r;(void)d;(void)n; return BUS_OK;
 }
 uint32_t HAL_GetTick(void) { return now; }
 void board_init(void) {}
-SensorBus board_sensor_bus(void) { return (SensorBus){NULL,bus_read,bus_write}; }
+Mpu6050Bus board_sensor_bus(void) { return (Mpu6050Bus){NULL,register_access}; }
 bool board_read_light(uint16_t *value) { ++adc_reads; ++now; *value=1234; return adc_ok; }
 bool board_button(void) { return pressed; }
 void board_led(bool on) { led=on; }
@@ -43,7 +42,8 @@ size_t board_tx_free(void) { return free_bytes; }
 int board_get_char(void) { return in_at<in_len ? (unsigned char)input[in_at++] : -1; }
 bool board_rx_overflow(void) { bool result=rx_over; rx_over=false; return result; }
 bool board_tx_overflow(void) { bool result=tx_over; tx_over=false; return result; }
-int board_put_char(int ch) { if (used+1==sizeof(output)) { memmove(output,output+32768,used-32768); used-=32768; } output[used++]=(char)ch; output[used]=0; return ch; }
+void board_tx_service(void) {}
+bool board_tx_write(const uint8_t *bytes, size_t length) { if (length > free_bytes) return false; for (size_t i=0; i<length; ++i) { if (used+1==sizeof(output)) { memmove(output,output+32768,used-32768); used-=32768; } output[used++]=(char)bytes[i]; } output[used]=0; return true; }
 static void clear_output(void) { used=0; output[0]=0; }
 static void command(const char *s) {
     assert(strlen(s)<sizeof(input)); strcpy(input,s); in_at=0; in_len=(unsigned)strlen(s);
@@ -51,6 +51,7 @@ static void command(const char *s) {
 }
 static void step(unsigned ms) { uint32_t end=now+ms; while(now<end) { ++now; runtime_poll(); } }
 static void click(void) { pressed=true;step(40);pressed=false;step(40); }
+#ifndef LIGHTBENCH_RTOS_HOST_FIXTURE
 int main(void) {
     memset(flash_bytes,255,sizeof(flash_bytes));
     runtime_init();
@@ -90,3 +91,5 @@ int main(void) {
     puts("runtime: concurrent polling, button, export, retry timing, ADC stop, recovery, errors and hour limit passed with fake ports");
     return 0;
 }
+
+#endif

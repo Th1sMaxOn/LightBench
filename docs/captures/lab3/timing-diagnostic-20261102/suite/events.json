@@ -1,0 +1,562 @@
+[
+  {
+    "button_ns": 72000000000,
+    "point_ns": 72030037950,
+    "latency_ms": 30.03795,
+    "during_export": false,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 72500000000,
+    "point_ns": 72530029725,
+    "latency_ms": 30.029725,
+    "during_export": false,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 73000000000,
+    "point_ns": 73029975625,
+    "latency_ms": 29.975625,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 73500000000,
+    "point_ns": 73530016100,
+    "latency_ms": 30.0161,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 74000000000,
+    "point_ns": 74031758025,
+    "latency_ms": 31.758025,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 74500000000,
+    "point_ns": 74531876675,
+    "latency_ms": 31.876675,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 75000000000,
+    "point_ns": 75031989675,
+    "latency_ms": 31.989675,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 75500000000,
+    "point_ns": 75529925175,
+    "latency_ms": 29.925175,
+    "during_export": false,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 76000000000,
+    "point_ns": 76029936550,
+    "latency_ms": 29.93655,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 76500000000,
+    "point_ns": 76531947725,
+    "latency_ms": 31.947725,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 77000000000,
+    "point_ns": 77032576600,
+    "latency_ms": 32.5766,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 77500000000,
+    "point_ns": 77530015400,
+    "latency_ms": 30.0154,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 78000000000,
+    "point_ns": 78031869925,
+    "latency_ms": 31.869925,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 78500000000,
+    "point_ns": 78529924225,
+    "latency_ms": 29.924225,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 79000000000,
+    "point_ns": 79031642650,
+    "latency_ms": 31.64265,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 79500000000,
+    "point_ns": 79535316050,
+    "latency_ms": 35.31605,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 80000000000,
+    "point_ns": 80031830075,
+    "latency_ms": 31.830075,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 80500000000,
+    "point_ns": 80529813875,
+    "latency_ms": 29.813875,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 81000000000,
+    "point_ns": 81032823400,
+    "latency_ms": 32.8234,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 81500000000,
+    "point_ns": 81532401425,
+    "latency_ms": 32.401425,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 82000000000,
+    "point_ns": 82029819875,
+    "latency_ms": 29.819875,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 82500000000,
+    "point_ns": 82530153200,
+    "latency_ms": 30.1532,
+    "during_export": false,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 83000000000,
+    "point_ns": 83033191475,
+    "latency_ms": 33.191475,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 83500000000,
+    "point_ns": 83532839625,
+    "latency_ms": 32.839625,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 84000000000,
+    "point_ns": 84033479100,
+    "latency_ms": 33.4791,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 84500000000,
+    "point_ns": 84532726125,
+    "latency_ms": 32.726125,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 85000000000,
+    "point_ns": 85032412950,
+    "latency_ms": 32.41295,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 85500000000,
+    "point_ns": 85531750075,
+    "latency_ms": 31.750075,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 86000000000,
+    "point_ns": 86030290675,
+    "latency_ms": 30.290675,
+    "during_export": false,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 86500000000,
+    "point_ns": 86541716600,
+    "latency_ms": 41.7166,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 87000000000,
+    "point_ns": 87029748400,
+    "latency_ms": 29.7484,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 87500000000,
+    "point_ns": 87529691325,
+    "latency_ms": 29.691325,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 88000000000,
+    "point_ns": 88035031475,
+    "latency_ms": 35.031475,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 88500000000,
+    "point_ns": 88530276675,
+    "latency_ms": 30.276675,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 89000000000,
+    "point_ns": 89030233875,
+    "latency_ms": 30.233875,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 89500000000,
+    "point_ns": 89529692000,
+    "latency_ms": 29.692,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 90000000000,
+    "point_ns": 90030601300,
+    "latency_ms": 30.6013,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 90500000000,
+    "point_ns": 90533480325,
+    "latency_ms": 33.480325,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 91000000000,
+    "point_ns": 91032817450,
+    "latency_ms": 32.81745,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 91500000000,
+    "point_ns": 91529575875,
+    "latency_ms": 29.575875,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 92000000000,
+    "point_ns": 92032363100,
+    "latency_ms": 32.3631,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 92500000000,
+    "point_ns": 92529579925,
+    "latency_ms": 29.579925,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 93000000000,
+    "point_ns": 93033923575,
+    "latency_ms": 33.923575,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 93500000000,
+    "point_ns": 93529537950,
+    "latency_ms": 29.53795,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 94000000000,
+    "point_ns": 94031122875,
+    "latency_ms": 31.122875,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 94500000000,
+    "point_ns": 94531607600,
+    "latency_ms": 31.6076,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 95000000000,
+    "point_ns": 95029540200,
+    "latency_ms": 29.5402,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 95500000000,
+    "point_ns": 95531438100,
+    "latency_ms": 31.4381,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 96000000000,
+    "point_ns": 96033280450,
+    "latency_ms": 33.28045,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 96500000000,
+    "point_ns": 96530507450,
+    "latency_ms": 30.50745,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 97000000000,
+    "point_ns": 97031039175,
+    "latency_ms": 31.039175,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 97500000000,
+    "point_ns": 97533287150,
+    "latency_ms": 33.28715,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 98000000000,
+    "point_ns": 98031435075,
+    "latency_ms": 31.435075,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 98500000000,
+    "point_ns": 98531572000,
+    "latency_ms": 31.572,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 99000000000,
+    "point_ns": 99031259450,
+    "latency_ms": 31.25945,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 99500000000,
+    "point_ns": 99533479150,
+    "latency_ms": 33.47915,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 100000000000,
+    "point_ns": 100031509400,
+    "latency_ms": 31.5094,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 100500000000,
+    "point_ns": 100533432225,
+    "latency_ms": 33.432225,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 101000000000,
+    "point_ns": 101030973050,
+    "latency_ms": 30.97305,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 101500000000,
+    "point_ns": 101531893325,
+    "latency_ms": 31.893325,
+    "during_export": true,
+    "point_during_export": false
+  },
+  {
+    "button_ns": 102000000000,
+    "point_ns": 102030348000,
+    "latency_ms": 30.348,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 102500000000,
+    "point_ns": 102533331150,
+    "latency_ms": 33.33115,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 103000000000,
+    "point_ns": 103030984525,
+    "latency_ms": 30.984525,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 103500000000,
+    "point_ns": 103529398100,
+    "latency_ms": 29.3981,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 104000000000,
+    "point_ns": 104031820125,
+    "latency_ms": 31.820125,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 104500000000,
+    "point_ns": 104531317675,
+    "latency_ms": 31.317675,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 105000000000,
+    "point_ns": 105029301400,
+    "latency_ms": 29.3014,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 105500000000,
+    "point_ns": 105532184800,
+    "latency_ms": 32.1848,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 106000000000,
+    "point_ns": 106033315550,
+    "latency_ms": 33.31555,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 106500000000,
+    "point_ns": 106529264825,
+    "latency_ms": 29.264825,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 107000000000,
+    "point_ns": 107032442375,
+    "latency_ms": 32.442375,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 107500000000,
+    "point_ns": 107531184175,
+    "latency_ms": 31.184175,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 108000000000,
+    "point_ns": 108029257350,
+    "latency_ms": 29.25735,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 108500000000,
+    "point_ns": 108532188950,
+    "latency_ms": 32.18895,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 109000000000,
+    "point_ns": 109033192475,
+    "latency_ms": 33.192475,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 109500000000,
+    "point_ns": 109532247450,
+    "latency_ms": 32.24745,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 110000000000,
+    "point_ns": 110034737750,
+    "latency_ms": 34.73775,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 110500000000,
+    "point_ns": 110533218150,
+    "latency_ms": 33.21815,
+    "during_export": false,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 111000000000,
+    "point_ns": 111032218575,
+    "latency_ms": 32.218575,
+    "during_export": true,
+    "point_during_export": true
+  },
+  {
+    "button_ns": 111500000000,
+    "point_ns": 111532084025,
+    "latency_ms": 32.084025,
+    "during_export": true,
+    "point_during_export": true
+  }
+]

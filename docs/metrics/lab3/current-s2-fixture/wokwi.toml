@@ -1,0 +1,10 @@
+[wokwi]
+version=1
+firmware='firmware.hex'
+elf='firmware.elf'
+rfc2217ServerPort=4557
+vcdFile='s2.vcd'
+
+[[chip]]
+name='events'
+binary='events.chip.wasm'

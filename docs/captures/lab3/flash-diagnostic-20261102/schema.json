@@ -1,0 +1,36 @@
+{
+  "regions": {
+    "flash_diagnostic": {
+      "address": "0x2000008c",
+      "bytes": 72,
+      "fields": [
+        "operation",
+        "offset",
+        "unlock_result",
+        "hal_result",
+        "page_error",
+        "hal_error",
+        "lock_result",
+        "sr_before",
+        "cr_before",
+        "sr_after",
+        "cr_after",
+        "checked_words",
+        "non_ff_words",
+        "first_bad_offset",
+        "first_bad_word",
+        "first_word",
+        "last_word",
+        "complete"
+      ]
+    },
+    "page14": {
+      "address": "0x8007000",
+      "bytes": 2048
+    },
+    "page15": {
+      "address": "0x8007800",
+      "bytes": 2048
+    }
+  }
+}

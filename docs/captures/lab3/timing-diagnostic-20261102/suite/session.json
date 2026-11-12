@@ -1,0 +1,6127 @@
+{
+  "reason": "mcu_141s",
+  "host_elapsed": 150.855357417,
+  "latest_mcu_ms": 141082,
+  "marks": [
+    {
+      "stage": "S1-start",
+      "latest_mcu_ms": 1045
+    },
+    {
+      "stage": "S1-end",
+      "latest_mcu_ms": 67045
+    },
+    {
+      "stage": "S3-start",
+      "latest_mcu_ms": 69045
+    },
+    {
+      "stage": "S3-end",
+      "latest_mcu_ms": 114082
+    },
+    {
+      "stage": "UART-end",
+      "latest_mcu_ms": 134082
+    },
+    {
+      "stage": "UART-long-line",
+      "latest_mcu_ms": 136082
+    },
+    {
+      "stage": "final",
+      "latest_mcu_ms": 138082
+    }
+  ],
+  "commands": [
+    {
+      "host_elapsed": 9.167187042,
+      "latest_mcu_ms": 0,
+      "stage": "boot",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 10.516788416999999,
+      "latest_mcu_ms": 1045,
+      "stage": "S1-start",
+      "command": "metrics reset"
+    },
+    {
+      "host_elapsed": 76.515901375,
+      "latest_mcu_ms": 67045,
+      "stage": "S1-end",
+      "command": "metrics"
+    },
+    {
+      "host_elapsed": 78.515964292,
+      "latest_mcu_ms": 69045,
+      "stage": "S3-start",
+      "command": "metrics reset\nrun"
+    },
+    {
+      "host_elapsed": 81.5167105,
+      "latest_mcu_ms": 72045,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.51673062500001,
+      "latest_mcu_ms": 72045,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 81.669897459,
+      "latest_mcu_ms": 72075,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.669920709,
+      "latest_mcu_ms": 72075,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 81.715402834,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.746565792,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.779825667,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.813502334,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.82375254200001,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 81.846812042,
+      "latest_mcu_ms": 72225,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.882158792,
+      "latest_mcu_ms": 72382,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.913202167,
+      "latest_mcu_ms": 72382,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.946244709,
+      "latest_mcu_ms": 72382,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 81.974131542,
+      "latest_mcu_ms": 72382,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 81.980899542,
+      "latest_mcu_ms": 72382,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.032323834,
+      "latest_mcu_ms": 72532,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.065185667,
+      "latest_mcu_ms": 72532,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.09879275,
+      "latest_mcu_ms": 72532,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.124282709,
+      "latest_mcu_ms": 72532,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.132275,
+      "latest_mcu_ms": 72532,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.174982167,
+      "latest_mcu_ms": 72682,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.207006,
+      "latest_mcu_ms": 72682,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.240369875,
+      "latest_mcu_ms": 72682,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.272046209,
+      "latest_mcu_ms": 72682,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.278261875,
+      "latest_mcu_ms": 72682,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.324056834,
+      "latest_mcu_ms": 72833,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.356393625,
+      "latest_mcu_ms": 72833,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.388158917,
+      "latest_mcu_ms": 72833,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.423868625,
+      "latest_mcu_ms": 72833,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.430226,
+      "latest_mcu_ms": 72833,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.473982709,
+      "latest_mcu_ms": 72992,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.516017417,
+      "latest_mcu_ms": 72992,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.565347667,
+      "latest_mcu_ms": 73045,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.58380700000001,
+      "latest_mcu_ms": 73045,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.599019084,
+      "latest_mcu_ms": 73045,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.649375459,
+      "latest_mcu_ms": 73140,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.68233416700001,
+      "latest_mcu_ms": 73140,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.7154715,
+      "latest_mcu_ms": 73140,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.738264875,
+      "latest_mcu_ms": 73140,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.749137542,
+      "latest_mcu_ms": 73140,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.798672042,
+      "latest_mcu_ms": 73299,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.832207584,
+      "latest_mcu_ms": 73299,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.865466625,
+      "latest_mcu_ms": 73299,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.890070834,
+      "latest_mcu_ms": 73299,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 82.899020167,
+      "latest_mcu_ms": 73299,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.949052292,
+      "latest_mcu_ms": 73448,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 82.982469584,
+      "latest_mcu_ms": 73448,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.0236175,
+      "latest_mcu_ms": 73448,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.040414334,
+      "latest_mcu_ms": 73448,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.05747175,
+      "latest_mcu_ms": 73448,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.115518834,
+      "latest_mcu_ms": 73598,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.14924975,
+      "latest_mcu_ms": 73598,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.182894417,
+      "latest_mcu_ms": 73598,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.190423292,
+      "latest_mcu_ms": 73598,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.240353375,
+      "latest_mcu_ms": 73750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.274147042,
+      "latest_mcu_ms": 73750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.307997417,
+      "latest_mcu_ms": 73750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.33979675,
+      "latest_mcu_ms": 73750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.345794375,
+      "latest_mcu_ms": 73750,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.398772834,
+      "latest_mcu_ms": 73899,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.432010792,
+      "latest_mcu_ms": 73899,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.465677334,
+      "latest_mcu_ms": 73899,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.496819292,
+      "latest_mcu_ms": 73899,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.516102084,
+      "latest_mcu_ms": 73899,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.590677292,
+      "latest_mcu_ms": 74057,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.632191334,
+      "latest_mcu_ms": 74057,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.64842975,
+      "latest_mcu_ms": 74057,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.690712459,
+      "latest_mcu_ms": 74209,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.7321105,
+      "latest_mcu_ms": 74209,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.77377495900001,
+      "latest_mcu_ms": 74209,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.798858459,
+      "latest_mcu_ms": 74209,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.816352792,
+      "latest_mcu_ms": 74209,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.864701084,
+      "latest_mcu_ms": 74357,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.907108792,
+      "latest_mcu_ms": 74357,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 83.949046042,
+      "latest_mcu_ms": 74357,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 83.949256959,
+      "latest_mcu_ms": 74357,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.023881084,
+      "latest_mcu_ms": 74507,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.066126542,
+      "latest_mcu_ms": 74507,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.099286042,
+      "latest_mcu_ms": 74507,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.10800725,
+      "latest_mcu_ms": 74507,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.165748792,
+      "latest_mcu_ms": 74657,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.208064042,
+      "latest_mcu_ms": 74657,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.249034042,
+      "latest_mcu_ms": 74657,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.255386875,
+      "latest_mcu_ms": 74657,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.31475120900001,
+      "latest_mcu_ms": 74817,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.357909167,
+      "latest_mcu_ms": 74817,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.398823875,
+      "latest_mcu_ms": 74817,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.407399792,
+      "latest_mcu_ms": 74817,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.465201875,
+      "latest_mcu_ms": 74969,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.541087959,
+      "latest_mcu_ms": 75046,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.558015834,
+      "latest_mcu_ms": 75046,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.607430875,
+      "latest_mcu_ms": 75116,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.656971584,
+      "latest_mcu_ms": 75116,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.706293792,
+      "latest_mcu_ms": 75116,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.712709292,
+      "latest_mcu_ms": 75116,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.774025292,
+      "latest_mcu_ms": 75275,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.823738917,
+      "latest_mcu_ms": 75275,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.8636425,
+      "latest_mcu_ms": 75275,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 84.873768959,
+      "latest_mcu_ms": 75275,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.940607,
+      "latest_mcu_ms": 75425,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 84.991064625,
+      "latest_mcu_ms": 75425,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.015131375,
+      "latest_mcu_ms": 75425,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.065273875,
+      "latest_mcu_ms": 75576,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.115918917,
+      "latest_mcu_ms": 75576,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.165520834,
+      "latest_mcu_ms": 75576,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.165658625,
+      "latest_mcu_ms": 75576,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.2409445,
+      "latest_mcu_ms": 75725,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.290646167,
+      "latest_mcu_ms": 75725,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.31570916700001,
+      "latest_mcu_ms": 75725,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.358216334,
+      "latest_mcu_ms": 75875,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.407469125,
+      "latest_mcu_ms": 75875,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.457236,
+      "latest_mcu_ms": 75875,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.471320875,
+      "latest_mcu_ms": 75875,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.557398792,
+      "latest_mcu_ms": 76046,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.607910417,
+      "latest_mcu_ms": 76046,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.621768167,
+      "latest_mcu_ms": 76046,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.68223841700001,
+      "latest_mcu_ms": 76184,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.73249525,
+      "latest_mcu_ms": 76184,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.773442042,
+      "latest_mcu_ms": 76184,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.78313558400001,
+      "latest_mcu_ms": 76184,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.856914459,
+      "latest_mcu_ms": 76332,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.907972459,
+      "latest_mcu_ms": 76332,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 85.923947375,
+      "latest_mcu_ms": 76332,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 85.982467959,
+      "latest_mcu_ms": 76484,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.041185875,
+      "latest_mcu_ms": 76484,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.07425875,
+      "latest_mcu_ms": 76484,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.115882834,
+      "latest_mcu_ms": 76634,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.17351404200001,
+      "latest_mcu_ms": 76634,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.230355792,
+      "latest_mcu_ms": 76634,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.233046084,
+      "latest_mcu_ms": 76634,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.315410375,
+      "latest_mcu_ms": 76790,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.37398400000001,
+      "latest_mcu_ms": 76790,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.380373459,
+      "latest_mcu_ms": 76790,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.448870334,
+      "latest_mcu_ms": 76942,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.515362917,
+      "latest_mcu_ms": 76942,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.532188,
+      "latest_mcu_ms": 76942,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.615273417,
+      "latest_mcu_ms": 77092,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.67414075,
+      "latest_mcu_ms": 77092,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.682283042,
+      "latest_mcu_ms": 77092,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.757268292,
+      "latest_mcu_ms": 77242,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.815802667,
+      "latest_mcu_ms": 77242,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.832412792,
+      "latest_mcu_ms": 77242,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 86.898655209,
+      "latest_mcu_ms": 77392,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.957902625,
+      "latest_mcu_ms": 77392,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 86.988441,
+      "latest_mcu_ms": 77392,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.048930875,
+      "latest_mcu_ms": 77550,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.115445084,
+      "latest_mcu_ms": 77550,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.138692542,
+      "latest_mcu_ms": 77550,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.199420542,
+      "latest_mcu_ms": 77701,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.26558075,
+      "latest_mcu_ms": 77701,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.291093,
+      "latest_mcu_ms": 77701,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.34919975,
+      "latest_mcu_ms": 77849,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.41517125,
+      "latest_mcu_ms": 77849,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.446033125,
+      "latest_mcu_ms": 77849,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.499115667,
+      "latest_mcu_ms": 78009,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.591614209,
+      "latest_mcu_ms": 78046,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.597945417,
+      "latest_mcu_ms": 78046,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.681865375,
+      "latest_mcu_ms": 78159,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.748797625,
+      "latest_mcu_ms": 78159,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.748977834,
+      "latest_mcu_ms": 78159,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.840505209,
+      "latest_mcu_ms": 78307,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.898808875,
+      "latest_mcu_ms": 78307,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 87.907844459,
+      "latest_mcu_ms": 78307,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 87.9915015,
+      "latest_mcu_ms": 78457,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.049130834,
+      "latest_mcu_ms": 78457,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.065872959,
+      "latest_mcu_ms": 78457,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.149145917,
+      "latest_mcu_ms": 78607,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.19939875,
+      "latest_mcu_ms": 78607,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.216337,
+      "latest_mcu_ms": 78607,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.307333084,
+      "latest_mcu_ms": 78757,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.35495766700001,
+      "latest_mcu_ms": 78757,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.382587542,
+      "latest_mcu_ms": 78757,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.465987875,
+      "latest_mcu_ms": 78915,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.50567175,
+      "latest_mcu_ms": 78915,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.58977375,
+      "latest_mcu_ms": 79065,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.657520792,
+      "latest_mcu_ms": 79065,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.664562584,
+      "latest_mcu_ms": 79065,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.75732075,
+      "latest_mcu_ms": 79215,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.811780584,
+      "latest_mcu_ms": 79215,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 88.849776417,
+      "latest_mcu_ms": 79365,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.92427475,
+      "latest_mcu_ms": 79365,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 88.964383709,
+      "latest_mcu_ms": 79365,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.032320917,
+      "latest_mcu_ms": 79528,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.1074955,
+      "latest_mcu_ms": 79528,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.114637542,
+      "latest_mcu_ms": 79528,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.20742483400001,
+      "latest_mcu_ms": 79673,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.265302209,
+      "latest_mcu_ms": 79673,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.282699417,
+      "latest_mcu_ms": 79673,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.382275084,
+      "latest_mcu_ms": 79825,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.415630125,
+      "latest_mcu_ms": 79825,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.482636417,
+      "latest_mcu_ms": 79976,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.56566870900001,
+      "latest_mcu_ms": 80047,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.590915125,
+      "latest_mcu_ms": 80047,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.68324712500001,
+      "latest_mcu_ms": 80125,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.71576025,
+      "latest_mcu_ms": 80125,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.782852709,
+      "latest_mcu_ms": 80276,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.86625441700001,
+      "latest_mcu_ms": 80276,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 89.866631792,
+      "latest_mcu_ms": 80276,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 89.973929709,
+      "latest_mcu_ms": 80425,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.02258125,
+      "latest_mcu_ms": 80425,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.089925584,
+      "latest_mcu_ms": 80582,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.173593167,
+      "latest_mcu_ms": 80582,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.173732584,
+      "latest_mcu_ms": 80582,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.282268542,
+      "latest_mcu_ms": 80732,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.3237785,
+      "latest_mcu_ms": 80732,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.390685209,
+      "latest_mcu_ms": 80884,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.47455725,
+      "latest_mcu_ms": 80884,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.474807,
+      "latest_mcu_ms": 80884,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.614976917,
+      "latest_mcu_ms": 81048,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.62490983400001,
+      "latest_mcu_ms": 81048,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.724218667,
+      "latest_mcu_ms": 81183,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.780633792,
+      "latest_mcu_ms": 81183,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 90.83255375,
+      "latest_mcu_ms": 81343,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.923775084,
+      "latest_mcu_ms": 81343,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 90.932466167,
+      "latest_mcu_ms": 81343,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.040450167,
+      "latest_mcu_ms": 81492,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.082367584,
+      "latest_mcu_ms": 81492,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.157109834,
+      "latest_mcu_ms": 81642,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.232391917,
+      "latest_mcu_ms": 81642,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.249537042,
+      "latest_mcu_ms": 81642,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.357682792,
+      "latest_mcu_ms": 81790,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.388026042,
+      "latest_mcu_ms": 81790,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.473081917,
+      "latest_mcu_ms": 81951,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.538070667,
+      "latest_mcu_ms": 81951,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.616079042,
+      "latest_mcu_ms": 82100,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.688963792,
+      "latest_mcu_ms": 82100,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.715820042,
+      "latest_mcu_ms": 82100,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.824064792,
+      "latest_mcu_ms": 82248,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.840252125,
+      "latest_mcu_ms": 82248,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 91.94096254200001,
+      "latest_mcu_ms": 82401,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 91.990653125,
+      "latest_mcu_ms": 82401,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.065860292,
+      "latest_mcu_ms": 82551,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.14565375000001,
+      "latest_mcu_ms": 82551,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.164678417,
+      "latest_mcu_ms": 82551,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.282018459,
+      "latest_mcu_ms": 82706,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.2964175,
+      "latest_mcu_ms": 82706,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.39903025,
+      "latest_mcu_ms": 82859,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.448950542,
+      "latest_mcu_ms": 82859,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.531622,
+      "latest_mcu_ms": 83009,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.598978417,
+      "latest_mcu_ms": 83050,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.665973834,
+      "latest_mcu_ms": 83159,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.748984709,
+      "latest_mcu_ms": 83159,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 92.772008875,
+      "latest_mcu_ms": 83159,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.890610667,
+      "latest_mcu_ms": 83307,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 92.904352084,
+      "latest_mcu_ms": 83307,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.024245209,
+      "latest_mcu_ms": 83470,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.054882375,
+      "latest_mcu_ms": 83470,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.150049375,
+      "latest_mcu_ms": 83618,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.205943917,
+      "latest_mcu_ms": 83618,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.276033,
+      "latest_mcu_ms": 83765,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.360316084,
+      "latest_mcu_ms": 83765,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.39900558400001,
+      "latest_mcu_ms": 83912,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.515178959,
+      "latest_mcu_ms": 83912,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.515722167,
+      "latest_mcu_ms": 83912,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.657879625,
+      "latest_mcu_ms": 84073,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.665465792,
+      "latest_mcu_ms": 84073,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.79140920900001,
+      "latest_mcu_ms": 84226,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.81598395900001,
+      "latest_mcu_ms": 84226,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 93.923688875,
+      "latest_mcu_ms": 84376,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 93.97139375,
+      "latest_mcu_ms": 84376,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.066407,
+      "latest_mcu_ms": 84536,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.12406237500001,
+      "latest_mcu_ms": 84536,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.199647042,
+      "latest_mcu_ms": 84683,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.274191,
+      "latest_mcu_ms": 84683,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.333168125,
+      "latest_mcu_ms": 84835,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.424225917,
+      "latest_mcu_ms": 84835,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.448411584,
+      "latest_mcu_ms": 84835,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.574269625,
+      "latest_mcu_ms": 85052,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.610107042,
+      "latest_mcu_ms": 85052,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.729814292,
+      "latest_mcu_ms": 85132,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 94.7404025,
+      "latest_mcu_ms": 85132,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.875213542,
+      "latest_mcu_ms": 85291,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 94.880549042,
+      "latest_mcu_ms": 85291,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.015751209,
+      "latest_mcu_ms": 85442,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.032601709,
+      "latest_mcu_ms": 85442,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.15684375000001,
+      "latest_mcu_ms": 85593,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.188051542,
+      "latest_mcu_ms": 85593,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.299021292,
+      "latest_mcu_ms": 85750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.340398625,
+      "latest_mcu_ms": 85750,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.440960375,
+      "latest_mcu_ms": 85901,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.490670292,
+      "latest_mcu_ms": 85901,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.615506209,
+      "latest_mcu_ms": 86056,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.64095625,
+      "latest_mcu_ms": 86056,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.758103167,
+      "latest_mcu_ms": 86201,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.790930667,
+      "latest_mcu_ms": 86201,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 95.899892167,
+      "latest_mcu_ms": 86351,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 95.94125575,
+      "latest_mcu_ms": 86351,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.056903209,
+      "latest_mcu_ms": 86501,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.091319375,
+      "latest_mcu_ms": 86501,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.20746025,
+      "latest_mcu_ms": 86651,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.246379209,
+      "latest_mcu_ms": 86651,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.357222709,
+      "latest_mcu_ms": 86809,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.397382209,
+      "latest_mcu_ms": 86809,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.508684625,
+      "latest_mcu_ms": 86960,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.54905875,
+      "latest_mcu_ms": 87056,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.682171584,
+      "latest_mcu_ms": 87110,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.69913175,
+      "latest_mcu_ms": 87110,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.833186209,
+      "latest_mcu_ms": 87259,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 96.854703042,
+      "latest_mcu_ms": 87259,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 96.982872334,
+      "latest_mcu_ms": 87417,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.006213625,
+      "latest_mcu_ms": 87417,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.141075042,
+      "latest_mcu_ms": 87570,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.156920709,
+      "latest_mcu_ms": 87570,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.29872362500001,
+      "latest_mcu_ms": 87718,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.313027459,
+      "latest_mcu_ms": 87718,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.457017792,
+      "latest_mcu_ms": 87876,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.463045584,
+      "latest_mcu_ms": 87876,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.614704584,
+      "latest_mcu_ms": 88058,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.640928542,
+      "latest_mcu_ms": 88058,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.765862917,
+      "latest_mcu_ms": 88173,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.79930645900001,
+      "latest_mcu_ms": 88173,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 97.915798959,
+      "latest_mcu_ms": 88325,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 97.95015175,
+      "latest_mcu_ms": 88325,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.06586262500001,
+      "latest_mcu_ms": 88474,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.11559,
+      "latest_mcu_ms": 88474,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.221342209,
+      "latest_mcu_ms": 88625,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.290699125,
+      "latest_mcu_ms": 88782,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.371773125,
+      "latest_mcu_ms": 88782,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.457337334,
+      "latest_mcu_ms": 88932,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.522135542,
+      "latest_mcu_ms": 88932,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.648409125,
+      "latest_mcu_ms": 89084,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.672224334,
+      "latest_mcu_ms": 89084,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.81589637500001,
+      "latest_mcu_ms": 89234,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 98.823661625,
+      "latest_mcu_ms": 89234,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.974619334,
+      "latest_mcu_ms": 89384,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 98.982839042,
+      "latest_mcu_ms": 89384,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.130571542,
+      "latest_mcu_ms": 89532,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 99.157838084,
+      "latest_mcu_ms": 89532,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.282277584,
+      "latest_mcu_ms": 89690,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 99.316550334,
+      "latest_mcu_ms": 89690,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.432689667,
+      "latest_mcu_ms": 89841,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 99.498697792,
+      "latest_mcu_ms": 89991,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.5883565,
+      "latest_mcu_ms": 90061,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 99.69950691700001,
+      "latest_mcu_ms": 90150,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.739416959,
+      "latest_mcu_ms": 90150,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 99.873912292,
+      "latest_mcu_ms": 90301,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 99.890724834,
+      "latest_mcu_ms": 90301,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.040979375,
+      "latest_mcu_ms": 90451,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.056871667,
+      "latest_mcu_ms": 90451,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 100.191060709,
+      "latest_mcu_ms": 90599,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.22443425,
+      "latest_mcu_ms": 90599,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 100.346467084,
+      "latest_mcu_ms": 90749,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.415156417,
+      "latest_mcu_ms": 90910,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 100.49774425,
+      "latest_mcu_ms": 90910,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.623902792,
+      "latest_mcu_ms": 91066,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 100.648515709,
+      "latest_mcu_ms": 91066,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.799259459,
+      "latest_mcu_ms": 91209,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.807285292,
+      "latest_mcu_ms": 91209,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 100.949172209,
+      "latest_mcu_ms": 91357,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 100.982786917,
+      "latest_mcu_ms": 91357,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 101.104651,
+      "latest_mcu_ms": 91507,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.189553167,
+      "latest_mcu_ms": 91669,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 101.254974209,
+      "latest_mcu_ms": 91669,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.372968209,
+      "latest_mcu_ms": 91817,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 101.40682933400001,
+      "latest_mcu_ms": 91817,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.55716958400001,
+      "latest_mcu_ms": 91969,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.591259417,
+      "latest_mcu_ms": 92066,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 101.707234334,
+      "latest_mcu_ms": 92116,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.790799875,
+      "latest_mcu_ms": 92269,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 101.857393375,
+      "latest_mcu_ms": 92269,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 101.982205042,
+      "latest_mcu_ms": 92418,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 102.007616959,
+      "latest_mcu_ms": 92418,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.163060959,
+      "latest_mcu_ms": 92570,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.173876875,
+      "latest_mcu_ms": 92570,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 102.31359720900001,
+      "latest_mcu_ms": 92725,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.358103167,
+      "latest_mcu_ms": 92725,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 102.463718667,
+      "latest_mcu_ms": 92874,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.574140292,
+      "latest_mcu_ms": 93025,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 102.6155625,
+      "latest_mcu_ms": 93066,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.765728542,
+      "latest_mcu_ms": 93176,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.783242375,
+      "latest_mcu_ms": 93176,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 102.915762667,
+      "latest_mcu_ms": 93325,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 102.991356125,
+      "latest_mcu_ms": 93477,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 103.065816625,
+      "latest_mcu_ms": 93477,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.198515042,
+      "latest_mcu_ms": 93624,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 103.215960167,
+      "latest_mcu_ms": 93624,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.37130525,
+      "latest_mcu_ms": 93776,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.39942379200001,
+      "latest_mcu_ms": 93776,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 103.52231875,
+      "latest_mcu_ms": 93932,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.640099667,
+      "latest_mcu_ms": 94082,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 103.67391525000001,
+      "latest_mcu_ms": 94082,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.824121292,
+      "latest_mcu_ms": 94234,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 103.841132917,
+      "latest_mcu_ms": 94234,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 103.980421042,
+      "latest_mcu_ms": 94382,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.065839542,
+      "latest_mcu_ms": 94541,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 104.132143834,
+      "latest_mcu_ms": 94541,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.273786917,
+      "latest_mcu_ms": 94692,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 104.28223616700001,
+      "latest_mcu_ms": 94692,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.432381042,
+      "latest_mcu_ms": 94843,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.499787209,
+      "latest_mcu_ms": 94991,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 104.582340792,
+      "latest_mcu_ms": 95070,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.73220795900001,
+      "latest_mcu_ms": 95143,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 104.738218125,
+      "latest_mcu_ms": 95143,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.890592875,
+      "latest_mcu_ms": 95301,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 104.965251042,
+      "latest_mcu_ms": 95449,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 105.040843584,
+      "latest_mcu_ms": 95449,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.18556825,
+      "latest_mcu_ms": 95600,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 105.19190025,
+      "latest_mcu_ms": 95600,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.346315542,
+      "latest_mcu_ms": 95749,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.424359334,
+      "latest_mcu_ms": 95909,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 105.498665792,
+      "latest_mcu_ms": 95909,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.6489325,
+      "latest_mcu_ms": 96070,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.666770167,
+      "latest_mcu_ms": 96070,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 105.804434167,
+      "latest_mcu_ms": 96208,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 105.899143,
+      "latest_mcu_ms": 96365,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 105.956232084,
+      "latest_mcu_ms": 96365,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.106403917,
+      "latest_mcu_ms": 96518,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.124421917,
+      "latest_mcu_ms": 96518,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 106.257166792,
+      "latest_mcu_ms": 96665,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.357964334,
+      "latest_mcu_ms": 96816,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 106.40732787500001,
+      "latest_mcu_ms": 96816,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.558051584,
+      "latest_mcu_ms": 96971,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.60814425,
+      "latest_mcu_ms": 97071,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 106.713653542,
+      "latest_mcu_ms": 97116,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 106.840742709,
+      "latest_mcu_ms": 97275,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 106.865386834,
+      "latest_mcu_ms": 97275,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.015669,
+      "latest_mcu_ms": 97428,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.091084709,
+      "latest_mcu_ms": 97577,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 107.17127512500001,
+      "latest_mcu_ms": 97577,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.315594542,
+      "latest_mcu_ms": 97732,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 107.322509084,
+      "latest_mcu_ms": 97732,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.47392929200001,
+      "latest_mcu_ms": 97882,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.574329542,
+      "latest_mcu_ms": 98035,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 107.627847417,
+      "latest_mcu_ms": 98071,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.77967725,
+      "latest_mcu_ms": 98182,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 107.816671875,
+      "latest_mcu_ms": 98182,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 107.931197417,
+      "latest_mcu_ms": 98341,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.07364591700001,
+      "latest_mcu_ms": 98491,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 108.081841542,
+      "latest_mcu_ms": 98491,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.232896417,
+      "latest_mcu_ms": 98643,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.324702875,
+      "latest_mcu_ms": 98791,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 108.388231625,
+      "latest_mcu_ms": 98791,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.539688,
+      "latest_mcu_ms": 98952,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.590044334,
+      "latest_mcu_ms": 99071,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 108.69068275000001,
+      "latest_mcu_ms": 99099,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.841068959,
+      "latest_mcu_ms": 99252,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 108.841365959,
+      "latest_mcu_ms": 99252,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 108.99109225000001,
+      "latest_mcu_ms": 99399,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.107621042,
+      "latest_mcu_ms": 99551,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 109.146877625,
+      "latest_mcu_ms": 99551,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.298889125,
+      "latest_mcu_ms": 99710,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.34969345900001,
+      "latest_mcu_ms": 99710,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 109.454877584,
+      "latest_mcu_ms": 99858,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.606237792,
+      "latest_mcu_ms": 100072,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.632948709,
+      "latest_mcu_ms": 100072,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 109.757073209,
+      "latest_mcu_ms": 100166,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 109.891251375,
+      "latest_mcu_ms": 100316,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 109.907214084,
+      "latest_mcu_ms": 100316,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.057062667,
+      "latest_mcu_ms": 100471,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.166156375,
+      "latest_mcu_ms": 100616,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 110.212869209,
+      "latest_mcu_ms": 100616,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.363023917,
+      "latest_mcu_ms": 100775,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.416057125,
+      "latest_mcu_ms": 100775,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 110.514623542,
+      "latest_mcu_ms": 100925,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.665740667,
+      "latest_mcu_ms": 101079,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.70815525,
+      "latest_mcu_ms": 101079,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 110.815760375,
+      "latest_mcu_ms": 101225,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.966004709,
+      "latest_mcu_ms": 101375,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 110.976223834,
+      "latest_mcu_ms": 101375,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 111.122121459,
+      "latest_mcu_ms": 101525,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 111.257216292,
+      "latest_mcu_ms": 101684,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 111.273879709,
+      "latest_mcu_ms": 101684,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 111.423966834,
+      "latest_mcu_ms": 101835,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 111.533347042,
+      "latest_mcu_ms": 101983,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 111.578993,
+      "latest_mcu_ms": 102079,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 111.729540417,
+      "latest_mcu_ms": 102132,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 111.839677084,
+      "latest_mcu_ms": 102293,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 111.880997334,
+      "latest_mcu_ms": 102293,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.032455709,
+      "latest_mcu_ms": 102443,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.132269375,
+      "latest_mcu_ms": 102594,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 112.187907375,
+      "latest_mcu_ms": 102594,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.34047541700001,
+      "latest_mcu_ms": 102752,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.415739167,
+      "latest_mcu_ms": 102901,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 112.490471459,
+      "latest_mcu_ms": 102901,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.644879292,
+      "latest_mcu_ms": 103079,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.70752095900001,
+      "latest_mcu_ms": 103079,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 112.797479375,
+      "latest_mcu_ms": 103199,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.949177084,
+      "latest_mcu_ms": 103358,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 112.991463667,
+      "latest_mcu_ms": 103358,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 113.104880209,
+      "latest_mcu_ms": 103508,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.25623900000001,
+      "latest_mcu_ms": 103669,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.29125745900001,
+      "latest_mcu_ms": 103669,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 113.406958584,
+      "latest_mcu_ms": 103816,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.557089917,
+      "latest_mcu_ms": 103969,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.583340042,
+      "latest_mcu_ms": 103969,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 113.707295917,
+      "latest_mcu_ms": 104116,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.857281292,
+      "latest_mcu_ms": 104269,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 113.890736209,
+      "latest_mcu_ms": 104269,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 114.007381334,
+      "latest_mcu_ms": 104416,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.157456417,
+      "latest_mcu_ms": 104569,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.190998792,
+      "latest_mcu_ms": 104569,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 114.307675625,
+      "latest_mcu_ms": 104716,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.457750417,
+      "latest_mcu_ms": 104869,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.473719875,
+      "latest_mcu_ms": 104869,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 114.612873209,
+      "latest_mcu_ms": 105079,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.764590375,
+      "latest_mcu_ms": 105177,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 114.792018875,
+      "latest_mcu_ms": 105177,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 114.915657,
+      "latest_mcu_ms": 105325,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.065825625,
+      "latest_mcu_ms": 105475,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.091705917,
+      "latest_mcu_ms": 105475,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 115.22081825000001,
+      "latest_mcu_ms": 105625,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.372105125,
+      "latest_mcu_ms": 105784,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.381019334,
+      "latest_mcu_ms": 105784,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 115.522443084,
+      "latest_mcu_ms": 105932,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.672883959,
+      "latest_mcu_ms": 106087,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.699027459,
+      "latest_mcu_ms": 106087,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 115.823708292,
+      "latest_mcu_ms": 106232,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.974030334,
+      "latest_mcu_ms": 106384,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 115.9908525,
+      "latest_mcu_ms": 106384,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 116.12879375,
+      "latest_mcu_ms": 106533,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.279755959,
+      "latest_mcu_ms": 106684,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.2908505,
+      "latest_mcu_ms": 106684,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 116.432201,
+      "latest_mcu_ms": 106840,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.582280875,
+      "latest_mcu_ms": 106992,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.589744375,
+      "latest_mcu_ms": 106992,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 116.732527459,
+      "latest_mcu_ms": 107141,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.882447,
+      "latest_mcu_ms": 107291,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 116.898963042,
+      "latest_mcu_ms": 107291,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 117.03799991700001,
+      "latest_mcu_ms": 107441,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.189085375,
+      "latest_mcu_ms": 107600,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.199708125,
+      "latest_mcu_ms": 107600,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 117.34039525,
+      "latest_mcu_ms": 107748,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.490452709,
+      "latest_mcu_ms": 107900,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.4906155,
+      "latest_mcu_ms": 107900,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 117.646683917,
+      "latest_mcu_ms": 108079,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.797746834,
+      "latest_mcu_ms": 108210,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 117.808079292,
+      "latest_mcu_ms": 108210,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 117.94880525,
+      "latest_mcu_ms": 108358,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.09893933400001,
+      "latest_mcu_ms": 108509,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.107676,
+      "latest_mcu_ms": 108509,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 118.24920900000001,
+      "latest_mcu_ms": 108658,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.399059334,
+      "latest_mcu_ms": 108809,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 118.404496709,
+      "latest_mcu_ms": 108809,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.5551645,
+      "latest_mcu_ms": 108970,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.706229209,
+      "latest_mcu_ms": 109118,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 118.72448875,
+      "latest_mcu_ms": 109118,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 118.8572875,
+      "latest_mcu_ms": 109266,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.007382959,
+      "latest_mcu_ms": 109417,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.015256709,
+      "latest_mcu_ms": 109417,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 119.157404125,
+      "latest_mcu_ms": 109566,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.307554375,
+      "latest_mcu_ms": 109716,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.315659542,
+      "latest_mcu_ms": 109716,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 119.463292542,
+      "latest_mcu_ms": 109866,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.613788459,
+      "latest_mcu_ms": 110026,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.64060795900001,
+      "latest_mcu_ms": 110081,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 119.764317375,
+      "latest_mcu_ms": 110174,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.91516375,
+      "latest_mcu_ms": 110325,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 119.932132584,
+      "latest_mcu_ms": 110325,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 120.065396375,
+      "latest_mcu_ms": 110474,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.215296542,
+      "latest_mcu_ms": 110625,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.232421292,
+      "latest_mcu_ms": 110625,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 120.365409834,
+      "latest_mcu_ms": 110774,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.515487125,
+      "latest_mcu_ms": 110926,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.524272625,
+      "latest_mcu_ms": 110926,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 120.671537959,
+      "latest_mcu_ms": 111081,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.822399292,
+      "latest_mcu_ms": 111234,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 120.849032709,
+      "latest_mcu_ms": 111234,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 120.974116709,
+      "latest_mcu_ms": 111383,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.12422600000001,
+      "latest_mcu_ms": 111536,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.149231334,
+      "latest_mcu_ms": 111536,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 121.274230667,
+      "latest_mcu_ms": 111683,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.430564834,
+      "latest_mcu_ms": 111834,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.440147459,
+      "latest_mcu_ms": 111834,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 121.581022625,
+      "latest_mcu_ms": 111990,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.731031917,
+      "latest_mcu_ms": 112144,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 121.758141167,
+      "latest_mcu_ms": 112144,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 121.882016292,
+      "latest_mcu_ms": 112291,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.032509417,
+      "latest_mcu_ms": 112442,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.047956292,
+      "latest_mcu_ms": 112442,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 122.187634625,
+      "latest_mcu_ms": 112591,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.338094709,
+      "latest_mcu_ms": 112750,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.339611792,
+      "latest_mcu_ms": 112750,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 122.490429125,
+      "latest_mcu_ms": 112899,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.64068804200001,
+      "latest_mcu_ms": 113082,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.665523792,
+      "latest_mcu_ms": 113082,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 122.79069579200001,
+      "latest_mcu_ms": 113199,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.940919625,
+      "latest_mcu_ms": 113351,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 122.957320667,
+      "latest_mcu_ms": 113351,
+      "stage": "S3",
+      "command": "export"
+    },
+    {
+      "host_elapsed": 123.091224834,
+      "latest_mcu_ms": 113499,
+      "stage": "S3",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 123.556794375,
+      "latest_mcu_ms": 114082,
+      "stage": "S3-end",
+      "command": "stop\nmetrics\nexport"
+    },
+    {
+      "host_elapsed": 127.556626917,
+      "latest_mcu_ms": 118082,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 127.760925584,
+      "latest_mcu_ms": 118116,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 127.962268209,
+      "latest_mcu_ms": 118316,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 128.16821166699998,
+      "latest_mcu_ms": 118525,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 128.36894116699997,
+      "latest_mcu_ms": 118725,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 128.570383,
+      "latest_mcu_ms": 119082,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 128.77364895899998,
+      "latest_mcu_ms": 119125,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 128.977237417,
+      "latest_mcu_ms": 119333,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 129.182011625,
+      "latest_mcu_ms": 119533,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 129.38577375,
+      "latest_mcu_ms": 119741,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 129.588147959,
+      "latest_mcu_ms": 120082,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 129.78996095899998,
+      "latest_mcu_ms": 120150,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 129.99196179199998,
+      "latest_mcu_ms": 120349,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 130.195646042,
+      "latest_mcu_ms": 120550,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 130.39628233399998,
+      "latest_mcu_ms": 120758,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 130.59896841699998,
+      "latest_mcu_ms": 121082,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 130.800724584,
+      "latest_mcu_ms": 121157,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 131.004419375,
+      "latest_mcu_ms": 121358,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 131.210834917,
+      "latest_mcu_ms": 121566,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 131.41275308399997,
+      "latest_mcu_ms": 121774,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 131.612952792,
+      "latest_mcu_ms": 122082,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 131.818156459,
+      "latest_mcu_ms": 122175,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.019100792,
+      "latest_mcu_ms": 122374,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.221721667,
+      "latest_mcu_ms": 122575,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.423039959,
+      "latest_mcu_ms": 122785,
+      "stage": "UART-5-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.624404,
+      "latest_mcu_ms": 123082,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.675371625,
+      "latest_mcu_ms": 123185,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.73129383399998,
+      "latest_mcu_ms": 123233,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.78406637499998,
+      "latest_mcu_ms": 123291,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.83940804199997,
+      "latest_mcu_ms": 123341,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.8919795,
+      "latest_mcu_ms": 123400,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 132.947658292,
+      "latest_mcu_ms": 123450,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.00003683399999,
+      "latest_mcu_ms": 123507,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.052224959,
+      "latest_mcu_ms": 123558,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.10222779199998,
+      "latest_mcu_ms": 123608,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.155768459,
+      "latest_mcu_ms": 123657,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.208910125,
+      "latest_mcu_ms": 123716,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.26035725,
+      "latest_mcu_ms": 123766,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.315935084,
+      "latest_mcu_ms": 123816,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.36800062499998,
+      "latest_mcu_ms": 123875,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.42334358399998,
+      "latest_mcu_ms": 123925,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.477116167,
+      "latest_mcu_ms": 123985,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.532104084,
+      "latest_mcu_ms": 124033,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.587726417,
+      "latest_mcu_ms": 124092,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.64228724999998,
+      "latest_mcu_ms": 124150,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.69603787499997,
+      "latest_mcu_ms": 124199,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.75088854199998,
+      "latest_mcu_ms": 124258,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.806485792,
+      "latest_mcu_ms": 124307,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.860431084,
+      "latest_mcu_ms": 124365,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.914181542,
+      "latest_mcu_ms": 124417,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 133.96713499999998,
+      "latest_mcu_ms": 124475,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.02014508399998,
+      "latest_mcu_ms": 124525,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.07377029199998,
+      "latest_mcu_ms": 124575,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.128751459,
+      "latest_mcu_ms": 124641,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.18340404199998,
+      "latest_mcu_ms": 124685,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.235100625,
+      "latest_mcu_ms": 124741,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.28792554199998,
+      "latest_mcu_ms": 124791,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.342693917,
+      "latest_mcu_ms": 124850,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.39732304199998,
+      "latest_mcu_ms": 124899,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.45050949999998,
+      "latest_mcu_ms": 124958,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.506509167,
+      "latest_mcu_ms": 125008,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.55681595899998,
+      "latest_mcu_ms": 125066,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.607997542,
+      "latest_mcu_ms": 125116,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.65916058399998,
+      "latest_mcu_ms": 125167,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.70941258399998,
+      "latest_mcu_ms": 125216,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.76544604199998,
+      "latest_mcu_ms": 125266,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.81654991699997,
+      "latest_mcu_ms": 125325,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.86871616699997,
+      "latest_mcu_ms": 125375,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.923760459,
+      "latest_mcu_ms": 125425,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 134.977053292,
+      "latest_mcu_ms": 125485,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.02722425,
+      "latest_mcu_ms": 125533,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.082771084,
+      "latest_mcu_ms": 125585,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.133727,
+      "latest_mcu_ms": 125641,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.187586292,
+      "latest_mcu_ms": 125691,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.241025834,
+      "latest_mcu_ms": 125750,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.29146458399998,
+      "latest_mcu_ms": 125800,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.34191274999998,
+      "latest_mcu_ms": 125850,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.392026875,
+      "latest_mcu_ms": 125900,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.448252334,
+      "latest_mcu_ms": 125950,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.501638042,
+      "latest_mcu_ms": 126008,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.555484542,
+      "latest_mcu_ms": 126058,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.609065459,
+      "latest_mcu_ms": 126116,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.660739875,
+      "latest_mcu_ms": 126166,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.714996875,
+      "latest_mcu_ms": 126216,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.76752066699999,
+      "latest_mcu_ms": 126275,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.823196667,
+      "latest_mcu_ms": 126325,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.87703408399997,
+      "latest_mcu_ms": 126385,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.93064083399997,
+      "latest_mcu_ms": 126433,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 135.98326225,
+      "latest_mcu_ms": 126491,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.03524241699998,
+      "latest_mcu_ms": 126541,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.09020462499998,
+      "latest_mcu_ms": 126591,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.142947667,
+      "latest_mcu_ms": 126650,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.194104792,
+      "latest_mcu_ms": 126700,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.25036699999998,
+      "latest_mcu_ms": 126758,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.306677209,
+      "latest_mcu_ms": 126808,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.35932920899998,
+      "latest_mcu_ms": 126866,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.410441542,
+      "latest_mcu_ms": 126916,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.46492941699998,
+      "latest_mcu_ms": 126966,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.518763625,
+      "latest_mcu_ms": 127025,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.572523,
+      "latest_mcu_ms": 127082,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.62352529199998,
+      "latest_mcu_ms": 127133,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.675960834,
+      "latest_mcu_ms": 127186,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.72993062499998,
+      "latest_mcu_ms": 127233,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.783791334,
+      "latest_mcu_ms": 127291,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.83999462499997,
+      "latest_mcu_ms": 127341,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.89197249999998,
+      "latest_mcu_ms": 127399,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.94256520899998,
+      "latest_mcu_ms": 127450,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 136.998237459,
+      "latest_mcu_ms": 127500,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.0514235,
+      "latest_mcu_ms": 127558,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.104745459,
+      "latest_mcu_ms": 127608,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.159952917,
+      "latest_mcu_ms": 127666,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.214768459,
+      "latest_mcu_ms": 127717,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.26731625,
+      "latest_mcu_ms": 127775,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.32209125,
+      "latest_mcu_ms": 127825,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.37557754199997,
+      "latest_mcu_ms": 127882,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.42730129199998,
+      "latest_mcu_ms": 127933,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.48267587499998,
+      "latest_mcu_ms": 127985,
+      "stage": "UART-20-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.5329845,
+      "latest_mcu_ms": 128041,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.54711020899998,
+      "latest_mcu_ms": 128041,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.56431816699998,
+      "latest_mcu_ms": 128082,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.58179199999998,
+      "latest_mcu_ms": 128092,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.597897042,
+      "latest_mcu_ms": 128092,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.615330084,
+      "latest_mcu_ms": 128108,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.63121974999999,
+      "latest_mcu_ms": 128125,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.64827724999998,
+      "latest_mcu_ms": 128141,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.664939125,
+      "latest_mcu_ms": 128141,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.681192834,
+      "latest_mcu_ms": 128158,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.69834758399998,
+      "latest_mcu_ms": 128175,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.714641417,
+      "latest_mcu_ms": 128192,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.73183245899997,
+      "latest_mcu_ms": 128192,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.748258,
+      "latest_mcu_ms": 128208,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.76482024999999,
+      "latest_mcu_ms": 128225,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.780945875,
+      "latest_mcu_ms": 128241,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.79354454199998,
+      "latest_mcu_ms": 128241,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.806586542,
+      "latest_mcu_ms": 128258,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.823051709,
+      "latest_mcu_ms": 128274,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.838962042,
+      "latest_mcu_ms": 128274,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.85649495899997,
+      "latest_mcu_ms": 128292,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.87355062499998,
+      "latest_mcu_ms": 128308,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.88966699999997,
+      "latest_mcu_ms": 128325,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.9066815,
+      "latest_mcu_ms": 128325,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.922929875,
+      "latest_mcu_ms": 128342,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.93992749999998,
+      "latest_mcu_ms": 128350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.956656792,
+      "latest_mcu_ms": 128367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.973652,
+      "latest_mcu_ms": 128386,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 137.98985887499998,
+      "latest_mcu_ms": 128386,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.00618970899998,
+      "latest_mcu_ms": 128400,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.023946,
+      "latest_mcu_ms": 128416,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.04136358399998,
+      "latest_mcu_ms": 128486,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.058928834,
+      "latest_mcu_ms": 128486,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.07244120899998,
+      "latest_mcu_ms": 128499,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.0903305,
+      "latest_mcu_ms": 128517,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.106951584,
+      "latest_mcu_ms": 128532,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.12319666699997,
+      "latest_mcu_ms": 128532,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.139318584,
+      "latest_mcu_ms": 128550,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.15682195899998,
+      "latest_mcu_ms": 128567,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.17303620899997,
+      "latest_mcu_ms": 128586,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.19011262499998,
+      "latest_mcu_ms": 128586,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.20649429199997,
+      "latest_mcu_ms": 128600,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.22296125,
+      "latest_mcu_ms": 128617,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.24011720899998,
+      "latest_mcu_ms": 128700,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.257407667,
+      "latest_mcu_ms": 128700,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.27328558399998,
+      "latest_mcu_ms": 128716,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.28917224999998,
+      "latest_mcu_ms": 128732,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.30486574999998,
+      "latest_mcu_ms": 128749,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.32336425,
+      "latest_mcu_ms": 128749,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.339171084,
+      "latest_mcu_ms": 128767,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.356479792,
+      "latest_mcu_ms": 128786,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.373249709,
+      "latest_mcu_ms": 128800,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.389284667,
+      "latest_mcu_ms": 128816,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.40540554199998,
+      "latest_mcu_ms": 128816,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.42301583399998,
+      "latest_mcu_ms": 128833,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.43903320899997,
+      "latest_mcu_ms": 128883,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.456468667,
+      "latest_mcu_ms": 128900,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.473980709,
+      "latest_mcu_ms": 128900,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.490300542,
+      "latest_mcu_ms": 128917,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.505337167,
+      "latest_mcu_ms": 128933,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.522797834,
+      "latest_mcu_ms": 128950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.539147209,
+      "latest_mcu_ms": 128950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.556119959,
+      "latest_mcu_ms": 128967,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.57236766699998,
+      "latest_mcu_ms": 128986,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.589009125,
+      "latest_mcu_ms": 129000,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.60651612499998,
+      "latest_mcu_ms": 129000,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.623289084,
+      "latest_mcu_ms": 129017,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.639900375,
+      "latest_mcu_ms": 129033,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.655222709,
+      "latest_mcu_ms": 129100,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.67200125,
+      "latest_mcu_ms": 129100,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.68941683399999,
+      "latest_mcu_ms": 129117,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.706961125,
+      "latest_mcu_ms": 129133,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.723004875,
+      "latest_mcu_ms": 129150,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.74043849999998,
+      "latest_mcu_ms": 129150,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.756269834,
+      "latest_mcu_ms": 129167,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.77448274999998,
+      "latest_mcu_ms": 129183,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.78979033399997,
+      "latest_mcu_ms": 129200,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.806831209,
+      "latest_mcu_ms": 129200,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.821333459,
+      "latest_mcu_ms": 129217,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.833875125,
+      "latest_mcu_ms": 129233,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.84830845899998,
+      "latest_mcu_ms": 129233,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.86463733399998,
+      "latest_mcu_ms": 129300,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.881120292,
+      "latest_mcu_ms": 129317,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.89769654199998,
+      "latest_mcu_ms": 129333,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.915624875,
+      "latest_mcu_ms": 129333,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.931364584,
+      "latest_mcu_ms": 129350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.94740524999997,
+      "latest_mcu_ms": 129366,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.96514887499998,
+      "latest_mcu_ms": 129383,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.98210212499998,
+      "latest_mcu_ms": 129383,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 138.99857408399998,
+      "latest_mcu_ms": 129392,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.015653125,
+      "latest_mcu_ms": 129408,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.03131108399998,
+      "latest_mcu_ms": 129425,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.0486925,
+      "latest_mcu_ms": 129425,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.06487166699998,
+      "latest_mcu_ms": 129508,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.080908,
+      "latest_mcu_ms": 129525,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.09757208399998,
+      "latest_mcu_ms": 129542,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.11505904199998,
+      "latest_mcu_ms": 129558,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.13086837499998,
+      "latest_mcu_ms": 129558,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.14763349999998,
+      "latest_mcu_ms": 129575,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.16436449999998,
+      "latest_mcu_ms": 129591,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.181173125,
+      "latest_mcu_ms": 129591,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.197993917,
+      "latest_mcu_ms": 129608,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.21282829199998,
+      "latest_mcu_ms": 129625,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.225422584,
+      "latest_mcu_ms": 129641,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.238745084,
+      "latest_mcu_ms": 129641,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.25658987499997,
+      "latest_mcu_ms": 129658,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.27349595899997,
+      "latest_mcu_ms": 129708,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.28940774999998,
+      "latest_mcu_ms": 129708,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.307052167,
+      "latest_mcu_ms": 129725,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.32117666699997,
+      "latest_mcu_ms": 129742,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.339757417,
+      "latest_mcu_ms": 129758,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.35626004199997,
+      "latest_mcu_ms": 129758,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.37225437499998,
+      "latest_mcu_ms": 129774,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.38938274999998,
+      "latest_mcu_ms": 129800,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.40426624999998,
+      "latest_mcu_ms": 129816,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.416820125,
+      "latest_mcu_ms": 129833,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.431393209,
+      "latest_mcu_ms": 129833,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.448613584,
+      "latest_mcu_ms": 129849,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.46452887499998,
+      "latest_mcu_ms": 129849,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.48019879199998,
+      "latest_mcu_ms": 129916,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.49795666699998,
+      "latest_mcu_ms": 129933,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.51486774999998,
+      "latest_mcu_ms": 129950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.53116533399998,
+      "latest_mcu_ms": 129950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.547446209,
+      "latest_mcu_ms": 129966,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.564185542,
+      "latest_mcu_ms": 129975,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.581284959,
+      "latest_mcu_ms": 130008,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.59768325,
+      "latest_mcu_ms": 130008,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.61515412499998,
+      "latest_mcu_ms": 130025,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.63027970899998,
+      "latest_mcu_ms": 130042,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.648341292,
+      "latest_mcu_ms": 130058,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.664004792,
+      "latest_mcu_ms": 130058,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.68013141699998,
+      "latest_mcu_ms": 130108,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.69722820899997,
+      "latest_mcu_ms": 130125,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.713577792,
+      "latest_mcu_ms": 130142,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.731434334,
+      "latest_mcu_ms": 130158,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.74837920899998,
+      "latest_mcu_ms": 130158,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.76489833399998,
+      "latest_mcu_ms": 130175,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.78051491699998,
+      "latest_mcu_ms": 130192,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.794211792,
+      "latest_mcu_ms": 130192,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.806710042,
+      "latest_mcu_ms": 130208,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.821053542,
+      "latest_mcu_ms": 130225,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.83932795899997,
+      "latest_mcu_ms": 130225,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.855859959,
+      "latest_mcu_ms": 130242,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.87291545899998,
+      "latest_mcu_ms": 130258,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.889481209,
+      "latest_mcu_ms": 130325,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.906942209,
+      "latest_mcu_ms": 130325,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.92331675,
+      "latest_mcu_ms": 130342,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.93979495899998,
+      "latest_mcu_ms": 130350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.95661962499997,
+      "latest_mcu_ms": 130367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.97223745899998,
+      "latest_mcu_ms": 130367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 139.98988312499998,
+      "latest_mcu_ms": 130386,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.004398459,
+      "latest_mcu_ms": 130417,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.01678224999998,
+      "latest_mcu_ms": 130433,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.03188425,
+      "latest_mcu_ms": 130433,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.047647625,
+      "latest_mcu_ms": 130450,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.064679459,
+      "latest_mcu_ms": 130467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.080745125,
+      "latest_mcu_ms": 130467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.09751170899997,
+      "latest_mcu_ms": 130532,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.1149395,
+      "latest_mcu_ms": 130550,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.130664917,
+      "latest_mcu_ms": 130567,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.14806174999998,
+      "latest_mcu_ms": 130567,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.16372099999998,
+      "latest_mcu_ms": 130575,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.18117525,
+      "latest_mcu_ms": 130592,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.197359625,
+      "latest_mcu_ms": 130608,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.21414499999997,
+      "latest_mcu_ms": 130608,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.2299895,
+      "latest_mcu_ms": 130625,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.248240209,
+      "latest_mcu_ms": 130642,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.265535084,
+      "latest_mcu_ms": 130657,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.279931625,
+      "latest_mcu_ms": 130657,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.29768274999998,
+      "latest_mcu_ms": 130742,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.31480399999998,
+      "latest_mcu_ms": 130758,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.3311475,
+      "latest_mcu_ms": 130775,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.34845754199998,
+      "latest_mcu_ms": 130792,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.36442079199998,
+      "latest_mcu_ms": 130792,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.381516292,
+      "latest_mcu_ms": 130808,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.398243792,
+      "latest_mcu_ms": 130825,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.415243125,
+      "latest_mcu_ms": 130841,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.43155745899998,
+      "latest_mcu_ms": 130841,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.447468792,
+      "latest_mcu_ms": 130858,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.46378679199998,
+      "latest_mcu_ms": 130875,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.482220709,
+      "latest_mcu_ms": 130892,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.49846829199998,
+      "latest_mcu_ms": 130892,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.514231917,
+      "latest_mcu_ms": 130925,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.53112645899998,
+      "latest_mcu_ms": 130942,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.548506917,
+      "latest_mcu_ms": 130958,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.565098875,
+      "latest_mcu_ms": 130958,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.579453917,
+      "latest_mcu_ms": 130975,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.597425792,
+      "latest_mcu_ms": 131042,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.61527991699998,
+      "latest_mcu_ms": 131058,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.63196729199998,
+      "latest_mcu_ms": 131058,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.648742084,
+      "latest_mcu_ms": 131075,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.66468899999998,
+      "latest_mcu_ms": 131082,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.679270834,
+      "latest_mcu_ms": 131091,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.696608917,
+      "latest_mcu_ms": 131091,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.71508212499998,
+      "latest_mcu_ms": 131125,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.73133016699998,
+      "latest_mcu_ms": 131142,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.74700812499998,
+      "latest_mcu_ms": 131158,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.76430266699998,
+      "latest_mcu_ms": 131158,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.78103495899998,
+      "latest_mcu_ms": 131175,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.794295625,
+      "latest_mcu_ms": 131225,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.80816795899997,
+      "latest_mcu_ms": 131225,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.82190225,
+      "latest_mcu_ms": 131242,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.83867575,
+      "latest_mcu_ms": 131258,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.856429792,
+      "latest_mcu_ms": 131275,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.872316042,
+      "latest_mcu_ms": 131275,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.889417334,
+      "latest_mcu_ms": 131292,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.906538542,
+      "latest_mcu_ms": 131342,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.922731584,
+      "latest_mcu_ms": 131350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.94058833399998,
+      "latest_mcu_ms": 131350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.95537829199998,
+      "latest_mcu_ms": 131367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.973431584,
+      "latest_mcu_ms": 131386,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.987403125,
+      "latest_mcu_ms": 131400,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 140.999921084,
+      "latest_mcu_ms": 131400,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.015184667,
+      "latest_mcu_ms": 131433,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.030261084,
+      "latest_mcu_ms": 131450,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.04483274999998,
+      "latest_mcu_ms": 131450,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.05791008399999,
+      "latest_mcu_ms": 131467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.071006459,
+      "latest_mcu_ms": 131467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.08358925,
+      "latest_mcu_ms": 131485,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.09781195899998,
+      "latest_mcu_ms": 131558,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.11524287499998,
+      "latest_mcu_ms": 131558,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.131012417,
+      "latest_mcu_ms": 131575,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.148501125,
+      "latest_mcu_ms": 131592,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.165108375,
+      "latest_mcu_ms": 131600,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.183939375,
+      "latest_mcu_ms": 131600,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.196535209,
+      "latest_mcu_ms": 131617,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.209308959,
+      "latest_mcu_ms": 131633,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.223322917,
+      "latest_mcu_ms": 131633,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.240332459,
+      "latest_mcu_ms": 131642,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.25677466699997,
+      "latest_mcu_ms": 131658,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.272420292,
+      "latest_mcu_ms": 131675,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.288261875,
+      "latest_mcu_ms": 131675,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.305252584,
+      "latest_mcu_ms": 131692,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.322307959,
+      "latest_mcu_ms": 131757,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.33943308399998,
+      "latest_mcu_ms": 131767,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.356739834,
+      "latest_mcu_ms": 131767,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.373711,
+      "latest_mcu_ms": 131786,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.387988834,
+      "latest_mcu_ms": 131799,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.40673925,
+      "latest_mcu_ms": 131816,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.42295529199998,
+      "latest_mcu_ms": 131816,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.440161209,
+      "latest_mcu_ms": 131850,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.456516417,
+      "latest_mcu_ms": 131867,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.47300875,
+      "latest_mcu_ms": 131886,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.48996325,
+      "latest_mcu_ms": 131886,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.50633979199998,
+      "latest_mcu_ms": 131900,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.522246667,
+      "latest_mcu_ms": 131967,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.538782917,
+      "latest_mcu_ms": 131986,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.55585025,
+      "latest_mcu_ms": 131986,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.57324070899998,
+      "latest_mcu_ms": 132000,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.58996929199998,
+      "latest_mcu_ms": 132017,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.60528820899998,
+      "latest_mcu_ms": 132033,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.62300141699998,
+      "latest_mcu_ms": 132033,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.639820709,
+      "latest_mcu_ms": 132049,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.65619462499998,
+      "latest_mcu_ms": 132067,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.67295149999998,
+      "latest_mcu_ms": 132082,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.69014662499998,
+      "latest_mcu_ms": 132082,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.70695337499998,
+      "latest_mcu_ms": 132087,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.722056625,
+      "latest_mcu_ms": 132186,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.73970325,
+      "latest_mcu_ms": 132200,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.755828792,
+      "latest_mcu_ms": 132217,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.77107404199998,
+      "latest_mcu_ms": 132217,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.78973524999998,
+      "latest_mcu_ms": 132233,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.806753625,
+      "latest_mcu_ms": 132250,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.82263858399998,
+      "latest_mcu_ms": 132267,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.840285959,
+      "latest_mcu_ms": 132267,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.856693084,
+      "latest_mcu_ms": 132286,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.872800125,
+      "latest_mcu_ms": 132300,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.889663959,
+      "latest_mcu_ms": 132317,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.90423829199997,
+      "latest_mcu_ms": 132317,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.92278549999997,
+      "latest_mcu_ms": 132333,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.93955699999998,
+      "latest_mcu_ms": 132350,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.95664349999998,
+      "latest_mcu_ms": 132367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.973613834,
+      "latest_mcu_ms": 132367,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 141.988900375,
+      "latest_mcu_ms": 132386,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.00561,
+      "latest_mcu_ms": 132400,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.02319195899997,
+      "latest_mcu_ms": 132467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.04048949999998,
+      "latest_mcu_ms": 132467,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.05673199999998,
+      "latest_mcu_ms": 132486,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.07259224999999,
+      "latest_mcu_ms": 132500,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.08974716699998,
+      "latest_mcu_ms": 132517,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.10484945899998,
+      "latest_mcu_ms": 132517,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.12091325,
+      "latest_mcu_ms": 132533,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.133489584,
+      "latest_mcu_ms": 132550,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.148063542,
+      "latest_mcu_ms": 132550,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.163847042,
+      "latest_mcu_ms": 132566,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.18201549999998,
+      "latest_mcu_ms": 132586,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.19828425,
+      "latest_mcu_ms": 132600,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.21472466699998,
+      "latest_mcu_ms": 132600,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.231669792,
+      "latest_mcu_ms": 132667,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.24811874999997,
+      "latest_mcu_ms": 132685,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.263675334,
+      "latest_mcu_ms": 132692,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.276887375,
+      "latest_mcu_ms": 132692,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.291602959,
+      "latest_mcu_ms": 132708,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.30694337499997,
+      "latest_mcu_ms": 132708,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.32284570899998,
+      "latest_mcu_ms": 132725,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.34002545899997,
+      "latest_mcu_ms": 132758,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.355424167,
+      "latest_mcu_ms": 132774,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.373246667,
+      "latest_mcu_ms": 132792,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.38941816699997,
+      "latest_mcu_ms": 132792,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.406045625,
+      "latest_mcu_ms": 132808,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.42327774999998,
+      "latest_mcu_ms": 132867,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.439574667,
+      "latest_mcu_ms": 132886,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.457165917,
+      "latest_mcu_ms": 132886,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.473273917,
+      "latest_mcu_ms": 132900,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.487586667,
+      "latest_mcu_ms": 132917,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.506325042,
+      "latest_mcu_ms": 132933,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.52129275,
+      "latest_mcu_ms": 132933,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.534171042,
+      "latest_mcu_ms": 132950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.548303875,
+      "latest_mcu_ms": 132950,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.563130417,
+      "latest_mcu_ms": 132966,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 142.58084466699998,
+      "latest_mcu_ms": 132986,
+      "stage": "UART-80-host-Hz",
+      "command": "status"
+    },
+    {
+      "host_elapsed": 143.55558491699998,
+      "latest_mcu_ms": 134082,
+      "stage": "UART-end",
+      "command": "metrics"
+    },
+    {
+      "host_elapsed": 145.55634658399998,
+      "latest_mcu_ms": 136082,
+      "stage": "UART-long-line",
+      "command": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nstatus"
+    },
+    {
+      "host_elapsed": 147.556825667,
+      "latest_mcu_ms": 138082,
+      "stage": "final",
+      "command": "status\nmetrics"
+    }
+  ]
+}

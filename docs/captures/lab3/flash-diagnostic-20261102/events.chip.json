@@ -1,0 +1,6 @@
+{
+  "name": "LightBench short S3 input source",
+  "pins": [
+    "OUT"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "LightBench analogue input test",
+  "pins": [
+    "OUT"
+  ]
+}

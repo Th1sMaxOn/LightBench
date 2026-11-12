@@ -1,5 +1,6 @@
 .DS_Store
 firmware/build/
+firmware/build-*/
 wokwi.vcd
 *.swp
 

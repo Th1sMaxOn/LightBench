@@ -1,0 +1,164 @@
+{
+  "elf_sha256": "ccacdff46ba36c49f6f21eaf6e56eef459f642783cdae29063a9bf075659f1e4",
+  "vcd_sha256": "b5db19f4afb2c524f52e3ae0b5edbee5d373768fdf656ff946953e375072ba8e",
+  "vcd_duration_s": 157.854604425,
+  "S1": {
+    "wire_window_s": [
+      1.079754356,
+      67.082153525
+    ],
+    "duration_s": 66.002399169,
+    "periodic": {
+      "ADC_MARK": {
+        "period_ms": {
+          "n": 3299,
+          "min": 13.503225,
+          "avg": 19.999581395877538,
+          "max": 26.467475
+        },
+        "width_us": {
+          "n": 3300,
+          "min": 48.875,
+          "avg": 51.04395454545455,
+          "max": 64.55
+        }
+      },
+      "IMU_MARK": {
+        "period_ms": {
+          "n": 3299,
+          "min": 19.8616,
+          "avg": 19.99958753410124,
+          "max": 20.1482
+        },
+        "width_us": {
+          "n": 3300,
+          "min": 1924.325,
+          "avg": 1928.9208333333333,
+          "max": 1977.1
+        }
+      }
+    },
+    "measure": "MEASURE us=67097000 elapsed_us=66024000 busy_us=6866000 missed_adc=0 missed_imu=0 stack=1336 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=67097 resolution_us=1000"
+  },
+  "S3": {
+    "buttons": 80,
+    "points": 80,
+    "unmatched": 0,
+    "latency_ms": {
+      "n": 80,
+      "min": 29.28305,
+      "avg": 31.25809,
+      "max": 37.6702
+    },
+    "buttons_during_export": 71,
+    "points_during_export": 68,
+    "completed_exports_wire": 303,
+    "completed_exports_crc": 303,
+    "last_snapshot": {
+      "rows": 64,
+      "overwritten": 16,
+      "rejected_pairs": 2,
+      "crc32": "2458656f",
+      "series": [
+        1
+      ]
+    }
+  },
+  "UART": {
+    "tx_bad_stop": 0,
+    "rx_bad_stop": 0,
+    "wire_status_rates": [
+      {
+        "vcd_window_s": [
+          118,
+          123
+        ],
+        "status_lines": 25,
+        "average_commands_per_s": 5.0
+      },
+      {
+        "vcd_window_s": [
+          123,
+          128
+        ],
+        "status_lines": 91,
+        "average_commands_per_s": 18.2
+      },
+      {
+        "vcd_window_s": [
+          128,
+          133
+        ],
+        "status_lines": 305,
+        "average_commands_per_s": 61.0
+      }
+    ],
+    "error_responses": [
+      {
+        "start_ns": 136121958725,
+        "end_ns": 136125234331,
+        "text": "reply=error reason=invalid_line"
+      }
+    ]
+  },
+  "metrics": [
+    "metrics_reset us=1073000",
+    "METRIC name=loop n=1182757 min_us=0 avg_us=40 max_us=7000",
+    "METRIC name=adc n=3300 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=imu n=3300 min_us=2000 avg_us=2000 max_us=2000",
+    "METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=rx n=6 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=button n=0 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=store n=0 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=export n=0 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=status n=66 min_us=4000 avg_us=4000 max_us=4000",
+    "METRIC name=adc_interval n=3300 min_us=14000 avg_us=20000 max_us=26000",
+    "METRIC name=imu_interval n=3300 min_us=20000 avg_us=20000 max_us=21000",
+    "METRIC name=reaction n=0 min_us=0 avg_us=0 max_us=0",
+    "MEASURE us=67097000 elapsed_us=66024000 busy_us=6866000 missed_adc=0 missed_imu=0 stack=1336 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=67097 resolution_us=1000",
+    "metrics_reset us=69079000",
+    "METRIC name=loop n=273557 min_us=0 avg_us=147 max_us=14000",
+    "METRIC name=adc n=2252 min_us=0 avg_us=36 max_us=1000",
+    "METRIC name=imu n=2202 min_us=2000 avg_us=2229 max_us=11000",
+    "METRIC name=retry n=1 min_us=4000 avg_us=4000 max_us=4000",
+    "METRIC name=rx n=1397 min_us=0 avg_us=1056 max_us=6000",
+    "METRIC name=button n=240 min_us=0 avg_us=758 max_us=3000",
+    "METRIC name=store n=1 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=export n=8455 min_us=0 avg_us=2628 max_us=4000",
+    "METRIC name=status n=45 min_us=4000 avg_us=4577 max_us=5000",
+    "METRIC name=adc_interval n=2253 min_us=13000 avg_us=20000 max_us=27000",
+    "METRIC name=imu_interval n=2203 min_us=13000 avg_us=20454 max_us=1020000",
+    "METRIC name=reaction n=80 min_us=30000 avg_us=30500 max_us=36000",
+    "MEASURE us=114170000 elapsed_us=45091000 busy_us=29135000 missed_adc=0 missed_imu=0 stack=1388 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=114171 resolution_us=1000",
+    "METRIC name=loop n=565546 min_us=0 avg_us=98 max_us=14000",
+    "METRIC name=adc n=3252 min_us=0 avg_us=29 max_us=1000",
+    "METRIC name=imu n=3202 min_us=2000 avg_us=2166 max_us=11000",
+    "METRIC name=retry n=1 min_us=4000 avg_us=4000 max_us=4000",
+    "METRIC name=rx n=2708 min_us=0 avg_us=1306 max_us=6000",
+    "METRIC name=button n=240 min_us=0 avg_us=758 max_us=3000",
+    "METRIC name=store n=1 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=export n=8513 min_us=0 avg_us=2628 max_us=4000",
+    "METRIC name=status n=65 min_us=4000 avg_us=4430 max_us=5000",
+    "METRIC name=adc_interval n=3251 min_us=13000 avg_us=20000 max_us=27000",
+    "METRIC name=imu_interval n=3201 min_us=13000 avg_us=20312 max_us=1020000",
+    "METRIC name=reaction n=80 min_us=30000 avg_us=30500 max_us=36000",
+    "MEASURE us=134126000 elapsed_us=65047000 busy_us=33460000 missed_adc=0 missed_imu=0 stack=1408 heap=0 period_ms=20 rx_lost=0 tx_lost=84 hal_ms=134126 resolution_us=1000",
+    "METRIC name=loop n=634865 min_us=0 avg_us=92 max_us=14000",
+    "METRIC name=adc n=3452 min_us=0 avg_us=27 max_us=1000",
+    "METRIC name=imu n=3402 min_us=2000 avg_us=2156 max_us=11000",
+    "METRIC name=retry n=1 min_us=4000 avg_us=4000 max_us=4000",
+    "METRIC name=rx n=2785 min_us=0 avg_us=1275 max_us=6000",
+    "METRIC name=button n=240 min_us=0 avg_us=758 max_us=3000",
+    "METRIC name=store n=1 min_us=0 avg_us=0 max_us=0",
+    "METRIC name=export n=8513 min_us=0 avg_us=2628 max_us=4000",
+    "METRIC name=status n=69 min_us=4000 avg_us=4405 max_us=5000",
+    "METRIC name=adc_interval n=3452 min_us=13000 avg_us=20000 max_us=27000",
+    "METRIC name=imu_interval n=3402 min_us=13000 avg_us=20293 max_us=1020000",
+    "METRIC name=reaction n=80 min_us=30000 avg_us=30500 max_us=36000",
+    "MEASURE us=138131000 elapsed_us=69052000 busy_us=33890000 missed_adc=0 missed_imu=0 stack=1408 heap=0 period_ms=20 rx_lost=0 tx_lost=84 hal_ms=138131 resolution_us=1000"
+  ],
+  "imu_probe_lines": [
+    "probe=imu result=0 ms=91178"
+  ],
+  "limits": "Wokwi only. UART command rate windows use VCD seconds; generator target rates were host-time rates. Repeated status replies include unsolicited status, so no unique latency pairing is claimed. Internal microsecond metrics have 1 ms resolution. Raw logs/captures retained; flash and loaded IMU failures are reported, not erased."
+}

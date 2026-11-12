@@ -1,0 +1,51 @@
+{
+  "duration_s": 28.57505205,
+  "READY": [
+    {
+      "ns": 2000000000,
+      "value": 1
+    }
+  ],
+  "FAULT_PHASE": [
+    {
+      "ns": 10000000000,
+      "value": 1
+    },
+    {
+      "ns": 13000000000,
+      "value": 0
+    }
+  ],
+  "SDA_low": [
+    {
+      "start_ns": 10000000000,
+      "end_ns": 13000000000,
+      "duration_ms": 3000.0
+    }
+  ],
+  "probes": [
+    {
+      "result": 1,
+      "ms": 1038
+    },
+    {
+      "result": 0,
+      "ms": 2041
+    },
+    {
+      "result": 2,
+      "ms": 11018
+    },
+    {
+      "result": 2,
+      "ms": 12018
+    },
+    {
+      "result": 0,
+      "ms": 13011
+    }
+  ],
+  "adc_pulses_during_fault": 150,
+  "adc_fault_interval_max_ms": 20.64885,
+  "source": "Own synthetic register-bank I2C model, not native MPU or physical hardware."
+}

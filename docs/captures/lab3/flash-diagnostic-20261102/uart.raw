@@ -1,0 +1,49 @@
+project=LightBench build=8ecda79-02c6fb653d0f adc=1 imu=1 button=ready store=flash uart=115200_8N1 clock=SysTick_1ms recovered=0 rejected=128 us=43000
+status ms=1045 series=0 running=0 adc=1 raw=3413 light_ms=1043 imu=1 angle_cdeg=0 pose_ms=1045 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+reply=run result=ok ms=1072
+status ms=2045 series=1 running=1 adc=1 raw=3413 light_ms=2043 imu=1 angle_cdeg=0 pose_ms=2045 flags=0 points=0 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=0 committed=0 rejected=128 lost=0 failed=0
+point seq=1 series=1 ms=3026 edge_ms=2996 raw=3413 angle_cdeg=0 flags=0 light_ms=3023 pose_ms=3025
+fault=flash seq=0 pending=1
+status ms=3045 series=1 running=1 adc=1 raw=3413 light_ms=3043 imu=1 angle_cdeg=0 pose_ms=3045 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+status ms=4045 series=1 running=1 adc=1 raw=3413 light_ms=4043 imu=1 angle_cdeg=0 pose_ms=4045 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+status ms=5045 series=1 running=1 adc=1 raw=3413 light_ms=5043 imu=1 angle_cdeg=0 pose_ms=5045 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+status ms=6045 series=1 running=1 adc=1 raw=3413 light_ms=6043 imu=1 angle_cdeg=0 pose_ms=6045 flags=0 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+status ms=7045 series=1 running=1 adc=1 raw=3413 light_ms=7023 imu=1 angle_cdeg=0 pose_ms=7044 flags=16 points=1 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=0 failed=1
+point seq=2 series=1 ms=8026 edge_ms=7996 raw=3413 angle_cdeg=0 flags=0 light_ms=8023 pose_ms=8025
+status ms=8045 series=1 running=1 adc=1 raw=3413 light_ms=8043 imu=1 angle_cdeg=0 pose_ms=8045 flags=0 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+status ms=9045 series=1 running=1 adc=1 raw=3413 light_ms=9023 imu=1 angle_cdeg=0 pose_ms=9044 flags=16 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+status ms=10045 series=1 running=1 adc=1 raw=3413 light_ms=10023 imu=1 angle_cdeg=0 pose_ms=10044 flags=16 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+status ms=11045 series=1 running=1 adc=1 raw=3413 light_ms=11043 imu=1 angle_cdeg=0 pose_ms=11045 flags=0 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+status ms=12045 series=1 running=1 adc=1 raw=3413 light_ms=12043 imu=1 angle_cdeg=0 pose_ms=12045 flags=0 points=2 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=1 failed=1
+point seq=3 series=1 ms=13026 edge_ms=12996 raw=3413 angle_cdeg=0 flags=0 light_ms=13023 pose_ms=13025
+status ms=13045 series=1 running=1 adc=1 raw=3413 light_ms=13043 imu=1 angle_cdeg=0 pose_ms=13045 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+status ms=14045 series=1 running=1 adc=1 raw=3413 light_ms=14043 imu=1 angle_cdeg=0 pose_ms=14045 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+status ms=15045 series=1 running=1 adc=1 raw=3413 light_ms=15043 imu=1 angle_cdeg=0 pose_ms=15045 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+status ms=16045 series=1 running=1 adc=1 raw=3413 light_ms=16043 imu=1 angle_cdeg=0 pose_ms=16045 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+status ms=17045 series=1 running=1 adc=1 raw=3413 light_ms=17043 imu=1 angle_cdeg=0 pose_ms=17045 flags=0 points=3 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=2 failed=1
+point seq=4 series=1 ms=18026 edge_ms=17996 raw=3413 angle_cdeg=0 flags=0 light_ms=18023 pose_ms=18025
+status ms=18045 series=1 running=1 adc=1 raw=3413 light_ms=18043 imu=1 angle_cdeg=0 pose_ms=18045 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+status ms=19045 series=1 running=1 adc=1 raw=3413 light_ms=19043 imu=1 angle_cdeg=0 pose_ms=19045 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+status ms=20045 series=1 running=1 adc=1 raw=3413 light_ms=20043 imu=1 angle_cdeg=0 pose_ms=20045 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+export_begin count=4 overwritten=0 format=LB1_le_28 crc=IEEE
+seq,series,mark_ms,light_ms,pose_ms,raw,angle_cdeg,flags,reserved
+1,1,3026,3023,3025,3413,0,0,0
+METRIC name=loop n=342055 min_us=0 avg_us=43 max_us=7000
+2,1,8026,8023,8025,3413,0,0,0
+METRIC name=adc n=1002 min_us=0 avg_us=0 max_us=0
+3,1,13026,13023,13025,3413,0,0,0
+METRIC name=imu n=1002 min_us=2000 avg_us=2000 max_us=2000
+4,1,18026,18023,18025,3413,0,0,0
+METRIC name=retry n=0 min_us=0 avg_us=0 max_us=0
+export_end count=4 crc32=e0d3b1c3
+METRIC name=rx n=8 min_us=0 avg_us=0 max_us=0
+METRIC name=button n=12 min_us=0 avg_us=750 max_us=2000
+METRIC name=store n=1 min_us=2000 avg_us=2000 max_us=2000
+METRIC name=export n=6 min_us=0 avg_us=2000 max_us=3000
+METRIC name=status n=20 min_us=4000 avg_us=4000 max_us=4000
+METRIC name=adc_interval n=1002 min_us=14000 avg_us=20004 max_us=26000
+METRIC name=imu_interval n=1002 min_us=20000 avg_us=20004 max_us=23000
+METRIC name=reaction n=4 min_us=30000 avg_us=30000 max_us=30000
+MEASURE us=20108000 elapsed_us=20071000 busy_us=2110000 missed_adc=0 missed_imu=0 stack=1336 heap=0 period_ms=20 rx_lost=0 tx_lost=0 hal_ms=20108 resolution_us=1000
+status ms=21045 series=1 running=1 adc=1 raw=3413 light_ms=21043 imu=1 angle_cdeg=0 pose_ms=21045 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1
+status ms=22045 series=1 running=1 adc=1 raw=3413 light_ms=22043 imu=1 angle_cdeg=0 pose_ms=22045 flags=0 points=4 overwritten=0 rx_lost=0 tx_lost=0 store=flash pending=1 committed=0 rejected=128 lost=3 failed=1

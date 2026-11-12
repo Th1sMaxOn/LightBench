@@ -1,0 +1,38 @@
+{
+  "flash_diagnostic": {
+    "address": "0x2000008c",
+    "bytes": 72,
+    "fields": {
+      "operation": 1,
+      "offset": 0,
+      "unlock_result": 0,
+      "hal_result": 0,
+      "page_error": 4294967295,
+      "hal_error": 0,
+      "lock_result": 1,
+      "sr_before": 0,
+      "cr_before": 0,
+      "sr_after": 0,
+      "cr_after": 0,
+      "checked_words": 512,
+      "non_ff_words": 512,
+      "first_bad_offset": 0,
+      "first_bad_word": 0,
+      "first_word": 0,
+      "last_word": 0,
+      "complete": 1
+    }
+  },
+  "page14": {
+    "address": "0x8007000",
+    "bytes": 2048,
+    "all_ff": false,
+    "all_zero": true
+  },
+  "page15": {
+    "address": "0x8007800",
+    "bytes": 2048,
+    "all_ff": false,
+    "all_zero": true
+  }
+}

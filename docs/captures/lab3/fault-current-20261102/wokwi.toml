@@ -1,0 +1,10 @@
+[wokwi]
+version=1
+firmware='firmware.hex'
+elf='firmware.elf'
+rfc2217ServerPort=4563
+vcdFile='fault.vcd'
+
+[[chip]]
+name='fixture'
+binary='fixture.chip.wasm'

@@ -1,0 +1,52 @@
+{
+  "status": "verified",
+  "level": "simulator UART",
+  "reason": "mcu_interval_and_outputs",
+  "duration_required_ms": 3605000,
+  "mcu_elapsed_ms": 3606011,
+  "reset_mcu_ms": 2071,
+  "last_mcu_ms": 3608082,
+  "status_count": 3609,
+  "max_status_gap_ms": 1003,
+  "continuity": true,
+  "boot_count": 1,
+  "measure": true,
+  "export": true,
+  "elf_sha256": "2a55d38645690ffe0324aa112e727fba6e55c5ad78bad0fcdf9d2c9e638ad36a",
+  "elf_unchanged": true,
+  "host_s": 3620.31248974998,
+  "commands": [
+    {
+      "latest_mcu_ms": null,
+      "command": "status",
+      "host_s": 9.302410708973184
+    },
+    {
+      "latest_mcu_ms": 2043,
+      "command": "metrics reset",
+      "host_s": 11.812516999896616
+    },
+    {
+      "latest_mcu_ms": 2043,
+      "command": "run",
+      "host_s": 11.812527458998375
+    },
+    {
+      "latest_mcu_ms": 3608055,
+      "command": "metrics",
+      "host_s": 3619.5857566249324
+    },
+    {
+      "latest_mcu_ms": 3608055,
+      "command": "status",
+      "host_s": 3619.585774624953
+    },
+    {
+      "latest_mcu_ms": 3608055,
+      "command": "export",
+      "host_s": 3619.585791333928
+    }
+  ],
+  "note": "Flash fault remains a product failure. Successful duration/continuity does not verify FR-12. VCD/export CRC checked separately after simulator stop.",
+  "collector_sha256": "b4b8b9ba2d38e6b64ca998388c7c5adbe640803370dd75dfe34c1e94b32f42be"
+}

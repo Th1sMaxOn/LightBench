@@ -1,6 +1,6 @@
 # Власні записи LightBench
 
-Фактичний запуск Wokwi 27.10.2026, build ed8ba61-d5b4dbed. [Manifest](manifest.json) містить SHA256 прошивки, джерел і файлів. Дати Git не є датами вимірювання.
+Фактичний запуск Wokwi 27.10.2026, build ed8ba61-d5b4dbed. [Manifest](manifest.json) містить SHA256 прошивки, джерел і файлів.
 
 - final.vcd.gz є повним lossless VCD фінального запуску, 29.25814355 с модельного часу.
 - final-uart.txt є сирим UART, final-session-uart.txt його точний фінальний сеанс.
@@ -37,4 +37,4 @@ sigrok-cli -i docs/captures/i2c-whoami.sr -P i2c:scl=SCL:sda=SDA -A i2c=addr-dat
 sigrok-cli -i docs/captures/uart-startup.sr -P uart:tx=UART_TX:baudrate=115200 -B uart=tx
 ```
 
-inspect_capture створює нові вікна у вказаному каталозі; збережені докази не перезаписуються цими командами. Під час пауз симулятора модельний час стоїть. Вхід lux та орієнтація змінювалися незалежно, тому записи не доводять залежності світла від кута.
+inspect_capture формує часові вікна аналізу у вказаному каталозі. Під час пауз симулятора модельний час стоїть. Вхід lux та орієнтація змінювалися незалежно, тому записи не доводять залежності світла від кута.
